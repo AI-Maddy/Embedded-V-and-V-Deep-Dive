@@ -1,0 +1,58 @@
+Suite Name: Aerospace ARINC HIL Regression
+Objective: Guard against regressions in avionics messaging and timing.
+
+Execution Order:
+1. nominal_stream_stability
+2. parity_fault_detection
+3. stale_label_recovery
+4. invalid_ssm_transition
+5. long_duration_determinism
+
+Entry Gates:
+- Bench clock synchronization verified
+- Configuration hash recorded
+- Trace capture path writable
+
+Exit Gates:
+- Zero unresolved critical failures
+- Timing drift within budget
+- Each failure linked to ticket/owner
+
+Additional Validation Notes
+Domain: Aerospace
+Phase: HIL
+Extended Checks:
+- Validate deterministic replay under the same configuration hash.
+- Add explicit boundary values and expected tolerances.
+- Include fault-detection latency and recovery completion timestamp.
+- Record unresolved anomalies with severity and owner.
+Evidence Additions:
+- Raw capture reference + parsed summary reference.
+- Requirement IDs touched by this scenario.
+- Final verdict and residual risk statement.
+
+Additional Validation Notes
+Domain: Aerospace
+Phase: HIL
+Extended Checks:
+- Validate deterministic replay under the same configuration hash.
+- Add explicit boundary values and expected tolerances.
+- Include fault-detection latency and recovery completion timestamp.
+- Record unresolved anomalies with severity and owner.
+Evidence Additions:
+- Raw capture reference + parsed summary reference.
+- Requirement IDs touched by this scenario.
+- Final verdict and residual risk statement.
+
+Additional Validation Notes
+Domain: Aerospace
+Phase: HIL
+Extended Checks:
+- Validate deterministic replay under the same configuration hash.
+- Add explicit boundary values and expected tolerances.
+- Include fault-detection latency and recovery completion timestamp.
+- Record unresolved anomalies with severity and owner.
+Evidence Additions:
+- Raw capture reference + parsed summary reference.
+- Requirement IDs touched by this scenario.
+- Final verdict and residual risk statement.

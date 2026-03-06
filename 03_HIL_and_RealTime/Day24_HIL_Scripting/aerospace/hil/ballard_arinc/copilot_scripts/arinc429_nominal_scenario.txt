@@ -1,0 +1,58 @@
+Scenario Name: ARINC429 Nominal Flight-Control Data Flow
+Domain: Aerospace
+Objective: Validate deterministic message scheduling and decode integrity.
+
+Configuration:
+- Labels: 203 (pitch), 204 (roll), 212 (airspeed)
+- Transmission rate: 50 Hz for 180 seconds
+- SSM state: NORMAL for all packets
+
+Expected Behavior:
+- No dropped labels across capture window
+- Decode latency within configured threshold
+- Receiver values match injected stream tolerance
+
+Evidence Pack:
+- Raw Ballard capture file
+- Decoded label timeline export
+- Requirement-linked verdict summary
+- Residual risk note and owner
+
+Additional Validation Notes
+Domain: Aerospace
+Phase: HIL
+Extended Checks:
+- Validate deterministic replay under the same configuration hash.
+- Add explicit boundary values and expected tolerances.
+- Include fault-detection latency and recovery completion timestamp.
+- Record unresolved anomalies with severity and owner.
+Evidence Additions:
+- Raw capture reference + parsed summary reference.
+- Requirement IDs touched by this scenario.
+- Final verdict and residual risk statement.
+
+Additional Validation Notes
+Domain: Aerospace
+Phase: HIL
+Extended Checks:
+- Validate deterministic replay under the same configuration hash.
+- Add explicit boundary values and expected tolerances.
+- Include fault-detection latency and recovery completion timestamp.
+- Record unresolved anomalies with severity and owner.
+Evidence Additions:
+- Raw capture reference + parsed summary reference.
+- Requirement IDs touched by this scenario.
+- Final verdict and residual risk statement.
+
+Additional Validation Notes
+Domain: Aerospace
+Phase: HIL
+Extended Checks:
+- Validate deterministic replay under the same configuration hash.
+- Add explicit boundary values and expected tolerances.
+- Include fault-detection latency and recovery completion timestamp.
+- Record unresolved anomalies with severity and owner.
+Evidence Additions:
+- Raw capture reference + parsed summary reference.
+- Requirement IDs touched by this scenario.
+- Final verdict and residual risk statement.

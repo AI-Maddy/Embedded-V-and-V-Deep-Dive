@@ -1,0 +1,55 @@
+; HIL Automotive ACC Trace Collection
+; Generated for reproducible V&V workflows
+; Preconditions: target connected, symbols available, trace buffers cleared
+PRINT "----------------------------------------"
+PRINT "HIL Automotive ACC Trace Collection"
+PRINT "----------------------------------------"
+SYStem.CPU CORTEXR5
+SYStem.Mode Up
+SYStem.Option RESBREAK ON
+Trace.RESet
+Perf.RESet
+Break.Set \acc_controller_step
+Go
+Wait 1.s
+Trace.ON
+Wait 2.s
+Trace.OFF
+Perf.List
+Trace.List
+Break.Set \aeb_controller_step
+Trace.METHOD Program
+Data.SAVE.Binary hil_auto_acc_trace.bin
+PRINT "Artifact exported"
+PRINT "Script completed successfully"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Automotive Phase=HIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Automotive Phase=HIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Automotive Phase=HIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+ENDDO

@@ -1,0 +1,57 @@
+; Load symbols for SIL object verification
+; Preconditions: ELF image built with debug information
+PRINT "Load Symbols Start"
+SYStem.CPU CORTEXR5
+SYStem.Mode Up
+SYStem.Option RESBREAK ON
+Data.LOAD.Elf flight_control.elf
+SYmbol.RESet
+SYmbol.AutoLOAD ON
+Var.View
+List.Mix \main
+Break.Set \main
+Break.Set \flight_control_step
+Break.List
+PRINT "Symbols loaded and breakpoints configured"
+PRINT "Load Symbols Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+ENDDO

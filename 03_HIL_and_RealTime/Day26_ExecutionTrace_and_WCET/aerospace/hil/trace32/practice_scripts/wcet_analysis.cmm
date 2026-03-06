@@ -1,0 +1,55 @@
+; HIL Aerospace WCET
+; Generated for reproducible V&V workflows
+; Preconditions: target connected, symbols available, trace buffers cleared
+PRINT "----------------------------------------"
+PRINT "HIL Aerospace WCET"
+PRINT "----------------------------------------"
+SYStem.CPU CORTEXR5
+SYStem.Mode Up
+SYStem.Option RESBREAK ON
+Trace.RESet
+Perf.RESet
+Break.Set \control_loop
+Go
+Wait 1.s
+Trace.ON
+Wait 2.s
+Trace.OFF
+Perf.List
+Trace.List
+Perf.MEASURE \control_loop
+Perf.MEASURE \flight_control_step
+Data.SAVE.Binary hil_aerospace_wcet.bin
+PRINT "Artifact exported"
+PRINT "Script completed successfully"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=HIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=HIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=HIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+ENDDO

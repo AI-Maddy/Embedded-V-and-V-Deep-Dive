@@ -1,0 +1,55 @@
+; SIL Coverage Export
+; Generated for reproducible V&V workflows
+; Preconditions: target connected, symbols available, trace buffers cleared
+PRINT "----------------------------------------"
+PRINT "SIL Coverage Export"
+PRINT "----------------------------------------"
+SYStem.CPU CORTEXR5
+SYStem.Mode Up
+SYStem.Option RESBREAK ON
+Trace.RESet
+Perf.RESet
+Break.Set \main
+Go
+Wait 1.s
+Trace.ON
+Wait 2.s
+Trace.OFF
+Perf.List
+Trace.List
+Trace.STATistic ON
+Break.Set \flight_control_step
+Data.SAVE.Binary sil_coverage.bin
+PRINT "Artifact exported"
+PRINT "Script completed successfully"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+PRINT "Quality Gate Extension"
+PRINT "Domain=Aerospace Phase=SIL"
+Break.List
+Trace.STATistic ON
+Trace.METHOD Program
+Perf.List
+Trace.List
+PRINT "Ensure artifact contains nominal, boundary, fault evidence"
+PRINT "Record requirement IDs and residual risk items"
+PRINT "Quality Gate Extension Complete"
+ENDDO
