@@ -2564,3 +2564,210 @@ NameError: name 'COPILOT_MODEL' is not defined
 [0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
 [OK]  ENRICHED via Copilot: README.rst  (+24 lines)
     [0;32mgit diff:[0m 159	43	tools/CANalyzer/README.rst
+[1m[278/281][0m tools/CANoe/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+136 lines)
+    [0;32mgit diff:[0m 165	29	03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/results/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+35 lines)
+    [0;32mgit diff:[0m 47	12	tools/TRACE32/README.rst
+[1m[281/281][0m tools/Wireshark/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+44 lines)
+    [0;32mgit diff:[0m 45	1	tools/CANoe/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (+168 lines)
+    [0;32mgit diff:[0m 178	10	domains/medical_InfusionPump/use_cases_and_examples.rst
+[1m[256/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+24 lines)
+    [0;32mgit diff:[0m 82	58	tools/Wireshark/README.rst
+[1m[279/281][0m tools/README.rst
+[1m[276/281][0m tools/Ballard_ARINC/README.rst
+
+[1m═══════════════════════════════════════════[0m
+[1m Batch Enrichment Complete[0m
+[1m═══════════════════════════════════════════[0m
+  [0;32mEnriched : 64[0m
+  [1;33mSkipped  : 0[0m
+  [0;31mErrors   : 32[0m
+  Total    : 281
+
+[0;36mOverall git diff summary:[0m
+ tools/TRACE32/README.rst                           |  59 +++++--
+ tools/Wireshark/README.rst                         | 140 +++++++++------
+ tools/automation/.copilot_batch_progress           |   2 +-
+ tools/automation/batch_enrich.log                  |  30 ++++
+ 7 files changed, 548 insertions(+), 111 deletions(-)
+
+[1;33mTip: git add -A && git commit -m 'chore: enrich RST files' && git push[0m
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+68 lines)
+    [0;32mgit diff:[0m 84	16	03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+13 lines)
+    [0;32mgit diff:[0m 22	9	tools/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (-1 lines)
+    [0;32mgit diff:[0m 6	7	tools/Ballard_ARINC/README.rst
+[1m[280/281][0m tools/TRACE32/README.rst
+[1m[277/281][0m tools/CANalyzer/README.rst
+[1m[257/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/automotive/results/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+112 lines)
+    [0;32mgit diff:[0m 159	12	tools/TRACE32/README.rst
+[1m[281/281][0m tools/Wireshark/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+  [Meta-Llama-3.1-8B-Instruct] [429] Rate limited — waiting 20s (retry 1/5)...
+[OK]  ENRICHED via Copilot: README.rst  (+86 lines)
+    [0;32mgit diff:[0m 115	29	03_HIL_and_RealTime/Day30_Final_Capstone/automotive/results/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+  [Meta-Llama-3.1-8B-Instruct] [429] Rate limited — waiting 20s (retry 1/5)...
+[OK]  ENRICHED via Copilot: README.rst  (+25 lines)
+    [0;32mgit diff:[0m 25	0	tools/CANalyzer/README.rst
+[1m[278/281][0m tools/CANoe/README.rst
+[1m[258/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+  [Meta-Llama-3.1-8B-Instruct] [429] Rate limited — waiting 11s (retry 1/5)...
+  [Meta-Llama-3.1-8B-Instruct] [429] Rate limited — waiting 7s (retry 2/5)...
+[OK]  ENRICHED via Copilot: README.rst  (+22 lines)
+    [0;32mgit diff:[0m 102	56	tools/Wireshark/README.rst
+
+[1m═══════════════════════════════════════════[0m
+[1m Batch Enrichment Complete[0m
+[1m═══════════════════════════════════════════[0m
+  [0;32mEnriched : 42[0m
+  [1;33mSkipped  : 0[0m
+  [0;31mErrors   : 21[0m
+  Total    : 281
+
+[0;36mOverall git diff summary:[0m
+ tools/TRACE32/README.rst                           | 171 ++++++++++++++++--
+ tools/Wireshark/README.rst                         | 158 +++++++++++------
+ tools/automation/.copilot_batch_progress           |   2 +-
+ tools/automation/batch_enrich.log                  |  78 +++++++++
+ 12 files changed, 980 insertions(+), 170 deletions(-)
+
+[1;33mTip: git add -A && git commit -m 'chore: enrich RST files' && git push[0m
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+134 lines)
+    [0;32mgit diff:[0m 188	54	03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+75 lines)
+    [0;32mgit diff:[0m 120	1	tools/CANoe/README.rst
+[1m[279/281][0m tools/README.rst
+[1m[259/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/concepts/concept_note.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — concept_note.rst ...
+[OK]  ENRICHED via Copilot: concept_note.rst  (+28 lines)
+    [0;32mgit diff:[0m 74	46	03_HIL_and_RealTime/Day30_Final_Capstone/concepts/concept_note.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+65 lines)
+    [0;32mgit diff:[0m 92	14	tools/README.rst
+[1m[280/281][0m tools/TRACE32/README.rst
+[1m[260/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+74 lines)
+    [0;32mgit diff:[0m 232	11	tools/TRACE32/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+88 lines)
+    [0;32mgit diff:[0m 150	62	03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst
+[1m[281/281][0m tools/Wireshark/README.rst
+[1m[261/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/exercises/worked_example.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+54 lines)
+    [0;32mgit diff:[0m 156	56	tools/Wireshark/README.rst
+
+[1m═══════════════════════════════════════════[0m
+[1m Batch Enrichment Complete[0m
+[1m═══════════════════════════════════════════[0m
+  [0;32mEnriched : 28[0m
+  [1;33mSkipped  : 3[0m
+  [0;31mErrors   : 21[0m
+  Total    : 281
+
+[0;36mOverall git diff summary:[0m
+ tools/TRACE32/README.rst                           | 243 ++++++++++++++++++++-
+ tools/Wireshark/README.rst                         | 212 +++++++++++++-----
+ tools/automation/.copilot_batch_progress           |   2 +-
+ tools/automation/batch_enrich.log                  | 122 +++++++++++
+ 15 files changed, 1708 insertions(+), 336 deletions(-)
+
+[1;33mTip: git add -A && git commit -m 'chore: enrich RST files' && git push[0m
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — worked_example.rst ...
+[OK]  ENRICHED via Copilot: worked_example.rst  (+102 lines)
+    [0;32mgit diff:[0m 153	51	03_HIL_and_RealTime/Day30_Final_Capstone/exercises/worked_example.rst
+[1m[262/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+81 lines)
+    [0;32mgit diff:[0m 110	29	03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst
+[1m[263/281][0m 03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+144 lines)
+    [0;32mgit diff:[0m 173	29	03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst
+[1m[264/281][0m Compliance_Standards_CheatSheet.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — Compliance_Standards_CheatSheet.rst ...
+[OK]  ENRICHED via Copilot: Compliance_Standards_CheatSheet.rst  (+127 lines)
+    [0;32mgit diff:[0m 127	0	Compliance_Standards_CheatSheet.rst
+[1m[265/281][0m README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+489 lines)
+    [0;32mgit diff:[0m 506	17	README.rst
+[1m[266/281][0m Ref/Domain usecases.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — Domain usecases.rst ...
+[OK]  ENRICHED via Copilot: Domain usecases.rst  (+141 lines)
+[1m[267/281][0m Ref/HIL-ref.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — HIL-ref.rst ...
+[OK]  ENRICHED via Copilot: HIL-ref.rst  (+30 lines)
+[1m[268/281][0m Ref/MIL-ref.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — MIL-ref.rst ...
+[OK]  ENRICHED via Copilot: MIL-ref.rst  (+90 lines)
+[1m[269/281][0m Ref/SIL-ref.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — SIL-ref.rst ...
+[OK]  ENRICHED via Copilot: SIL-ref.rst  (+50 lines)
+[1m[270/281][0m Ref/reference-for-repo.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — reference-for-repo.rst ...
+[OK]  ENRICHED via Copilot: reference-for-repo.rst  (+4 lines)
+[1m[271/281][0m Tools_and_Frameworks_Guide.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — Tools_and_Frameworks_Guide.rst ...
+[OK]  ENRICHED via Copilot: Tools_and_Frameworks_Guide.rst  (-2 lines)
+    [0;32mgit diff:[0m 12	14	Tools_and_Frameworks_Guide.rst
+[1m[272/281][0m domains/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+  [Meta-Llama-3.1-8B-Instruct] [429] Rate limited — waiting 60s (retry 1/5)...
+[OK]  ENRICHED via Copilot: README.rst  (+21 lines)
+    [0;32mgit diff:[0m 93	72	domains/README.rst
+[1m[273/281][0m domains/aerospace_FlightControl/use_cases_and_examples.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (+326 lines)
+    [0;32mgit diff:[0m 326	0	domains/aerospace_FlightControl/use_cases_and_examples.rst
+[1m[274/281][0m domains/automotive_ACC/use_cases_and_examples.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (+4 lines)
+    [0;32mgit diff:[0m 8	4	domains/automotive_ACC/use_cases_and_examples.rst
+[1m[275/281][0m domains/medical_InfusionPump/use_cases_and_examples.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (+255 lines)
+    [0;32mgit diff:[0m 432	9	domains/medical_InfusionPump/use_cases_and_examples.rst
+[1m[276/281][0m tools/Ballard_ARINC/README.rst
+[1;33m[SKIP][0m  Already enriched or unchanged: README.rst
+[1m[277/281][0m tools/CANalyzer/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+192 lines)
+    [0;32mgit diff:[0m 219	2	tools/CANalyzer/README.rst
+[1m[278/281][0m tools/CANoe/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+8 lines)
+    [0;32mgit diff:[0m 133	6	tools/CANoe/README.rst
+[1m[279/281][0m tools/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+17 lines)
+    [0;32mgit diff:[0m 109	14	tools/README.rst
+[1m[280/281][0m tools/TRACE32/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (-3 lines)
+    [0;32mgit diff:[0m 232	14	tools/TRACE32/README.rst
+[1m[281/281][0m tools/Wireshark/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-8B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+49 lines)
+    [0;32mgit diff:[0m 204	55	tools/Wireshark/README.rst
+batch_enrich.sh: line 185: unexpected EOF while looking for matching `"'
