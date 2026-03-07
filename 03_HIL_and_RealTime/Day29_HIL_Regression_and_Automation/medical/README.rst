@@ -1,61 +1,87 @@
-Medical Focus — Day29 HIL Regression and Automation
-===================================================
+Medical Focus — Day29 HIL Regression and Automation 🚑
+=======================================================
 
-Objective
+Objective 🎯
 ---------
-Apply this day in **Medical** context with explicit safety, compliance, and evidence expectations.
+Apply this day in **Medical** context with explicit safety, compliance, and evidence expectations. The goal is to ensure that all hardware-in-the-loop (HIL) systems are rigorously tested to meet the highest standards of safety and reliability in medical applications.
 
-Phase Context
+Phase Context 🔍
 -------------
-Phase: **HIL**
-Primary focus: **hardware-integrated timing and interface confidence**.
-Section focus: **medical verification workflow**.
+Phase: **HIL**  
+Primary focus: **hardware-integrated timing and interface confidence**.  
+Section focus: **medical verification workflow**.  
 
-Domain Constraints
+Domain Constraints 🚧
 ------------------
-- Compliance baseline: **IEC 62304 + ISO 14971 + IEC 60601 context**
-- Key hazard profile: incorrect dosage delivery, missed alarm, unsafe therapy continuation
-- Interface landscape: device buses, sensor links, alarm/event channels
+- Compliance baseline: **IEC 62304 + ISO 14971 + IEC 60601 context**  
+- Key hazard profile:  
+  - Incorrect dosage delivery  
+  - Missed alarm  
+  - Unsafe therapy continuation  
+- Interface landscape:  
+  - Device buses  
+  - Sensor links  
+  - Alarm/event channels  
 
-Domain-Specific Examples
+Domain-Specific Examples 📊
 ------------------------
-- Nominal: therapy control with validated sensor feedback.
-- Boundary: near-threshold dosing and alarm escalation timing.
-- Fault: sensor spike/dropout and actuator command rejection path.
+- **Nominal** 🟢: Therapy control with validated sensor feedback.  
+- **Boundary** 🟡: Near-threshold dosing and alarm escalation timing.  
+- **Fault** 🔴: Sensor spike/dropout and actuator command rejection path.  
 
-Patterns
+Patterns 🔄
 --------
-- Derive acceptance thresholds from hazard-linked requirements.
-- Keep interface timing contracts explicit and reviewable.
-- Compare nominal and stressed traces against the same baseline.
+- Derive acceptance thresholds from hazard-linked requirements to ensure that all tests are relevant and meaningful.
+- Keep interface timing contracts explicit and reviewable to maintain clarity and accountability.
+- Compare nominal and stressed traces against the same baseline to identify discrepancies and ensure consistency.
 
-Anti-Patterns
+Anti-Patterns 🚫
 -------------
-- Generic test claims without domain hazard mapping.
-- Pass/fail decisions without quantitative thresholds.
-- Evidence summaries without raw artifact references.
+- Generic test claims without domain hazard mapping lead to insufficient coverage.
+- Pass/fail decisions without quantitative thresholds undermine the reliability of results.
+- Evidence summaries without raw artifact references can obscure the basis for conclusions.
 
-Pitfalls
+Pitfalls ⚠️
 --------
-- Hidden assumptions in environment or calibration setup.
-- Missing negative-path scenarios for high-criticality behavior.
-- Incomplete traceability from requirement to verdict.
+- Hidden assumptions in environment or calibration setup can lead to unexpected failures.
+- Missing negative-path scenarios for high-criticality behavior can result in untested vulnerabilities.
+- Incomplete traceability from requirement to verdict can compromise the integrity of the validation process.
 
-Best Practices
+Best Practices 🌟
 --------------
-- Tag every artifact with domain requirement IDs.
-- Capture timing + functional evidence in the same run package.
-- Record residual risk and ownership before closure.
+- Tag every artifact with domain requirement IDs to ensure traceability and accountability.
+- Capture timing + functional evidence in the same run package to streamline the validation process.
+- Record residual risk and ownership before closure to ensure that all parties are aware of outstanding issues.
 
-Heuristics
+Heuristics 🧠
 ----------
-- If a domain hazard is untested, confidence is provisional.
-- If rerun differs unexpectedly, investigate determinism first.
-- If evidence is indirect, reduce verdict confidence level.
+- If a domain hazard is untested, confidence is provisional.  
+- If rerun differs unexpectedly, investigate determinism first to identify potential issues.  
+- If evidence is indirect, reduce verdict confidence level to reflect uncertainty.
 
-Checklist
+Checklist ✅
 ---------
-- Domain hazard coverage is explicit.
-- Compliance references are mapped to evidence.
-- Nominal/boundary/fault results are all documented.
-- Residual risks and next actions are assigned.
+.. note:: Ensure that the following items are checked before proceeding with the review.
+- [ ] Domain hazard coverage is explicit.  
+- [ ] Compliance references are mapped to evidence.  
+- [ ] Nominal/boundary/fault results are all documented.  
+- [ ] Residual risks and next actions are assigned.  
+
+GIVEN / WHEN / THEN Scenarios 📜
+-------------------------------
+- **Nominal** 🟢:  
+  - **GIVEN** a validated sensor feedback system,  
+  - **WHEN** a therapy control command is issued,  
+  - **THEN** the system should deliver the correct dosage without errors.  
+
+- **Boundary** 🟡:  
+  - **GIVEN** a near-threshold dosing scenario,  
+  - **WHEN** the alarm escalation timing is triggered,  
+  - **THEN** the system should activate alarms within the specified timing window.  
+
+- **Fault** 🔴:  
+  - **GIVEN** a sensor spike/dropout,  
+  - **WHEN** an actuator command is issued,  
+  - **THEN** the system should reject the command and log the fault appropriately.  
+
+.. important:: Always refer to the relevant standards (IEC 62304, ISO 14971, IEC 60601) when conducting HIL testing to ensure compliance and safety.

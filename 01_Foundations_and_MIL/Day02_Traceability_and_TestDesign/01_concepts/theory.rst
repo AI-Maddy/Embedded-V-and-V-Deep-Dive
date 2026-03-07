@@ -1,66 +1,124 @@
-Theory — Day02 Traceability and Test Design
-===========================================
+Theory — Day02 Traceability and Test Design 🌟
+=============================================
 
-Learning Goal
--------------
-Build test designs that are directly traceable to requirements and robust against change.
+Learning Goal 🎯
+----------------
+**Mnemonic: TRACE**  
+**T**est designs **R**obustly **A**ligned to **C**hangeable **E**vidence  
 
-Traceability Principles
+The primary goal is to construct test designs that are:  
+- **Traceable**: Directly linked to requirements.  
+- **Robust**: Resilient to requirement changes and system evolution.  
+- **Comprehensive**: Cover nominal, boundary, and fault scenarios.  
+
+.. note::  
+   This aligns with industry standards such as **DO-178C** (Software Considerations in Airborne Systems) and **ISO 26262** (Functional Safety for Road Vehicles).  
+
+Traceability Principles 🔗
+--------------------------
+Traceability ensures every requirement is verified and no test is orphaned.  
+
+- **Forward Trace**: Requirement → Test/Design/Artifact.  
+- **Backward Trace**: Artifact/Verdict → Originating Requirement.  
+- **Bidirectional Trace**: Reduces audit and regression risks.  
+
+.. important::  
+   According to **ARP4754A**, bidirectional traceability is critical for ensuring system-level requirements are met and verified across all development phases.  
+
+Test Design Depth 🧪
+--------------------
+Test design must address **three key dimensions**:  
+
+- **Nominal Tests 🟢**: Validate intended behavior under normal conditions.  
+- **Boundary Tests 🟡**: Assess system sensitivity to edge cases and limits.  
+- **Negative/Fault Tests 🔴**: Confirm safe degradation and recovery mechanisms.  
+
+**Scenario Templates**:  
+
+.. list-table:: Test Design Scenarios  
+   :header-rows: 1  
+
+   * - **Scenario Type**  
+     - **GIVEN**  
+     - **WHEN**  
+     - **THEN**  
+   * - Nominal 🟢  
+     - System is operating under normal conditions.  
+     - A valid input is provided.  
+     - The system produces the expected output.  
+   * - Boundary 🟡  
+     - System is operating near its limits.  
+     - An edge-case input is provided.  
+     - The system handles the input without failure.  
+   * - Fault 🔴  
+     - System encounters an error condition.  
+     - An invalid or unexpected input is provided.  
+     - The system degrades gracefully or recovers safely.  
+
+Review Triggers 🔍
+------------------
+Review processes must identify critical issues early.  
+
+- **Requirement Change 🟡**: A requirement changes without corresponding test updates.  
+- **Orphaned Tests 🔴**: A test exists without linkage to any requirement.  
+- **Undefined Criteria 🟡**: Pass/fail thresholds are missing or unclear.  
+
+.. warning::  
+   Unlinked tests or missing thresholds can lead to **audit failures** under standards such as **ASPICE** and **IEC 62304**.  
+
+Deliverable Expectations 📦
+---------------------------
+Key deliverables for MIL traceability and test design include:  
+
+- **Traceability Matrix Baseline**: Mapping requirements to tests and artifacts.  
+- **Scenario Set**: Comprehensive test cases with coverage rationale.  
+- **Gap List**: Identification of unverified requirements.  
+
+.. admonition:: Standards Alignment  
+   Ensure deliverables meet the traceability requirements of **DO-254** (Design Assurance Guidance for Airborne Electronic Hardware) and **ISO 26262**.  
+
+Pre-Review Checklist ✅
 -----------------------
-- Forward trace: requirement → test/design/artifact.
-- Backward trace: artifact/verdict → originating requirement.
-- Bidirectional trace reduces audit and regression risk.
+Use this checklist to ensure readiness for review:  
 
-Test Design Depth
------------------
-- Nominal tests prove intended behavior.
-- Boundary tests expose sensitivity to limits.
-- Negative/fault tests prove safe degradation and recovery.
+☐ Requirements are fully traceable to tests and artifacts.  
+☐ All tests have measurable pass/fail criteria.  
+☐ Nominal, boundary, and fault scenarios are included for each requirement.  
+☐ Residual risks are documented with ownership and next actions.  
+☐ Evidence aligns with domain standards (e.g., **DO-178C**, **ARP4761**).  
 
-Review Triggers
----------------
-- Requirement changed without test update.
-- Test exists without requirement linkage.
-- Pass/fail criteria missing measurable thresholds.
+Additional Deep-Dive Notes 🧠
+-----------------------------
+Expand your understanding of MIL traceability and test design with these insights:  
 
-Deliverable Expectations
-------------------------
-- Traceability matrix baseline
-- Scenario set with coverage rationale
-- Gap list for unverified requirements
+- **Domain Focus**: General embedded systems.  
+- **Phase Focus**: MIL (Model-in-the-Loop).  
+- **Evidence Priorities**:  
+  - Functional correctness.  
+  - Timing behavior.  
+  - Robustness.  
+  - Traceability.  
+- **Patterns**:  
+  - Baseline-first comparison.  
+  - Fixed acceptance thresholds.  
+  - Deterministic reruns.  
+- **Anti-Patterns**:  
+  - Post-hoc threshold tuning.  
+  - Missing raw artifacts.  
+  - Incomplete negative-path checks.  
+- **Pitfalls**:  
+  - Hidden assumptions.  
+  - Interface timing drift.  
+  - Weak requirement-to-test linkage.  
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+.. important::  
+   According to **ARP4754A**, hidden assumptions and weak traceability can undermine system safety and certification efforts.  
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+**Example Expansion**: Include one nominal, one boundary, and one fault scenario per objective.  
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+**Review Heuristic**: If a claim cannot be tied to an artifact, mark confidence as provisional.  
+
+**Checklist Extension**: Capture residual risk, ownership, and next action for each unresolved item.  
+
+.. note::  
+   For further guidance, refer to **ISO 26262 Part 6** for test design strategies and **DO-178C Annex A** for traceability matrix templates.

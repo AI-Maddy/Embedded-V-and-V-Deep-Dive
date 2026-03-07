@@ -1,67 +1,125 @@
-Description — Medical
-=====================
+🌟 Description — Medical
+=========================
 
-Purpose
--------
+🎯 Purpose
+----------
 Document **Medical**-specific details for Day01 VModel and Requirements with focus on use-case intent, assumptions, and acceptance criteria.
 
-Domain Alignment
-----------------
-- Standard reference: **IEC 62304 + ISO 14971 + IEC 60601 context**
-- Critical hazards: incorrect dosage delivery, missed alarm, unsafe therapy continuation
-- Relevant interfaces: device buses, sensor links, alarm/event channels
+🔗 Domain Alignment
+-------------------
+- **Standard References**: 
+  - IEC 62304 (Medical Device Software Lifecycle Processes)
+  - ISO 14971 (Risk Management for Medical Devices)
+  - IEC 60601 (Medical Electrical Equipment Safety)
+- **Critical Hazards**:
+  - Incorrect dosage delivery 🟡
+  - Missed alarm 🔴
+  - Unsafe therapy continuation 🟢
+- **Relevant Interfaces**:
+  - Device buses 🟢
+  - Sensor links 🟡
+  - Alarm/event channels 🔴
 
-Examples
---------
-- Nominal path: therapy control with validated sensor feedback.
-- Boundary path: near-threshold dosing and alarm escalation timing.
-- Fault path: sensor spike/dropout and actuator command rejection path.
+📖 Examples
+-----------
+**Nominal Scenario** 🟢  
+GIVEN validated sensor feedback  
+WHEN therapy control is initiated  
+THEN the system delivers therapy within specified parameters.
 
-Patterns
---------
-- Use requirement-linked checks for every scenario.
-- Track timing and functional outcomes together.
-- Keep setup reproducibility constraints explicit.
+**Boundary Scenario** 🟡  
+GIVEN a near-threshold dosing configuration  
+WHEN alarm escalation timing is triggered  
+THEN the system ensures proper alarm activation without delay.
 
-Anti-Patterns
--------------
-- Domain-agnostic statements without measurable criteria.
-- Ignoring interface constraints during analysis.
-- Closing findings without residual risk statement.
+**Fault Scenario** 🔴  
+GIVEN a sensor spike/dropout or actuator command rejection  
+WHEN the system detects an anomaly  
+THEN it halts therapy and raises a critical alarm.
 
-Pitfalls
---------
-- Missing sensor/actuator fault variants.
-- Weak traceability from objective to artifact.
-- Non-repeatable reruns from uncontrolled configuration drift.
+🔍 Patterns
+-----------
+- **Requirement-Linked Checks**: Ensure every scenario is tied to specific requirements.
+- **Timing and Functional Outcomes**: Simultaneously track timing behavior and functional correctness.
+- **Reproducibility Constraints**: Explicitly define setup conditions for repeatable tests.
 
-Checklist
----------
-- Scope and assumptions are explicit.
-- Acceptance criteria are quantitative.
-- Evidence set is complete and auditable.
-- Follow-up actions are prioritized.
+🚫 Anti-Patterns
+-----------------
+- **Domain-Agnostic Statements**: Avoid generic claims without measurable criteria.
+- **Interface Constraints Ignored**: Always analyze interface timing and data integrity.
+- **Unresolved Risks**: Do not close findings without a residual risk statement.
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: Medical
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+⚠️ Pitfalls
+------------
+- **Sensor/Actuator Fault Variants**: Missing coverage for edge cases.
+- **Weak Traceability**: Ensure objectives are clearly linked to artifacts.
+- **Configuration Drift**: Prevent non-repeatable reruns due to uncontrolled setup changes.
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: Medical
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+✅ Pre-Review Checklist
+-----------------------
+☐ Scope and assumptions are explicit.  
+☐ Acceptance criteria are quantitative and measurable.  
+☐ Evidence set is complete and auditable.  
+☐ Follow-up actions are prioritized and documented.  
+☐ Residual risks are captured with ownership and next steps.  
+
+💡 Additional Deep-Dive Notes
+-----------------------------
+.. note::
+   **Domain Focus**: Medical  
+   **Phase Focus**: MIL (Model-in-the-Loop)  
+
+.. important::
+   **Evidence Priorities**:  
+   - Functional correctness 🟢  
+   - Timing behavior 🟡  
+   - Robustness 🔴  
+   - Traceability 🟢  
+
+.. admonition:: Patterns to Follow  
+   - Baseline-first comparison methodology.  
+   - Fixed acceptance thresholds for predictable outcomes.  
+   - Deterministic reruns to ensure repeatability.  
+
+.. warning::
+   **Anti-Patterns**:  
+   - Post-hoc threshold tuning 🟡  
+   - Missing raw artifacts 🔴  
+   - Incomplete negative-path checks 🟡  
+
+.. warning::
+   **Pitfalls**:  
+   - Hidden assumptions 🔴  
+   - Interface timing drift 🟡  
+   - Weak requirement-to-test linkage 🟢  
+
+📊 Example Expansion
+---------------------
+.. list-table:: Example Scenarios
+   :widths: 15 15 20
+   :header-rows: 1
+
+   * - Scenario Type
+     - GIVEN
+     - THEN
+   * - 🟢 Nominal
+     - Validated sensor feedback
+     - Therapy delivered within parameters
+   * - 🟡 Boundary
+     - Near-threshold dosing configuration
+     - Alarm activated without delay
+   * - 🔴 Fault
+     - Sensor spike/dropout or actuator rejection
+     - Therapy halted, critical alarm raised
+
+🔍 Review Heuristic
+-------------------
+If a claim cannot be tied to an artifact, **mark confidence as provisional** and escalate for further analysis.
+
+📋 Checklist Extension
+----------------------
+☐ Capture residual risk for unresolved items.  
+☐ Assign ownership for follow-up actions.  
+☐ Document next steps for each incomplete item.  
+☐ Verify alignment with IEC 62304 and ISO 14971 risk management principles.  
+☐ Confirm deterministic reruns are possible under controlled configurations.

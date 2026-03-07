@@ -1,66 +1,176 @@
-🧰 Tools Playbook
-================
+🧰 Embedded V&V Tools Playbook
+=============================
 
-🎯 Purpose
+🎯 **V&V-VIP** (Verification and Validation Verification Insight Process)
 ----------
+
 Standardize tool usage so outputs are **repeatable, comparable, and auditable** across MIL/SIL/HIL.
 
 🔗 Tool Tracks
 --------------
-- `CANoe <CANoe/README.rst>`_
-- `CANalyzer <CANalyzer/README.rst>`_
-- `Wireshark <Wireshark/README.rst>`_
-- `TRACE32 <TRACE32/README.rst>`_
-- `Ballard ARINC <Ballard_ARINC/README.rst>`_
+
+* `CANoe <CANoe/README.rst>`_ 🟢
+* `CANalyzer <CANalyzer/README.rst>`_ 🟢
+* `Wireshark <Wireshark/README.rst>`_ 🟡
+* `TRACE32 <TRACE32/README.rst>`_ 🟡
+* `Ballard ARINC <Ballard_ARINC/README.rst>`_ 🔴
 
 🧭 Universal Workflow
 ---------------------
-1. Freeze test objective, assumptions, and acceptance criteria.
-2. Version-control the tool configuration and runtime options.
-3. Execute nominal and edge/fault scenarios.
-4. Export raw outputs and derived summaries.
-5. Link findings to requirement/objective references.
+
+### 1. Freeze test objective, assumptions, and acceptance criteria.
+
+.. note::
+    Ensure all stakeholders agree on the test objective, assumptions, and acceptance criteria.
+
+### 2. Version-control the tool configuration and runtime options.
+
+.. important::
+    Use a version control system (e.g., Git) to track changes to tool configurations and runtime options.
+
+### 3. Execute nominal and edge/fault scenarios.
+
+.. warning::
+    Ensure that nominal, boundary, and fault scenarios are executed to validate the system's behavior under various conditions.
+
+### 4. Export raw outputs and derived summaries.
+
+.. admonition::
+    Export raw outputs and derived summaries to facilitate analysis and verification.
+
+### 5. Link findings to requirement/objective references.
+
+.. note::
+    Link findings to requirement/objective references to ensure that the system meets the specified requirements.
 
 📦 Minimum Evidence Bundle
---------------------------
-- Versioned configuration snapshot
-- Timestamped raw output
-- Interpreted findings and verdict
-- Open issue list with owner/priority
+-------------------------
+
+### 1. Versioned configuration snapshot
+
+*   ☐ Versioned configuration snapshot
+*   ☐ Timestamped raw output
+*   ☐ Interpreted findings and verdict
+*   ☐ Open issue list with owner/priority
 
 ✅ Quality Gates
 ----------------
-- Repeatability verified via rerun comparison.
-- Data integrity checked (timestamps and interfaces consistent).
-- Findings mapped to objective IDs and risk statements.
+
+### 1. Repeatability verified via rerun comparison.
+
+*   ☐ Repeatability verified via rerun comparison
+*   ☐ Data integrity checked (timestamps and interfaces consistent)
+*   ☐ Findings mapped to objective IDs and risk statements
 
 ⚠️ Cross-Tool Pitfalls
 ----------------------
-- Timebase mismatch across tools and ECU clocks.
-- Non-deterministic setup not captured in artifacts.
-- Summary conclusions without raw evidence retention.
 
+### 1. Timebase mismatch across tools and ECU clocks.
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: Cross-Phase
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+*   ☐ Timebase mismatch across tools and ECU clocks
+*   ☐ Non-deterministic setup not captured in artifacts
+*   ☐ Summary conclusions without raw evidence retention
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: Cross-Phase
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+### Domain Standards
+-------------------
+
+*   DO-178C (Software Considerations in Airborne Systems and Equipment Certification) 🟢
+*   DO-254 (Design Assurance Guidance for Airborne Electronic Hardware) 🟢
+*   ISO 26262 (Functional Safety for Road Vehicles) 🟡
+*   IEC 62304 (Medical Device Software - Software Life Cycle Processes) 🟡
+*   ARP4754A/4761 (System and Software Integrity Plans) 🔴
+*   ASPICE (Automotive Safety Integrity Level Process for E/E Systems) 🔴
+
+### Patterns and Anti-Patterns
+---------------------------
+
+### Patterns
+-----------
+
+*   Baseline-first comparison 🟢
+*   Fixed acceptance thresholds 🟢
+*   Deterministic reruns 🟢
+
+### Anti-Patterns
+--------------
+
+*   Post-hoc threshold tuning 🔴
+*   Missing raw artifacts 🔴
+*   Incomplete negative-path checks 🔴
+
+### Review Heuristic
+------------------
+
+*   If a claim cannot be tied to an artifact, mark confidence as provisional.
+
+### Checklist Extension
+---------------------
+
+*   Capture residual risk
+*   Ownership
+*   Next action for each unresolved item
+
+### Example Expansion
+-------------------
+
+*   Include one nominal, one boundary, and one fault scenario per objective.
+
+### Evidence Priorities
+----------------------
+
+*   Functional correctness 🟢
+*   Timing behavior 🟡
+*   Robustness 🔴
+*   Traceability 🔴
+
+### Pitfalls
+---------
+
+*   Hidden assumptions 🔴
+*   Interface timing drift 🔴
+*   Weak requirement-to-test linkage 🔴
+
+### Example Use Cases
+-------------------
+
+### Nominal Scenario
+-----------------
+
+*   GIVEN: The system is in a normal operating state. 🟢
+*   WHEN: The user inputs a valid command. 🟢
+*   THEN: The system responds correctly. 🟢
+
+### Boundary Scenario
+-----------------
+
+*   GIVEN: The system is in a normal operating state. 🟡
+*   WHEN: The user inputs an invalid command. 🟡
+*   THEN: The system responds with an error message. 🟡
+
+### Fault Scenario
+----------------
+
+*   GIVEN: The system is in a faulty state. 🔴
+*   WHEN: The user inputs a valid command. 🔴
+*   THEN: The system responds with an error message. 🔴
+
+### Pre-Review Checklist
+-------------------------
+
+☐ Review all test objectives, assumptions, and acceptance criteria.
+☐ Verify that all tool configurations and runtime options are version-controlled.
+☐ Execute nominal, boundary, and fault scenarios to validate the system's behavior.
+☐ Export raw outputs and derived summaries to facilitate analysis and verification.
+☐ Link findings to requirement/objective references to ensure that the system meets the specified requirements.
+☐ Verify repeatability via rerun comparison.
+☐ Check data integrity (timestamps and interfaces consistent).
+☐ Map findings to objective IDs and risk statements.
+☐ Review all domain standards and ensure compliance.
+☐ Identify and address any cross-tool pitfalls.
+☐ Review all patterns and anti-patterns and ensure adherence.
+☐ Review the review heuristic and ensure that confidence is marked as provisional if a claim cannot be tied to an artifact.
+☐ Review the checklist extension and ensure that residual risk, ownership, and next action for each unresolved item are captured.
+☐ Review the example expansion and ensure that one nominal, one boundary, and one fault scenario per objective are included.
+☐ Review the evidence priorities and ensure that functional correctness, timing behavior, robustness, and traceability are addressed.
+☐ Review the pitfalls and ensure that hidden assumptions, interface timing drift, and weak requirement-to-test linkage are addressed.
+☐ Review the example use cases and ensure that nominal, boundary, and fault scenarios are included.
