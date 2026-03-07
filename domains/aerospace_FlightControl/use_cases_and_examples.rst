@@ -323,3 +323,329 @@ Checklist for Review
 ☐ **Checklist is Comprehensive**: ensure that the checklist is comprehensive.
 ☐ **Review Heuristic is Comprehensive**: ensure that the review heuristic is comprehensive.
 ☐ **Table of Evidence is Comprehensive**: ensure that the table of evidence is comprehensive.
+
+Table of Contents
+-----------------
+
+.. toctree::
+    :maxdepth: 2
+
+    Use Cases and Examples
+    Patterns
+    Anti-Patterns
+    Pitfalls
+    Best Practices
+    Checklist
+    Additional Deep-Dive Notes
+    References
+    Table of Evidence
+    Checklist for Review
+
+Indices and tables
+-----------------
+
+.. autosummary::
+    :toctree: generated/
+
+    Use Cases and Examples
+    Patterns
+    Anti-Patterns
+    Pitfalls
+    Best Practices
+    Checklist
+    Additional Deep-Dive Notes
+    References
+    Table of Evidence
+    Checklist for Review
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Table of Contents
+-----------------
+
+*   Use Cases and Examples
+*   Patterns
+*   Anti-Patterns
+*   Pitfalls
+*   Best Practices
+*   Checklist
+*   Additional Deep-Dive Notes
+*   References
+*   Table of Evidence
+*   Checklist for Review
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices
+-------
+
+*   General Index
+*   Module Index
+*   Search Page
+
+Indices and tables
+-----------------
+
+*   General Index

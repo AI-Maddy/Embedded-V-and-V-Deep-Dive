@@ -9,6 +9,11 @@ Use this tool for **ARINC traffic generation and avionics bus conformance** 📈
 -------------------------
 ### Domain-Specific Mnemonic Acronym
 **V&V-Vision** (Verification & Validation - Vision)
+🔑 **Definition**
+- V: Verification
+- &: And
+- V: Validation
+- Vision: Clear and concise understanding of the system under test
 
 ### Setup Baseline Checklist ☐
 - ☐ Capture tool version, project/profile, and interface mapping.
@@ -117,14 +122,8 @@ Track: **label accuracy, schedule adherence, parity/error response** 📊.
    | Schedule Adherence | Timeliness of schedule | 🟡 | Boundary |
    | Parity/Error Response | Correctness of parity/error response | 🔴 | Fault |
 
-### Mnemonic Acronym Expansion
+### V&V-Vision Mnemonic Acronym Expansion
 V&V-Vision = Verification & Validation - Vision
-
-### V&V-Vision Mnemonic
-- V: Verification
-- &: And
-- V: Validation
-- Vision: Clear and concise understanding of the system under test
 
 ### V&V-Vision Template
 - Given: <nominal/boundary/fault scenario>

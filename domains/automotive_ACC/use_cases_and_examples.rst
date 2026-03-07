@@ -187,22 +187,26 @@ Best Practices 📚
 Checklist 📝
 ------------
 
-### Nominal/Boundary/Fault Scenarios are Covered ☐
+☐ Nominal/Boundary/Fault Scenarios are Covered
+=============================================
 
 *   Ensure that nominal, boundary, and fault scenarios are covered
 *   Use a consistent naming convention for scenario types
 
-### Evidence is Traceable and Auditable ☐
+☐ Evidence is Traceable and Auditable
+=====================================
 
 *   Ensure that evidence is traceable and auditable
 *   Use a consistent naming convention for evidence types
 
-### Compliance Mapping is Explicit ☐
+☐ Compliance Mapping is Explicit
+=============================
 
 *   Ensure that compliance mapping is explicit
 *   Use a consistent naming convention for compliance references
 
-### Open Issues include Priority and Owner ☐
+☐ Open Issues include Priority and Owner
+=====================================
 
 *   Ensure that open issues include priority and owner
 *   Use a consistent naming convention for open issues

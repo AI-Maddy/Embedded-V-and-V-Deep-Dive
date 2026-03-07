@@ -20,7 +20,7 @@ Pre-Review Checklist
 Tools and Frameworks Guide
 ==========================
 
-### 1. Programming Languages (Embedded-Critical)
+### 1. Programming Languages (Embedded-Critical) 🤖
 
 🔍 **Programming Languages (Embedded-Critical)**
 
@@ -36,7 +36,7 @@ Tools and Frameworks Guide
 | **Simulink** | Graphical modeling for control systems and plant models. | MIL/SIL/HIL across all domains | 🟢 |
 | **Assembly** | Low-level deterministic control, bootloaders, interrupt routines. | Aerospace DAL-A, Medical Class C | 🟢 |
 
-### 2. Simulation & Modeling Tools (MIL/SIL/HIL)
+### 2. Simulation & Modeling Tools (MIL/SIL/HIL) 📈
 
 🔍 **Simulation & Modeling Tools (MIL/SIL/HIL)**
 
@@ -57,7 +57,7 @@ Tools and Frameworks Guide
 | **ModelSim** | HDL simulation for FPGA-based systems. | Aerospace DO-254, Medical hardware | 🟡 |
 | **PSpice/TINA-TI** | Analog circuit simulation. | Medical sensors, Aerospace analog front-ends | 🟡 |
 
-### 3. Bus, Network & Protocol Tools
+### 3. Bus, Network & Protocol Tools 📡
 
 🔍 **Bus, Network & Protocol Tools**
 
@@ -74,7 +74,7 @@ Tools and Frameworks Guide
 | **NI VeriStand** | Real-time test environment for HIL. | Aerospace/Medical HIL | 🟡 |
 | **Speedgoat** | Real-time hardware for Simulink Real-Time. | All domains HIL | 🟡 |
 
-### 4. Debugging, Trace & Profiling Tools
+### 4. Debugging, Trace & Profiling Tools 🔍
 
 🔍 **Debugging, Trace & Profiling Tools**
 
@@ -88,7 +88,7 @@ Tools and Frameworks Guide
 | **Valgrind** | Memory analysis for Linux-based embedded systems. | Automotive infotainment, Medical devices | 🟡 |
 | **Perf/Ftrace** | Linux kernel tracing. | Automotive IVI, Medical Linux-based systems | 🟡 |
 
-### 5. RTOS & Embedded Operating Systems
+### 5. RTOS & Embedded Operating Systems 🤖
 
 🔍 **RTOS & Embedded Operating Systems**
 
@@ -103,7 +103,7 @@ Tools and Frameworks Guide
 | **Zephyr** | Open-source RTOS with safety certification roadmap. | IoT/Medical | 🟡 |
 | **QNX Neutrino** | POSIX-compliant safety OS. | Automotive IVI, Medical | 🟡 |
 
-### 6. Static Analysis, Coverage & Compliance Tools
+### 6. Static Analysis, Coverage & Compliance Tools 🧐
 
 🔍 **Static Analysis, Coverage & Compliance Tools**
 
@@ -118,7 +118,7 @@ Tools and Frameworks Guide
 | **BullseyeCoverage** | Code coverage tool. | Aerospace/Automotive | 🟡 |
 | **Cantata** | Unit testing for safety-critical systems. | Medical/Aerospace | 🟡 |
 
-### 7. Build Systems, CI/CD & DevOps
+### 7. Build Systems, CI/CD & DevOps 🛠️
 
 🔍 **Build Systems, CI/CD & DevOps**
 
@@ -131,7 +131,7 @@ Tools and Frameworks Guide
 | **GitLab CI** | Enterprise CI/CD. | Automotive/Aerospace | 🟡 |
 | **Jenkins** | Customizable CI pipelines. | Aerospace DO-178C toolchains | 🟡 |
 
-### 8. Hardware Platforms & MCUs
+### 8. Hardware Platforms & MCUs 📱
 
 🔍 **Hardware Platforms & MCUs**
 
@@ -146,7 +146,7 @@ Tools and Frameworks Guide
 | **UEI Avionics I/O** | ARINC/MIL-STD-1553 hardware. | Aerospace HIL | 🟡 |
 | **dSPACE HIL Racks** | Real-time hardware for ECU testing. | Automotive/Aerospace | 🟡 |
 
-### 9. Safety, Compliance & Certification Standards
+### 9. Safety, Compliance & Certification Standards 📜
 
 🔍 **Safety, Compliance & Certification Standards**
 
@@ -160,7 +160,7 @@ Tools and Frameworks Guide
 | **FDA 21 CFR Part 820** | Quality system regulation. | Medical | 🔴 |
 | **ISO 14971** | Risk management for medical devices. | Medical | 🔴 |
 
-### 10. Scripting & Automation Languages
+### 10. Scripting & Automation Languages 📝
 
 🔍 **Scripting & Automation Languages**
 
@@ -172,7 +172,7 @@ Tools and Frameworks Guide
 | **Lua** | RTOS scripting (VxWorks). | Aerospace | 🟡 |
 | **Bash** | Automation in embedded Linux. | Automotive IVI, Medical | 🟡 |
 
-### 11. Communication Protocols
+### 11. Communication Protocols 📡
 
 🔍 **Communication Protocols**
 
@@ -253,6 +253,4 @@ This catalog is now ready to be inserted into your repository as:
 ### 3. Bus, Network & Protocol Tools
 
 | Tool | Explanation | Where Used | Severity/Priority |
-|------|-------------|------------|-------------------|
-| **CANoe** | Comprehensive simulation, SIL/HIL automation, CAPL scripting. | Automotive SIL/HIL | 🟡 |
-| **CANalyzer** |
+|------|-------------|------------|-------------------
