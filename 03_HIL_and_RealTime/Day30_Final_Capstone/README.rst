@@ -1,14 +1,15 @@
-🛰️ Day30 Final Capstone: Real-Time Integration Confidence on Representative Hardware and Buses
+🛰️ Day30 Final Capstone: Real-Time Integration Confidence on Representative Hardware and Buses 🛰️
 =====================================================================================
 
 .. important:: Ensure all activities are conducted in accordance with the relevant domain standards, including DO-178C, DO-254, ISO 26262, IEC 62304, ARP4754A/4761, and ASPICE.
 
-🎯 Day Objective: Build Practical Confidence
+🎯 Day Objective: Build Practical Confidence 🎯
 -------------------------------------------
 
 Build practical confidence in this topic by producing requirement-linked and review-ready evidence.
 
-**HIL-VVACE Mnemonic**
+**HIL-VVACE Mnemonic** 📝
+-------------------------
 
 - **H**: Hardware and buses in the loop
 - **I**: Integration confidence
@@ -19,12 +20,12 @@ Build practical confidence in this topic by producing requirement-linked and rev
 - **C**: Completeness of evidence and traceability links
 - **E**: Explicit assumptions and residual risk
 
-📌 Phase Context: HIL
+📌 Phase Context: HIL 📌
 -------------------------
 
 This day emphasizes **real-time integration confidence on representative hardware and buses**.
 
-🧠 Concept Drilldown
+🧠 Concept Drilldown 🧠
 ----------------------
 
 - **Primary Mechanism**: What signal, state, or computation governs expected behavior?
@@ -34,7 +35,7 @@ This day emphasizes **real-time integration confidence on representative hardwar
 
 .. note:: Ensure all concepts are well understood before proceeding with the execution workflow.
 
-🛠️ Execution Workflow
+🛠️ Execution Workflow 🛠️
 -----------------------
 
 1. **Define Acceptance Criteria**: Establish measurable pass/fail thresholds.
@@ -43,7 +44,8 @@ This day emphasizes **real-time integration confidence on representative hardwar
 4. **Execute Stress/Fault Variants**: Record divergence behavior and execute stress/fault variants.
 5. **Consolidate Verdicts**: Consolidate verdicts with traceability links.
 
-**GIVEN / WHEN / THEN Scenario Templates**
+**GIVEN / WHEN / THEN Scenario Templates** 📝
+-----------------------------------------
 
 - **Nominal Scenario 🟢**
   - GIVEN: A well-defined acceptance criterion
@@ -60,7 +62,7 @@ This day emphasizes **real-time integration confidence on representative hardwar
   - WHEN: The system is executed under the fault condition
   - THEN: The system behaves as expected, and the acceptance criterion is met
 
-📊 Metrics and Evidence
+📊 Metrics and Evidence 📊
 -------------------------
 
 - **Functional Correctness**: Against requirement intent
@@ -93,7 +95,7 @@ This day emphasizes **real-time integration confidence on representative hardwar
      - 🟢
      - TBD
 
-⚠️ Common Failure Modes
+⚠️ Common Failure Modes ⚠️
 -------------------------
 
 - **Ambiguous Acceptance Criteria**: Before test execution
@@ -101,7 +103,7 @@ This day emphasizes **real-time integration confidence on representative hardwar
 - **Overlooking Degraded-Mode or Recovery Path Checks**: Incomplete testing
 - **Incomplete Artifact Naming/Versioning Conventions**: Lack of standardization
 
-✅ Required Deliverables
+✅ Required Deliverables ✅
 -------------------------
 
 - **Scenario Matrix**: With objective mapping
@@ -109,15 +111,17 @@ This day emphasizes **real-time integration confidence on representative hardwar
 - **Requirement-Linked Verdict Summary**: With traceability links
 - **Residual-Risk and Next-Action List**: With ownership and next actions
 
-🔍 Reviewer Checklist
+🔍 Reviewer Checklist 🔍
 -----------------------
 
 ☐ Are pass/fail rules explicit and reproducible?
 ☐ Is each key claim backed by a concrete artifact?
 ☐ Are failures triaged with severity and owner?
 ☐ Is handoff quality sufficient for the next phase?
+☐ Are all domain standards (DO-178C, DO-254, ISO 26262, IEC 62304, ARP4754A/4761, ASPICE) properly considered?
+☐ Are all required deliverables complete and accurate?
 
-Additional Deep-Dive Notes
+Additional Deep-Dive Notes 📝
 ---------------------------
 
 - **Domain Focus**: General
@@ -129,3 +133,9 @@ Additional Deep-Dive Notes
 - **Example Expansion**: Include one nominal, one boundary, and one fault scenario per objective
 - **Review Heuristic**: If a claim cannot be tied to an artifact, mark confidence as provisional
 - **Checklist Extension**: Capture residual risk, ownership, and next action for each unresolved item
+
+.. warning:: Ensure all reviewer checklist items are completed before proceeding to the next phase.
+
+.. important:: Verify that all required deliverables are complete and accurate before submitting for review.
+
+.. admonition:: Reviewer feedback is essential for ensuring the quality and completeness of the evidence.

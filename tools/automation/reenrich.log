@@ -1,0 +1,170 @@
+[0;36m[INFO][0m  Progress reset.
+[0;36m[INFO][0m  Loaded 27 files from file_list.txt
+[1m[1/27][0m 01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — traceability_matrix.rst ...
+[OK]  ENRICHED via Copilot: traceability_matrix.rst  (+62 lines)
+    [0;32mgit diff:[0m 120	58	01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst
+[1m[2/27][0m 01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/worked_example.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — worked_example.rst ...
+[OK]  ENRICHED via Copilot: worked_example.rst  (+28 lines)
+    [0;32mgit diff:[0m 38	10	01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/worked_example.rst
+[1m[3/27][0m 01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/06_medical/use_case/requirements.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — requirements.rst ...
+[OK]  ENRICHED via Copilot: requirements.rst  (+14 lines)
+    [0;32mgit diff:[0m 50	36	01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/06_medical/use_case/requirements.rst
+[1m[4/27][0m 03_HIL_and_RealTime/Day24_HIL_Scripting/medical/hil/scripts/device_control_sequences.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — device_control_sequences.rst ...
+[OK]  ENRICHED via Copilot: device_control_sequences.rst  (+39 lines)
+    [0;32mgit diff:[0m 68	29	03_HIL_and_RealTime/Day24_HIL_Scripting/medical/hil/scripts/device_control_sequences.rst
+[1m[5/27][0m 03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — concept_note.rst ...
+[OK]  ENRICHED via Copilot: concept_note.rst  (+188 lines)
+    [0;32mgit diff:[0m 220	32	03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst
+[1m[6/27][0m 03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+58 lines)
+    [0;32mgit diff:[0m 132	74	03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst
+[1m[7/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+10 lines)
+    [0;32mgit diff:[0m 22	12	03_HIL_and_RealTime/Day30_Final_Capstone/README.rst
+[1m[8/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+58 lines)
+    [0;32mgit diff:[0m 113	55	03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst
+[1m[9/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/results/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+20 lines)
+    [0;32mgit diff:[0m 73	53	03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/results/README.rst
+[1m[10/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+60 lines)
+    [0;32mgit diff:[0m 162	102	03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst
+[1m[11/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+27 lines)
+    [0;32mgit diff:[0m 50	23	03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst
+[1m[12/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+  [Meta-Llama-3.1-405B-Instruct] [429] Rate limited — waiting 60s (retry 1/5)...
+[OK]  ENRICHED via Copilot: README.rst  (+35 lines)
+    [0;32mgit diff:[0m 67	32	03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst
+[1m[13/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+28 lines)
+    [0;32mgit diff:[0m 46	18	03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst
+[1m[14/27][0m 03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+9 lines)
+    [0;32mgit diff:[0m 58	49	03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst
+[1m[15/27][0m README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (-231 lines)
+    [0;32mgit diff:[0m 169	400	README.rst
+[1m[16/27][0m Ref/Domain usecases.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — Domain usecases.rst ...
+[OK]  ENRICHED via Copilot: Domain usecases.rst  (+2 lines)
+[1m[17/27][0m Ref/MIL-ref.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — MIL-ref.rst ...
+[OK]  ENRICHED via Copilot: MIL-ref.rst  (-1 lines)
+[1m[18/27][0m Tools_and_Frameworks_Guide.rst
+[0;31m[ERR][0m   Enricher error (rc=1):   → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — Tools_and_Frameworks_Guide.rst ...
+Traceback (most recent call last):
+  File "/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/automation/enrich_rst.py", line 450, in <module>
+    main()
+  File "/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/automation/enrich_rst.py", line 392, in main
+    candidate = clean_response(_call_model(model, original, path))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/automation/enrich_rst.py", line 209, in _call_model
+    with urllib.request.urlopen(req, timeout=120) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1448, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+[1m[19/27][0m domains/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+9 lines)
+    [0;32mgit diff:[0m 12	3	domains/README.rst
+[1m[20/27][0m domains/aerospace_FlightControl/use_cases_and_examples.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (-392 lines)
+    [0;32mgit diff:[0m 95	487	domains/aerospace_FlightControl/use_cases_and_examples.rst
+[1m[21/27][0m domains/automotive_ACC/use_cases_and_examples.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (+38 lines)
+    [0;32mgit diff:[0m 69	31	domains/automotive_ACC/use_cases_and_examples.rst
+[1m[22/27][0m domains/medical_InfusionPump/use_cases_and_examples.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — use_cases_and_examples.rst ...
+[OK]  ENRICHED via Copilot: use_cases_and_examples.rst  (-135 lines)
+    [0;32mgit diff:[0m 85	220	domains/medical_InfusionPump/use_cases_and_examples.rst
+[1m[23/27][0m tools/Ballard_ARINC/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+  [Meta-Llama-3.1-405B-Instruct] [429] Rate limited — waiting 60s (retry 1/5)...
+[OK]  ENRICHED via Copilot: README.rst  (+2 lines)
+    [0;32mgit diff:[0m 57	55	tools/Ballard_ARINC/README.rst
+[1m[24/27][0m tools/CANalyzer/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (-175 lines)
+    [0;32mgit diff:[0m 102	277	tools/CANalyzer/README.rst
+[1m[25/27][0m tools/CANoe/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (-80 lines)
+    [0;32mgit diff:[0m 61	141	tools/CANoe/README.rst
+[1m[26/27][0m tools/TRACE32/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (-99 lines)
+    [0;32mgit diff:[0m 127	226	tools/TRACE32/README.rst
+[1m[27/27][0m tools/Wireshark/README.rst
+[0;32m[OK][0m      → GitHub Models API (Meta-Llama-3.1-405B-Instruct) — README.rst ...
+[OK]  ENRICHED via Copilot: README.rst  (+66 lines)
+    [0;32mgit diff:[0m 128	62	tools/Wireshark/README.rst
+
+[1m═══════════════════════════════════════════[0m
+[1m Batch Enrichment Complete[0m
+[1m═══════════════════════════════════════════[0m
+  [0;32mEnriched : 26[0m
+  [1;33mSkipped  : 0[0m
+  [0;31mErrors   : 1[0m
+  Total    : 27
+
+[0;36mOverall git diff summary:[0m
+ tools/automation/.active_model                     |   2 +-
+ .../__pycache__/enrich_rst.cpython-312.pyc         | Bin 15484 -> 20561 bytes
+ tools/automation/batch_enrich.sh                   |   9 +-
+ tools/automation/enrich_rst.py                     |  96 +++-
+ 28 files changed, 2227 insertions(+), 2489 deletions(-)
+
+[1;33mTip: git add -A && git commit -m 'chore: enrich RST files' && git push[0m

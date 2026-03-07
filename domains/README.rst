@@ -1,21 +1,22 @@
 📚 Embedded Systems Verification and Validation (V&V) Domain 📚
 ===========================================================
 
-🎯 **EMBED** Your Way to V&V Success 🎯
+🎯 **EMBEDD** Your Way to V&V Success 🎯
 ------------------------------------
 
 .. important:: Capture focused artifacts for this scope with enough detail for independent technical review, adhering to industry standards such as DO-178C, DO-254, ISO 26262, IEC 62304, ARP4754A/4761, and ASPICE.
 
-🧩 **EMBED** Mnemonic 🧩
+🧩 **EMBEDD** Mnemonic 🧩
 -------------------
 
-Use the **EMBED** mnemonic to remember the key elements:
+Use the **EMBEDD** mnemonic to remember the key elements:
 
     - **E**: Explicitly state the scope and assumptions 📝
     - **M**: Map scenario or procedure descriptions to objectives 🗺️
     - **B**: Bind raw evidence references to findings 🔗
     - **E**: Evaluate analysis summary and verdict 💡
     - **D**: Document open issues and follow-up actions 📝
+    - **D**: Drive continuous improvement and iteration 🔁
 
     The expected content includes:
 
@@ -24,6 +25,7 @@ Use the **EMBED** mnemonic to remember the key elements:
     - Raw evidence references 🔗
     - Analysis summary and verdict 💡
     - Open issues and follow-up actions 📝
+    - Continuous improvement and iteration plan 🔁
 
 📋 Acceptance Criteria 📋
 ----------------------
@@ -44,6 +46,8 @@ Use the **EMBED** mnemonic to remember the key elements:
          - Mapped to scenario outcomes 🗺️
        * - Next Actions
          - Prioritized with ownership 📝
+       * - Continuous Improvement
+         - Iterative refinement and growth plan 🔁
 
 🟢 **Nominal Scenario** 🟢
 -------------------------
@@ -101,6 +105,8 @@ Use the **EMBED** mnemonic to remember the key elements:
          - Each finding links to objective/requirement IDs 🔗
        * - Auditable
          - Timestamps, versions, and ownership are present 📆
+       * - Continuous Improvement
+         - Iterative refinement and growth plan 🔁
 
 ⚠️ Typical Gaps ⚠️
 --------------
@@ -110,6 +116,7 @@ Use the **EMBED** mnemonic to remember the key elements:
     - Missing setup assumptions causing non-repeatable runs 🚫
     - Incomplete raw evidence attached to final conclusions 🔗
     - No confidence statement for borderline or mixed outcomes 💡
+    - Lack of continuous improvement and iteration plan 🔁
 
 ✅ Completion Checklist ✅
 ----------------------
@@ -120,6 +127,7 @@ Use the **EMBED** mnemonic to remember the key elements:
     ☐ Evidence attached and named consistently 🔗
     ☐ Findings summarized with confidence level 💡
     ☐ Next actions assigned with priority 📝
+    ☐ Continuous improvement and iteration plan established 🔁
 
 📝 Pre-Review Checklist 📝
 ------------------------
@@ -132,6 +140,7 @@ Use the **EMBED** mnemonic to remember the key elements:
     ☐ Are next actions prioritized with ownership? 📝
     ☐ Are all quality attributes met? 📏
     ☐ Are all typical gaps addressed? ⚠️
+    ☐ Is a continuous improvement and iteration plan in place? 🔁
 
 📊 Additional Deep-Dive Notes 📊
 ---------------------------

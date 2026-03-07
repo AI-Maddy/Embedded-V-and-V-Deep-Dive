@@ -1,7 +1,7 @@
 📚 Embedded V&V Deep Dive
 =========================
 
-🔑 V&V Mnemonic: **V**alidate, **E**valuate, **R**epeat, **I**nject, **F**ix, **C**onfirm
+🔑 V&V Mnemonic: **V**alidate, **E**valuate, **R**epeat, **I**nject, **F**ix, **C**onfirm, **E**xtend (VERIFYCE)
 
 🟢🟡🔴 Severity/Priority Legend
 -------------------------------
@@ -9,30 +9,37 @@
 .. note::
   Severity/Priority Legend
 
-| Color | Severity/Priority |
-| --- | --- |
-| 🟢 | Nominal (Green) |
-| 🟡 | Boundary (Yellow) |
-| 🔴 | Fault (Red) |
+.. list-table::
+   :widths: 20 80
+   :stub-columns: 1
+
+   * - Color
+     - Severity/Priority
+   * - 🟢
+     - Nominal (Green)
+   * - 🟡
+     - Boundary (Yellow)
+   * - 🔴
+     - Fault (Red)
 
 🎯 Why This Tool Matters
 ------------------------
 
 .. important::
-  This tool provides **packet-level visibility for Ethernet and diagnostic protocols**.
+  This tool provides **packet-level visibility for Ethernet and diagnostic protocols**, enabling effective V&V activities in the embedded systems domain.
 
 ⚙️ Setup Baseline
 -----------------
 
-### Given
+### GIVEN 📝
 - Capture tool version, project/profile, and interface mapping 📈
 - Define trigger points and logging granularity 🕒
 - Validate synchronization source before formal runs 🔁
 
-### When
+### WHEN 🔄
 - Perform setup and configuration 🔄
 
-### Then
+### THEN 📊
 - Verify that baseline is correctly established 🟢
 
 🧪 Execution Pattern
@@ -55,11 +62,18 @@
 📊 Key Metrics
 --------------
 
-| Metric | Description |
-| --- | --- |
-| Flow correctness | Verifies that packets are correctly transmitted 🟢 |
-| Retransmission profile | Verifies that retransmissions are correctly handled 🟡 |
-| Latency spread | Verifies that latency is correctly measured 🔴 |
+.. list-table::
+   :widths: 20 80
+   :stub-columns: 1
+
+   * - Metric
+     - Description
+   * - Flow correctness
+     - Verifies that packets are correctly transmitted 🟢
+   * - Retransmission profile
+     - Verifies that retransmissions are correctly handled 🟡
+   * - Latency spread
+     - Verifies that latency is correctly measured 🔴
 
 ✅ Deliverables
 --------------
@@ -160,88 +174,88 @@ References
 Pre-Review Checklist
 --------------------
 
-### Verify Given Conditions
+### Verify Given Conditions 📝
 ☐ Review the given conditions for setup and configuration
 
-### Verify Nominal Scenario
+### Verify Nominal Scenario 🟢
 ☐ Verify the nominal scenario execution
 
-### Verify Boundary Scenario
+### Verify Boundary Scenario 🟡
 ☐ Verify the boundary scenario execution
 
-### Verify Fault Scenario
+### Verify Fault Scenario 🔴
 ☐ Verify the fault scenario execution
 
-### Review Key Metrics
+### Review Key Metrics 📊
 ☐ Review the key metrics and deliverables
 
-### Review Quality Controls
+### Review Quality Controls 🔍
 ☐ Review the quality controls and review criteria
 
-### Review Checklist
+### Review Checklist 🔍
 ☐ Review the checklist and additional deep-dive notes
 
 Post-Review Checklist
 --------------------
 
-### Review Evidence
+### Review Evidence 📊
 ☐ Review the evidence for reproducibility and anomalies
 
-### Review Residual Risk
+### Review Residual Risk 📝
 ☐ Review the residual risk and next experiment
 
-### Review Review Criteria
+### Review Review Criteria 🔎
 ☐ Review the review criteria and checklist
 
-### Review Domain and Phase
+### Review Domain and Phase 📊
 ☐ Review the domain, phase, and evidence priorities
 
-### Review Patterns and Anti-Patterns
+### Review Patterns and Anti-Patterns 📊
 ☐ Review the patterns, anti-patterns, and pitfalls
 
-### Review Example Expansion
+### Review Example Expansion 📊
 ☐ Review the example expansion and review heuristic
 
-### Review Checklist Extension
+### Review Checklist Extension 📅
 ☐ Review the checklist extension and references
 
 Additional Deep-Dive Notes (Expanded)
 --------------------------------------
 
-### Domain Focus
+### Domain Focus 📊
 - Domain: Embedded Systems
 
-### Phase Focus
+### Phase Focus 📊
 - Phase: V&V
 
-### Evidence Priorities
+### Evidence Priorities 📊
 - Functional correctness 🟢
 - Timing behavior 🕒
 - Robustness 🔴
 - Traceability 🔗
 
-### Patterns
+### Patterns 📊
 - Baseline-first comparison
 - Fixed acceptance thresholds
 - Deterministic reruns
 
-### Anti-Patterns
+### Anti-Patterns 🚨
 - Post-hoc threshold tuning
 - Missing raw artifacts
 - Incomplete negative-path checks
 
-### Pitfalls
+### Pitfalls 🤔
 - Hidden assumptions
 - Interface timing drift
 - Weak requirement-to-test linkage
 
-### Example Expansion
+### Example Expansion 📊
 - Include one nominal, one boundary, and one fault scenario per objective
 
-### Review Heuristic
+### Review Heuristic 📝
 - If a claim cannot be tied to an artifact, mark confidence as provisional
 
-### Checklist Extension
+### Checklist Extension 📅
 - Capture residual risk, ownership, and next action for each unresolved item
 
 .. important::
@@ -256,39 +270,91 @@ Additional Deep-Dive Notes (Expanded)
 Table of Key Metrics
 --------------------
 
-| Metric | Description | Severity/Priority |
-| --- | --- | --- |
-| Flow correctness | Verifies that packets are correctly transmitted | 🟢 |
-| Retransmission profile | Verifies that retransmissions are correctly handled | 🟡 |
-| Latency spread | Verifies that latency is correctly measured | 🔴 |
+.. list-table::
+   :widths: 20 80 10
+   :stub-columns: 1
+
+   * - Metric
+     - Description
+     - Severity/Priority
+   * - Flow correctness
+     - Verifies that packets are correctly transmitted
+     - 🟢
+   * - Retransmission profile
+     - Verifies that retransmissions are correctly handled
+     - 🟡
+   * - Latency spread
+     - Verifies that latency is correctly measured
+     - 🔴
 
 Table of Quality Controls
 ------------------------
 
-| Quality Control | Description | Severity/Priority |
-| --- | --- | --- |
-| Scenario-to-Requirement Traceability | Verify that each scenario is linked to a requirement | 🔗 |
-| Artifact Naming/Versioning Consistency | Enforce consistent naming and versioning of artifacts | 📝 |
-| Review Notes | Include residual risk and next experiment in review notes | 📝 |
+.. list-table::
+   :widths: 20 80 10
+   :stub-columns: 1
+
+   * - Quality Control
+     - Description
+     - Severity/Priority
+   * - Scenario-to-Requirement Traceability
+     - Verify that each scenario is linked to a requirement
+     - 🔗
+   * - Artifact Naming/Versioning Consistency
+     - Enforce consistent naming and versioning of artifacts
+     - 📝
+   * - Review Notes
+     - Include residual risk and next experiment in review notes
+     - 📝
 
 Table of Review Criteria
 -------------------------
 
-| Review Criteria | Description | Severity/Priority |
-| --- | --- | --- |
-| Evidence Reproducibility | Is evidence reproducible across reruns? | 🔄 |
-| Anomaly Linkage | Are anomalies linked to objective requirements? | 🔗 |
-| Residual Risk Description | Is residual risk clearly described? | 📝 |
+.. list-table::
+   :widths: 20 80 10
+   :stub-columns: 1
+
+   * - Review Criteria
+     - Description
+     - Severity/Priority
+   * - Evidence Reproducibility
+     - Is evidence reproducible across reruns?
+     - 🔄
+   * - Anomaly Linkage
+     - Are anomalies linked to objective requirements?
+     - 🔗
+   * - Residual Risk Description
+     - Is residual risk clearly described?
+     - 📝
 
 Table of Checklist Items
 -------------------------
 
-| Checklist Item | Description | Severity/Priority |
-| --- | --- | --- |
-| Verify Baseline Establishment | Verify that baseline is correctly established | 🟢 |
-| Verify Baseline Artifact Storage | Verify that baseline artifacts are correctly stored | 🟢 |
-| Verify Controlled Variation | Verify that controlled variation does not affect baseline artifacts | 🟡 |
-| Verify Fault Injection | Verify that fault injection affects baseline artifacts as expected | 🔴 |
-| Verify Scenario-to-Requirement Traceability | Verify that each scenario is linked to a requirement | 🔗 |
-| Enforce Artifact Naming/Versioning Consistency | Enforce consistent naming and versioning of artifacts | 📝 |
-| Include Residual Risk and Next Experiment in Review Notes | Include residual risk and next experiment in review notes | 📝 |
+.. list-table::
+   :widths: 20 80 10
+   :stub-columns: 1
+
+   * - Checklist Item
+     - Description
+     - Severity/Priority
+   * - Verify Baseline Establishment
+     - Verify that baseline is correctly established
+     - 🟢
+   * - Verify Baseline Artifact Storage
+     - Verify that baseline artifacts are correctly stored
+     - 🟢
+   * - Verify Controlled Variation
+     - Verify that controlled variation does not affect baseline artifacts
+     - 🟡
+   * - Verify Fault Injection
+     - Verify that fault injection affects baseline artifacts as expected
+     - 🔴
+   * - Verify Scenario-to-Requirement Traceability
+     - Verify that each scenario is linked to a requirement
+     - 🔗
+   * - Enforce Artifact Naming/Versioning Consistency
+     - Enforce consistent naming and versioning of artifacts
+     - 📝
+   * - Include Residual Risk and Next Experiment in Review Notes
+     - Include residual risk and next experiment in review notes
+     - 📝

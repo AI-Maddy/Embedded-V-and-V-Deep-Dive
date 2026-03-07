@@ -1,18 +1,21 @@
-Aerospace Use Cases and Examples
-==============================
+🚀 **Aerospace Use Cases and Examples** 🚀
+=============================================
 
-🚀 **FLIGHT CONTROL V&V** 🚀
+🔴 **FLIGHT CONTROL V&V** 🔴
 ==========================
+
+.. admonition::
+    This document provides domain-tailored use cases with evidence expectations aligned to **DO-178C/DO-254 + ARP4754A/ARP4761**.
 
 Purpose
 -------
 
-🔴 **FLIGHT CONTROL V&V** 🔴 is a critical phase in ensuring the safety and reliability of aerospace systems. This document provides domain-tailored use cases with evidence expectations aligned to **DO-178C/DO-254 + ARP4754A/ARP4761**.
+The purpose of this document is to provide a comprehensive overview of aerospace use cases and examples for **FLIGHT CONTROL V&V**.
 
 Domain-Specific Mnemonic Acronym
 --------------------------------
 
-🟢 **FLIGHT CONTROL V&V** 🟢 can be remembered using the mnemonic acronym **FLIGHT**:
+🟢 **FLIGHT CONTROL V&V** 🟢 can be remembered using the mnemonic acronym **FLIGHTS**:
 
 - **F** - Functional Correctness
 - **L** - Timing Behavior
@@ -20,15 +23,7 @@ Domain-Specific Mnemonic Acronym
 - **G** - Robustness
 - **H** - Hazard Mitigation
 - **T** - Traceability
-- **C** - Compliance Mapping
-- **O** - Ownership and Accountability
-- **N** - Nominal, Boundary, and Fault Scenarios
-- **T** - Testability and Reproducibility
-- **R** - Review and Verification
-- **O** - Objective Evidence and Artifacts
-- **L** - Lessons Learned and Continuous Improvement
-- **V** - Validation and Verification
-- **V** - Verification and Validation
+- **S** - Safety and Reliability
 
 Severity/Priority Colour Legend
 -------------------------------
@@ -42,130 +37,90 @@ Representative Use Cases
 
 ### 🟢 Nominal Mission/Profile Operation 🟢
 
-1. **Nominal Flight Control**: stable flight-control mode tracking with expected disturbances.
-    GIVEN: System is in nominal flight control mode
-    WHEN: Expected disturbances are applied
-    THEN: System tracks the disturbances and maintains stability 🟢
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+
+    *   - **Use Case**
+        - **GIVEN**
+        - **WHEN**
+        - **THEN**
+    *   - **Nominal Flight Control**
+        - System is in nominal flight control mode
+        - Expected disturbances are applied
+        - System tracks the disturbances and maintains stability 🟢
+    *   - **Boundary-Condition Operation**
+        - System is in high-workload transition mode
+        - Stability margins are approached
+        - System behavior is evaluated for stability 🟡
+    *   - **Fault Detection, Containment, and Recovery**
+        - System is in fault detection mode
+        - Bus label corruption and sensor disagreement occur
+        - System detects and contains the fault, and recovers to a safe state 🔴
 
     .. note::
-        This scenario is aligned to **DO-178C/DO-254**.
+        These use cases are aligned to **DO-178C/DO-254**.
 
     .. important::
-        This scenario is critical for ensuring the safety and reliability of the system.
-
-2. **Boundary-Condition Operation**: high-workload transition envelope near stability margins.
-    GIVEN: System is in high-workload transition mode
-    WHEN: Stability margins are approached
-    THEN: System behavior is evaluated for stability 🟡
-
-    .. warning::
-        This scenario requires careful consideration of the system's stability margins.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's behavior is evaluated correctly.
-
-3. **Fault Detection, Containment, and Recovery**: bus label corruption and sensor disagreement event.
-    GIVEN: System is in fault detection mode
-    WHEN: Bus label corruption and sensor disagreement occur
-    THEN: System detects and contains the fault, and recovers to a safe state 🔴
-
-    .. important::
-        This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's fault detection and recovery mechanisms are functioning correctly.
-
-4. **Degraded-Mode Continuation with Safety Constraints**: system operation under reduced capacity.
-    GIVEN: System is in degraded mode
-    WHEN: Safety constraints are applied
-    THEN: System behavior is evaluated for safety and reliability 🟢
-
-    .. note::
-        This scenario is aligned to **ARP4754A/ARP4761**.
-
-    .. important::
-        This scenario is critical for ensuring the system's safety and reliability under reduced capacity.
-
-5. **Regression Stability after Fixes**: verification of fixes and their impact on system behavior.
-    GIVEN: System is in regression mode
-    WHEN: Fixes are applied
-    THEN: System behavior is evaluated for stability and reliability 🟡
-
-    .. warning::
-        This scenario requires careful consideration of the system's behavior after fixes are applied.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's behavior is evaluated correctly after fixes are applied.
+        These use cases are critical for ensuring the safety and reliability of the system.
 
 ### 🟡 Boundary-Condition Operation near Limits 🟡
 
-1. **High-Workload Transition**: system behavior under high workload and transition conditions.
-    GIVEN: System is in high-workload transition mode
-    WHEN: Workload is increased
-    THEN: System behavior is evaluated for stability and reliability 🟡
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
 
-    .. important::
-        This scenario is critical for ensuring the system's stability and reliability under high workload conditions.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's behavior is evaluated correctly under high workload conditions.
-
-2. **Stability Margin Testing**: evaluation of system stability near its limits.
-    GIVEN: System is in stability margin testing mode
-    WHEN: Stability margins are approached
-    THEN: System behavior is evaluated for stability and reliability 🟡
+    *   - **Use Case**
+        - **GIVEN**
+        - **WHEN**
+        - **THEN**
+    *   - **High-Workload Transition**
+        - System is in high-workload transition mode
+        - Workload is increased
+        - System behavior is evaluated for stability and reliability 🟡
+    *   - **Stability Margin Testing**
+        - System is in stability margin testing mode
+        - Stability margins are approached
+        - System behavior is evaluated for stability and reliability 🟡
+    *   - **Edge Cases**
+        - System is in edge case testing mode
+        - Extreme conditions are applied
+        - System behavior is evaluated for stability and reliability 🔴
 
     .. warning::
-        This scenario requires careful consideration of the system's stability margins.
+        These use cases require careful consideration of the system's stability margins.
 
     .. admonition::
-        Review this scenario carefully to ensure that the system's behavior is evaluated correctly near its stability margins.
-
-3. **Edge Cases**: testing of system behavior under extreme conditions.
-    GIVEN: System is in edge case testing mode
-    WHEN: Extreme conditions are applied
-    THEN: System behavior is evaluated for stability and reliability 🔴
-
-    .. important::
-        This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's behavior is evaluated correctly under extreme conditions.
+        Review these use cases carefully to ensure that the system's behavior is evaluated correctly.
 
 ### 🔴 Fault Detection, Containment, and Recovery 🔴
 
-1. **Bus Label Corruption**: system behavior under bus label corruption event.
-    GIVEN: System is in fault detection mode
-    WHEN: Bus label corruption occurs
-    THEN: System detects and contains the fault, and recovers to a safe state 🔴
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
+
+    *   - **Use Case**
+        - **GIVEN**
+        - **WHEN**
+        - **THEN**
+    *   - **Bus Label Corruption**
+        - System is in fault detection mode
+        - Bus label corruption occurs
+        - System detects and contains the fault, and recovers to a safe state 🔴
+    *   - **Sensor Disagreement**
+        - System is in fault detection mode
+        - Sensor disagreement occurs
+        - System detects and contains the fault, and recovers to a safe state 🔴
+    *   - **Fault Tolerance**
+        - System is in fault tolerance testing mode
+        - Faults are injected
+        - System behavior is evaluated for fault tolerance and recovery mechanisms 🔴
 
     .. important::
-        This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.
+        These use cases are critical for ensuring the system's fault tolerance and recovery mechanisms.
 
     .. admonition::
-        Review this scenario carefully to ensure that the system's fault detection and recovery mechanisms are functioning correctly.
-
-2. **Sensor Disagreement**: system behavior under sensor disagreement event.
-    GIVEN: System is in fault detection mode
-    WHEN: Sensor disagreement occurs
-    THEN: System detects and contains the fault, and recovers to a safe state 🔴
-
-    .. important::
-        This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's fault detection and recovery mechanisms are functioning correctly.
-
-3. **Fault Tolerance**: evaluation of system fault tolerance and recovery mechanisms.
-    GIVEN: System is in fault tolerance testing mode
-    WHEN: Faults are injected
-    THEN: System behavior is evaluated for fault tolerance and recovery mechanisms 🔴
-
-    .. important::
-        This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.
-
-    .. admonition::
-        Review this scenario carefully to ensure that the system's behavior is evaluated correctly under fault conditions.
+        Review these use cases carefully to ensure that the system's fault detection and recovery mechanisms are functioning correctly.
 
 Domain-Specific Examples
 ------------------------
@@ -251,12 +206,6 @@ Additional Deep-Dive Notes
 *   **Domain Focus: Aerospace**: focus on aerospace domain.
 *   **Phase Focus: Cross-Phase**: focus on cross-phase verification and validation.
 *   **Evidence Priorities: Functional Correctness, Timing Behavior, Robustness, and Traceability**: prioritize evidence based on functional correctness, timing behavior, robustness, and traceability.
-*   **Patterns: Baseline-First Comparison, Fixed Acceptance Thresholds, Deterministic Reruns**: use baseline-first comparison, fixed acceptance thresholds, and deterministic reruns as patterns.
-*   **Anti-Patterns: Post-Hoc Threshold Tuning, Missing Raw Artifacts, Incomplete Negative-Path Checks**: avoid post-hoc threshold tuning, missing raw artifacts, and incomplete negative-path checks.
-*   **Pitfalls: Hidden Assumptions, Interface Timing Drift, Weak Requirement-to-Test Linkage**: be aware of hidden assumptions, interface timing drift, and weak requirement-to-test linkage.
-*   **Example Expansion: Include One Nominal, One Boundary, and One Fault Scenario per Objective**: include one nominal, one boundary, and one fault scenario per objective.
-*   **Review Heuristic: If a Claim Cannot be Tied to an Artifact, Mark Confidence as Provisional**: mark confidence as provisional if a claim cannot be tied to an artifact.
-*   **Checklist Extension: Capture Residual Risk, Ownership, and Next Action for Each Unresolved Item**: capture residual risk, ownership, and next action for each unresolved item.
 
 References
 ----------
@@ -267,38 +216,26 @@ References
 Table of Evidence
 -----------------
 
-| **Scenario** | **Requirement** | **Hazard** | **Evidence** |
-| --- | --- | --- | --- |
-| Nominal |  |  |  |
-| Boundary |  |  |  |
-| Fault |  |  |  |
+.. list-table::
+    :header-rows: 1
+    :stub-columns: 1
 
-.. note::
-    This document provides a comprehensive overview of aerospace use cases and examples.
-    The use cases and examples are aligned to **DO-178C/DO-254 + ARP4754A/ARP4761**.
-    The document provides a checklist for ensuring that nominal, boundary, and fault scenarios are covered.
-    The document also provides a review heuristic for marking confidence as provisional if a claim cannot be tied to an artifact.
-
-.. warning::
-    Failure to follow this document's guidelines may result in incomplete or inaccurate verification and validation.
-
-.. important::
-    This document is intended for use by aerospace system developers and testers.
-
-.. admonition::
-    Review this document carefully before using it in your verification and validation efforts.
-
-.. admonition::
-    If you have any questions or concerns about this document, please contact the author.
-
-.. admonition::
-    This document is subject to change without notice.
-
-.. admonition::
-    Use this document at your own risk.
-
-.. admonition::
-    The author is not responsible for any damages or losses resulting from the use of this document.
+    *   - **Scenario**
+        - **Requirement**
+        - **Hazard**
+        - **Evidence**
+    *   - **Nominal**
+        - 
+        - 
+        - 
+    *   - **Boundary**
+        - 
+        - 
+        - 
+    *   - **Fault**
+        - 
+        - 
+        - 
 
 Checklist for Review
 --------------------
@@ -314,338 +251,9 @@ Checklist for Review
 ☐ **Review Heuristic is Clear and Concise**: ensure that the review heuristic is clear and concise.
 ☐ **Table of Evidence is Complete and Accurate**: ensure that the table of evidence is complete and accurate.
 
-☐ **Use Cases and Examples are Deterministic and Reproducible**: ensure that use cases and examples are deterministic and reproducible.
-☐ **Checklist is Easy to Understand**: ensure that the checklist is easy to understand.
-☐ **Review Heuristic is Easy to Follow**: ensure that the review heuristic is easy to follow.
-☐ **Table of Evidence is Easy to Understand**: ensure that the table of evidence is easy to understand.
-
-☐ **Use Cases and Examples are Aligned to Requirements and Hazards**: ensure that use cases and examples are aligned to requirements and hazards.
-☐ **Checklist is Comprehensive**: ensure that the checklist is comprehensive.
-☐ **Review Heuristic is Comprehensive**: ensure that the review heuristic is comprehensive.
-☐ **Table of Evidence is Comprehensive**: ensure that the table of evidence is comprehensive.
-
-Table of Contents
------------------
-
-.. toctree::
-    :maxdepth: 2
-
-    Use Cases and Examples
-    Patterns
-    Anti-Patterns
-    Pitfalls
-    Best Practices
-    Checklist
-    Additional Deep-Dive Notes
-    References
-    Table of Evidence
-    Checklist for Review
-
-Indices and tables
------------------
-
-.. autosummary::
-    :toctree: generated/
-
-    Use Cases and Examples
-    Patterns
-    Anti-Patterns
-    Pitfalls
-    Best Practices
-    Checklist
-    Additional Deep-Dive Notes
-    References
-    Table of Evidence
-    Checklist for Review
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Table of Contents
------------------
-
-*   Use Cases and Examples
-*   Patterns
-*   Anti-Patterns
-*   Pitfalls
-*   Best Practices
-*   Checklist
-*   Additional Deep-Dive Notes
-*   References
-*   Table of Evidence
-*   Checklist for Review
-
 Indices and tables
 -----------------
 
 *   General Index
 *   Module Index
 *   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices
--------
-
-*   General Index
-*   Module Index
-*   Search Page
-
-Indices and tables
------------------
-
-*   General Index

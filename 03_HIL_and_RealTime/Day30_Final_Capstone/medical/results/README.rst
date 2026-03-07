@@ -1,19 +1,29 @@
-Medical Focus — Day30 Final Capstone 🟢
+Medical Focus — Day30 Final Capstone 🏥
 =====================================
 
-Objective
+**MEDICS** Mnemonic for HIL Phase 🤖
+--------------------------------
+
+* **M** - Mitigate hazards through thorough testing and validation
+* **E** - Ensure compliance with IEC 62304, ISO 14971, and IEC 60601
+* **D** - Document assumptions, raw artifact references, and residual risks
+* **I** - Interface management is critical for system safety and performance
+* **C** - Capture timing and functional evidence in the same run package
+* **S** - Safety and performance are top priorities in medical device development
+
+Objective 🎯
 ---------
 Apply this day in **Medical** context with explicit safety, compliance, and evidence expectations. 💊
 
-Phase Context
+Phase Context 🤖
 -------------
-Phase: **HIL** 🤖
+Phase: **HIL** (Hardware-in-the-Loop)
 Primary focus: **hardware-integrated timing and interface confidence**.
 Section focus: **results consolidation and release-readiness evidence**.
 
-Domain Constraints
+Domain Constraints 📚
 ------------------
-- Compliance baseline: **IEC 62304 + ISO 14971 + IEC 60601 context** 📚
+- Compliance baseline: **IEC 62304 + ISO 14971 + IEC 60601 context** 
   .. note::
     These standards provide a foundation for ensuring medical device safety and performance.
 
@@ -25,7 +35,7 @@ Domain Constraints
   .. warning::
     Inadequate interface management can lead to system failures and safety issues.
 
-Domain-Specific Examples
+Domain-Specific Examples 📝
 ------------------------
 ### Nominal Example 🟢
 Therapy control with validated sensor feedback.
@@ -54,7 +64,7 @@ Sensor spike/dropout and actuator command rejection path.
     * WHEN: Therapy control algorithm is executed
     * THEN: Actuator command is rejected and system enters fault mode
 
-Patterns
+Patterns 🔍
 --------
 ### Derive Acceptance Thresholds 🟢
 Derive acceptance thresholds from hazard-linked requirements.
@@ -83,7 +93,7 @@ Compare nominal and stressed traces against the same baseline.
     * When: Traces are compared
     * Then: Differences are documented and investigated
 
-Anti-Patterns
+Anti-Patterns 🚫
 -------------
 ### Generic Test Claims Without Domain Hazard Mapping 🔴
 Generic test claims without domain hazard mapping.
@@ -103,7 +113,7 @@ Evidence summaries without raw artifact references.
   .. note::
     Raw artifact references are necessary for reproducing and verifying results.
 
-Pitfalls
+Pitfalls 🚨
 --------
 ### Hidden Assumptions in Environment or Calibration Setup 🔴
 Hidden assumptions in environment or calibration setup.
@@ -123,7 +133,7 @@ Incomplete traceability from requirement to verdict.
   .. note::
     Traceability is necessary for ensuring that requirements are met and verified.
 
-Best Practices
+Best Practices 🏆
 --------------
 ### Tag Every Artifact with Domain Requirement IDs 🟢
 Tag every artifact with domain requirement IDs.
@@ -146,7 +156,7 @@ Record residual risk and ownership before closure.
   .. note::
     Residual risk and ownership must be documented to ensure that issues are addressed.
 
-Heuristics
+Heuristics 🔮
 ----------
 ### If a Domain Hazard is Untested, Confidence is Provisional 🟢
 If a domain hazard is untested, confidence is provisional.
@@ -166,40 +176,39 @@ If evidence is indirect, reduce verdict confidence level.
   .. note::
     Indirect evidence can lead to incomplete testing and safety issues.
 
-Checklist
----------
-### Domain Hazard Coverage is Explicit ☐
-Domain hazard coverage is explicit.
+Severity / Priority Colour Legend 🟢🟡🔴
+--------------------------------
+* 🟢 - Low severity / priority
+* 🟡 - Medium severity / priority
+* 🔴 - High severity / priority
 
-### Compliance References are Mapped to Evidence ☐
-Compliance references are mapped to evidence.
+Pre-Review Checklist 📝
+---------------------
+.. list-table::
+   :widths: 50 50
+   :stub-columns: 1
 
-### Nominal/Boundary/Fault Results are All Documented ☐
-Nominal/boundary/fault results are all documented.
-
-### Residual Risks and Next Actions are Assigned ☐
-Residual risks and next actions are assigned.
-
-### Evidence Summaries are Complete and Accurate ☐
-Evidence summaries are complete and accurate.
-
-### Raw Artifact References are Provided ☐
-Raw artifact references are provided.
-
-### Assumptions are Documented and Validated ☐
-Assumptions are documented and validated.
-
-### Negative-Path Scenarios are Included ☐
-Negative-path scenarios are included.
-
-### Traceability is Complete and Accurate ☐
-Traceability is complete and accurate.
-
-### Requirement IDs are Assigned ☐
-Requirement IDs are assigned.
-
-### Timing + Functional Evidence is Captured in the Same Run Package ☐
-Timing + functional evidence is captured in the same run package.
-
-### Residual Risk and Ownership are Documented ☐
-Residual risk and ownership are documented.
+   * - ☐ Domain hazard coverage is explicit
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Compliance references are mapped to evidence
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Nominal/boundary/fault results are all documented
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Residual risks and next actions are assigned
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Evidence summaries are complete and accurate
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Raw artifact references are provided
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Assumptions are documented and validated
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Negative-path scenarios are included
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Traceability is complete and accurate
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Requirement IDs are assigned
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Timing + functional evidence is captured in the same run package
+     - Reference: IEC 62304, ISO 14971, IEC 60601
+   * - ☐ Residual risk and ownership are documented
+     - Reference: IEC 62304, ISO 14971, IEC 60601

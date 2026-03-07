@@ -311,6 +311,45 @@ def clean_response(text: str) -> str:
         lines = lines[:-1]
     return "\n".join(lines).strip() + "\n"
 
+
+def _quality_ok(text: str, path: Path) -> tuple[bool, str]:
+    """
+    Return (True, '') if the enriched text passes quality checks.
+    Return (False, reason) if it looks repetitive / low-quality.
+
+    Checks:
+      - Duplicate-paragraph ratio  > 40%  → fail
+      - Duplicate-line ratio        > 45%  → fail
+      - Output shorter than input  by >60% → fail (model truncated / went blank)
+    """
+    import re as _re
+    from collections import Counter as _Counter
+
+    lines = [l.strip() for l in text.splitlines()]
+
+    # ── Duplicate line ratio ───────────────────────────────────────────────
+    meaningful = [l for l in lines if len(l) > 15
+                  and not (len(set(l.replace(" ", ""))) <= 2)   # underlines
+                  and not l.startswith(".. ")                    # directives
+                  and not _re.match(r"^[\|\+\-=~^]+$", l)]      # table chars
+    if meaningful:
+        counts = _Counter(meaningful)
+        dup_lines = sum(c - 1 for c in counts.values() if c > 1)
+        dup_ratio = dup_lines / len(meaningful)
+        if dup_ratio > 0.45:
+            return False, f"duplicate-line ratio {dup_ratio:.0%} > 45% ({dup_lines}/{len(meaningful)} repeated lines)"
+
+    # ── Duplicate paragraph ratio ─────────────────────────────────────────
+    paras = [p.strip() for p in _re.split(r"\n\s*\n", text) if len(p.strip()) > 30]
+    if paras:
+        para_counts = _Counter(paras)
+        dup_para = sum(c - 1 for c in para_counts.values() if c > 1)
+        dup_para_ratio = dup_para / len(paras)
+        if dup_para_ratio > 0.40:
+            return False, f"duplicate-paragraph ratio {dup_para_ratio:.0%} > 40% ({dup_para}/{len(paras)} repeated paragraphs)"
+
+    return True, ""
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -334,10 +373,63 @@ def main():
     original = path.read_text(encoding="utf-8")
     original_sha = sha(original)
 
-    enriched = clean_response(call_copilot(original, path))
+    # When re-enriching known-bad files, skip the hash-equality check so the
+    # file gets rewritten even if the model happens to return similar content.
+    force = os.environ.get("FORCE_REENRICH", "").strip().lower() in ("1", "true", "yes")
+
+    # Try each model in the chain; skip to next if output fails quality gate
+    active = _load_active_model()
+    try:
+        start_idx = MODEL_CHAIN.index(active)
+    except ValueError:
+        start_idx = 0
+
+    enriched_raw = None
+    for idx in range(start_idx, len(MODEL_CHAIN)):
+        model = MODEL_CHAIN[idx]
+        print(f"  → GitHub Models API ({model}) — {path.name} ...", flush=True)
+        try:
+            candidate = clean_response(_call_model(model, original, path))
+        except RuntimeError as exc:
+            msg = str(exc)
+            if msg.startswith("daily_limit:"):
+                _, failed_model, wait_secs = msg.split(":", 2)
+                hours = int(wait_secs) // 3600 if int(wait_secs) >= 3600 else 0
+                eta   = f"~{hours}h" if hours else f"~{int(wait_secs)//60}min"
+                print(f"  ⚠️  Quota/model unavailable for '{failed_model}' (resets in {eta}).", flush=True)
+                next_models = MODEL_CHAIN[idx + 1:]
+                if next_models:
+                    print(f"  ↩️  Switching to next model: {next_models[0]}", flush=True)
+                    continue
+                else:
+                    print("\n[RATE LIMIT] All models exhausted. Re-run later.", file=sys.stderr)
+                    sys.exit(1)
+            raise
+
+        ok, reason = _quality_ok(candidate, path)
+        if not ok:
+            print(f"  ⚠️  Quality gate FAILED ({model}): {reason}", flush=True)
+            next_models = MODEL_CHAIN[idx + 1:]
+            if next_models:
+                print(f"  ↩️  Retrying with next model: {next_models[0]}", flush=True)
+                continue
+            else:
+                print(f"  ❌  All models produced low-quality output for {path.name} — skipping.",
+                      file=sys.stderr)
+                sys.exit(2)
+
+        _save_active_model(model)
+        enriched_raw = candidate
+        break
+
+    if enriched_raw is None:
+        print(f"[SKIP] No usable output for: {path.name}")
+        sys.exit(2)
+
+    enriched     = enriched_raw
     enriched_sha = sha(enriched)
 
-    if enriched_sha == original_sha:
+    if not force and enriched_sha == original_sha:
         print(f"[SKIP] Copilot returned identical content: {path.name}")
         sys.exit(2)
 

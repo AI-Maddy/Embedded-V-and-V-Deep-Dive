@@ -1,15 +1,16 @@
-Requirements — Medical 🩺
-=========================
+🩺 Requirements — Medical 🩺
+=============================
 
-Purpose 🎯
----------
+🎯 Purpose 🎯
+-------------
 Document **Medical**-specific details for Day02 Traceability and TestDesign with focus on use-case intent, assumptions, and acceptance criteria.
 
 .. note::
-   This document aligns with **Model-in-the-Loop (MIL)** phase objectives, ensuring traceability and robust test design for medical systems.
+   This document aligns with **Model-in-the-Loop (MIL)** phase objectives, ensuring traceability and robust test design for medical systems per IEC 62304 and ISO 14971 guidelines.
 
-Domain Alignment 🌐
--------------------
+🌐 Domain Alignment 🌐
+-----------------------
+
 - **Standards Reference**:
   - IEC 62304: Software lifecycle processes
   - ISO 14971: Risk management for medical devices
@@ -26,25 +27,30 @@ Domain Alignment 🌐
 .. important::
    Ensure all hazards are mitigated per IEC 62304 and ISO 14971 guidelines, with traceable links to requirements and test artifacts.
 
-Examples 🧪
-----------
-**Nominal Scenario 🟢**:
+🧪 Examples 🧪
+--------------
+
+### 🟢 Nominal Scenario 🟢
+
 GIVEN validated sensor feedback  
 WHEN therapy control is initiated  
 THEN the system delivers accurate therapy dosage within specified limits.
 
-**Boundary Scenario 🟡**:
+### 🟡 Boundary Scenario 🟡
+
 GIVEN near-threshold dosing conditions  
 WHEN alarm escalation timing is triggered  
 THEN the system raises an alarm within the prescribed response time.
 
-**Fault Scenario 🔴**:
+### 🔴 Fault Scenario 🔴
+
 GIVEN a sensor spike/dropout  
 WHEN an actuator command is issued  
 THEN the system rejects unsafe commands and logs the fault for further analysis.
 
-Patterns 📐
-----------
+📐 Patterns 📐
+-------------
+
 - **Requirement-Linked Checks**:
   - Ensure every test scenario is tied to a specific requirement.
 - **Timing and Functional Outcomes**:
@@ -52,29 +58,33 @@ Patterns 📐
 - **Setup Reproducibility**:
   - Maintain explicit constraints for reproducible test setups.
 
-Anti-Patterns 🚫
-----------------
+🚫 Anti-Patterns 🚫
+-----------------
+
 - Domain-agnostic statements without measurable criteria.
 - Ignoring interface constraints during analysis.
 - Closing findings without residual risk statement.
 
-Pitfalls ⚠️
------------
+⚠️ Pitfalls ⚠️
+-------------
+
 - Missing sensor/actuator fault variants 🔴
 - Weak traceability from objective to artifact 🟡
 - Non-repeatable reruns from uncontrolled configuration drift 🔴
 
-Checklist ✅
------------
+✅ Checklist ✅
+-------------
+
 ☐ Scope and assumptions are explicit.  
 ☐ Acceptance criteria are quantitative.  
 ☐ Evidence set is complete and auditable.  
 ☐ Follow-up actions are prioritized.  
 ☐ Residual risks are documented.  
-☐ Ownership and next actions are assigned for unresolved items.  
+☐ Ownership and next actions are assigned for unresolved items.
 
-Additional Deep-Dive Notes 📘
------------------------------
+📘 Additional Deep-Dive Notes 📘
+---------------------------------
+
 - **Domain Focus**: Medical 🩺  
 - **Phase Focus**: MIL 🧩  
 - **Evidence Priorities**:
@@ -95,24 +105,28 @@ Additional Deep-Dive Notes 📘
   - Interface timing drift 🔴  
   - Weak requirement-to-test linkage 🟡  
 
-Example Expansion 🧪
---------------------
+🧪 Example Expansion 🧪
+-----------------------
+
 Include **one nominal**, **one boundary**, and **one fault scenario** per objective to ensure comprehensive coverage.
 
-Review Heuristic 🔍
--------------------
+🔍 Review Heuristic 🔍
+---------------------
+
 If a claim cannot be tied to an artifact, mark confidence as **provisional** and escalate for further review.
 
-Traceability Mnemonic: **TRACE** 🌟
------------------------------------
-- **T**: Tie requirements to tests explicitly.  
-- **R**: Record timing and functional outcomes.  
-- **A**: Audit evidence comprehensively.  
-- **C**: Capture residual risks and ownership.  
-- **E**: Ensure reproducibility of test setups.
+🌟 Traceability Mnemonic: **MEDICS** 🌟
+--------------------------------------
 
-Tabular Summary 📊
-------------------
+- **M**: Map requirements to tests explicitly.  
+- **E**: Evaluate timing and functional outcomes.  
+- **D**: Document evidence comprehensively.  
+- **I**: Identify residual risks and ownership.  
+- **C**: Confirm reproducibility of test setups.  
+- **S**: Safeguard against domain-specific hazards.
+
+📊 Tabular Summary 📊
+---------------------
 
 .. list-table:: Medical V&V Traceability Summary
    :header-rows: 1

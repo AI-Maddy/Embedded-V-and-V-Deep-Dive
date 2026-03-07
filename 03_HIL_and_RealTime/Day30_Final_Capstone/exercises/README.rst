@@ -1,22 +1,28 @@
-Exercises — Day30 Final Capstone
-================================
+Exercises — Day30 Final Capstone 🎯
+=====================================
 
-🎯 **HIL** Evidence Quality Exercise Goal
+**HIL** Evidence Quality Exercise Goal 🎯
 ----------------------------------------
 
 Practice **HIL** evidence quality using reproducible tasks that demonstrate **HIL** evidence quality.
 
-🛠️ **HIL** Real-Time Integration Focus
+.. note:: The **HIL** Evidence Quality exercise is designed to practice the creation of high-quality evidence for HIL testing.
+
+**HIL** Real-Time Integration Focus 🛠️
 ----------------------------------------
 
 Primary focus: **real-time integration behavior, interface timing, and hardware realism**.
 
-**HIL** Evidence Quality Mnemonic: **HIL** - **H**ardware, **I**ntegration, **L**ogic
+**HIL** Evidence Quality Mnemonic: **HILETS** - **H**ardware, **I**ntegration, **L**ogic, **E**xecution, **T**iming, **S**ynchronization
 
-📋 **HIL** Exercise Pack
+**HIL** Exercise Pack 📋
 ----------------------
 
 ### Nominal Scenario 🟢
+
+GIVEN a well-defined set of requirements,
+WHEN the system is executed with nominal inputs,
+THEN the system shall produce the expected outputs and meet the requirement IDs.
 
 1.  Define thresholds before execution.
 2.  Capture one baseline artifact.
@@ -24,11 +30,19 @@ Primary focus: **real-time integration behavior, interface timing, and hardware 
 
 ### Boundary Scenario 🟡
 
+GIVEN a set of near-limit conditions (timing, value, or mode transitions),
+WHEN the system is executed with boundary inputs,
+THEN the system shall produce the expected outputs and meet the requirement IDs.
+
 1.  Identify near-limit conditions (timing, value, or mode transitions).
 2.  Capture one stressed comparison artifact.
 3.  Verify that each exercise result meets the requirement IDs.
 
 ### Fault/Negative Scenario 🔴
+
+GIVEN a fault or negative condition,
+WHEN the system is executed with faulty inputs,
+THEN the system shall detect and recover from the fault and meet the requirement IDs.
 
 1.  Introduce a fault or negative condition.
 2.  Capture expected detection and recovery behavior.
@@ -36,34 +50,44 @@ Primary focus: **real-time integration behavior, interface timing, and hardware 
 
 ### Rerun Consistency Check 🟢
 
+GIVEN a consistent setup,
+WHEN the exercise is rerun,
+THEN the system shall produce the same outputs and meet the requirement IDs.
+
 1.  Rerun the exercise with consistent setup.
 2.  Verify that each exercise result meets the requirement IDs.
 
-🧭 **HIL** Patterns
+**HIL** Patterns 🧭
 -------------------
 
 *   Define thresholds before execution.
 *   Capture one baseline and one stressed comparison artifact.
 *   Tie each exercise result to requirement IDs.
 
-🚫 **HIL** Anti-Patterns
+**HIL** Anti-Patterns 🚫
 ----------------------
 
 *   Running tests without fixed configuration snapshots.
 *   Declaring pass/fail without quantitative criteria.
 *   Logging summaries without raw evidence references.
 
-⚠️ **HIL** Pitfalls
+.. warning:: Running tests without fixed configuration snapshots, declaring pass/fail without quantitative criteria, and logging summaries without raw evidence references are all anti-patterns that can lead to poor evidence quality.
+
+**HIL** Pitfalls ⚠️
 ------------------
 
 *   Timebase mismatch across tools/interfaces.
 *   Incomplete negative-path coverage.
 *   Non-deterministic reruns due to hidden setup changes.
 
-📚 **HIL** Examples
+**HIL** Examples 📚
 -----------------
 
 ### Boundary Timing Overrun Scenario 🟡
+
+GIVEN a set of near-limit timing conditions,
+WHEN the system is executed with boundary inputs,
+THEN the system shall produce the expected outputs and meet the requirement IDs.
 
 *   Define near-limit timing conditions.
 *   Capture stressed comparison artifact.
@@ -71,43 +95,54 @@ Primary focus: **real-time integration behavior, interface timing, and hardware 
 
 ### Invalid Input Sequence 🔴
 
+GIVEN an invalid input sequence,
+WHEN the system is executed with faulty inputs,
+THEN the system shall detect and recover from the fault and meet the requirement IDs.
+
 *   Introduce invalid input sequence.
 *   Capture expected detection and recovery behavior.
 *   Verify that each exercise result meets the requirement IDs.
 
 ### Regression Rerun 🟢
 
+GIVEN a consistent setup,
+WHEN the exercise is rerun,
+THEN the system shall produce the same outputs and meet the requirement IDs.
+
 *   Rerun the exercise with consistent setup.
 *   Verify that each exercise result meets the requirement IDs.
 
-✅ **HIL** Best Practices
+**HIL** Best Practices ✅
 -------------------------
 
 *   Keep artifact names stable across reruns.
 *   Record environment/version metadata every run.
 *   Include residual risk with each unresolved finding.
 
-🧪 **HIL** Heuristics
+**HIL** Heuristics 🧪
 -------------------
 
 *   One failing test without root cause is incomplete work.
 *   Repeatability is required for confidence.
 *   If evidence is missing, result is provisional.
 
-🔎 **HIL** Checklist
+**HIL** Checklist 🔎
 -------------------
 
 ### Pre-Review Checklist ☐
 
-*   ☐ Pass/fail thresholds are unambiguous.
-*   ☐ Nominal + stress + fault evidence is present.
-*   ☐ Traceability and residual risk are documented.
+☐ Pass/fail thresholds are unambiguous.
+☐ Nominal + stress + fault evidence is present.
+☐ Traceability and residual risk are documented.
+☐ All exercise results meet the requirement IDs.
+☐ All exercise results have corresponding artifacts.
+☐ All exercise results have residual risk documented.
 
 ### Review Checklist ☐
 
-*   ☐ All exercise results meet the requirement IDs.
-*   ☐ All exercise results have corresponding artifacts.
-*   ☐ All exercise results have residual risk documented.
+☐ All exercise results meet the requirement IDs.
+☐ All exercise results have corresponding artifacts.
+☐ All exercise results have residual risk documented.
 
 Additional Deep-Dive Notes
 --------------------------
@@ -131,22 +166,22 @@ Severity/Priority Legend
 🟡 Boundary (Yellow)
 🔴 Fault (Red)
 
-Note:: The **HIL** Evidence Quality exercise is designed to practice the creation of high-quality evidence for HIL testing. The exercise pack includes nominal, boundary, and fault/negative scenarios, as well as a rerun consistency check. The **HIL** patterns, anti-patterns, pitfalls, and best practices are also covered.
+.. important:: The **HIL** Evidence Quality exercise is a critical component of the HIL testing process. It ensures that the evidence created is of high quality and meets the requirements of the project.
 
-Warning:: Running tests without fixed configuration snapshots, declaring pass/fail without quantitative criteria, and logging summaries without raw evidence references are all anti-patterns that can lead to poor evidence quality.
+.. admonition:: The **HIL** Evidence Quality exercise is designed to be a challenging but rewarding experience. It requires careful planning, execution, and review to ensure that the evidence created meets the requirements of the project.
 
-Important:: The **HIL** Evidence Quality exercise is a critical component of the HIL testing process. It ensures that the evidence created is of high quality and meets the requirements of the project.
+.. list-table:: HIL Exercise Pack
 
-Admonition:: The **HIL** Evidence Quality exercise is designed to be a challenging but rewarding experience. It requires careful planning, execution, and review to ensure that the evidence created meets the requirements of the project.
-
-List Table:: HIL Exercise Pack
-
-| Exercise Type | Description |
-| --- | --- |
-| Nominal | Define thresholds before execution. Capture one baseline artifact. Tie each exercise result to requirement IDs. |
-| Boundary | Identify near-limit conditions (timing, value, or mode transitions). Capture one stressed comparison artifact. Verify that each exercise result meets the requirement IDs. |
-| Fault/Negative | Introduce a fault or negative condition. Capture expected detection and recovery behavior. Verify that each exercise result meets the requirement IDs. |
-| Rerun Consistency Check | Rerun the exercise with consistent setup. Verify that each exercise result meets the requirement IDs. |
+   * - Exercise Type
+     - Description
+   * - Nominal
+     - Define thresholds before execution. Capture one baseline artifact. Tie each exercise result to requirement IDs.
+   * - Boundary
+     - Identify near-limit conditions (timing, value, or mode transitions). Capture one stressed comparison artifact. Verify that each exercise result meets the requirement IDs.
+   * - Fault/Negative
+     - Introduce a fault or negative condition. Capture expected detection and recovery behavior. Verify that each exercise result meets the requirement IDs.
+   * - Rerun Consistency Check
+     - Rerun the exercise with consistent setup. Verify that each exercise result meets the requirement IDs.
 
 References
 ----------

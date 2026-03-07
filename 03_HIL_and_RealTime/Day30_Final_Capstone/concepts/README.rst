@@ -1,17 +1,34 @@
-Concepts — Day30 Final Capstone
-==============================
+🔍 **HIL-ACE** (Hardware-in-the-Loop Analysis and Certification Excellence) - A Comprehensive Guide
+====================================================================================
 
-🔍 **HIL-ACE** (Hardware-in-the-Loop Analysis and Certification Excellence)
----------------------------------------------------------------
+**MNEMONIC: HIL-ACE**
+
+H - Hardware and software integration
+I - Interface timing and realism
+L - Limits and assumptions documented
+A - Acceptance criteria defined
+C - Consistent naming and traceability
+E - Evidence-based verification
 
 🟢 **Severity Legend**
 --------------------
 
-| Color | Severity | Priority |
-| --- | --- | --- |
-| 🟢 | Nominal | High |
-| 🟡 | Boundary | Medium |
-| 🔴 | Fault | Low |
+.. list-table::
+   :widths: 10 30 30
+   :stub-columns: 1
+
+   * - Color
+     - Severity
+     - Priority
+   * - 🟢
+     - Nominal
+     - High
+   * - 🟡
+     - Boundary
+     - Medium
+   * - 🔴
+     - Fault
+     - Low
 
 🎯 **Objective**
 --------------
@@ -161,28 +178,38 @@ Primary emphasis: **real-time integration behavior, interface timing, and hardwa
 *   If a failure is possible, define detection evidence.
 *   Detection evidence is essential for ensuring that failures are properly detected and addressed.
 
-🔎 **Checklist**
---------------
+🔎 **GIVEN / WHEN / THEN Scenario Templates**
+-------------------------------------------
 
-### Concept Definitions Are Precise and Testable
+### Nominal 🟢
 
-*   Concept definitions should be precise and testable.
-*   This ensures that the verification process is properly understood.
+*   GIVEN: The system is operating under normal conditions.
+*   WHEN: The system receives a valid input.
+*   THEN: The system produces the expected output.
 
-### Assumptions and Limits Are Documented
+### Boundary 🟡
 
-*   Assumptions and limits should be properly documented.
-*   This ensures that the verification process is properly understood.
+*   GIVEN: The system is operating at the boundary of its operating range.
+*   WHEN: The system receives an input that stresses one of its constraints.
+*   THEN: The system produces an output that is within its acceptable limits.
 
-### Verification Signals and Metrics Are Identified
+### Fault 🔴
 
-*   Verification signals and metrics should be properly identified.
-*   This ensures that the verification process is properly understood.
+*   GIVEN: The system has failed in a specific way.
+*   WHEN: The system receives an input that triggers the failure.
+*   THEN: The system produces an output that indicates the failure.
 
-### Evidence References Are Present and Reproducible
+🔎 **Pre-Review Checklist**
+-------------------------
 
-*   Evidence references should be properly maintained.
-*   This ensures that the verification process is properly understood.
+☐ Concept definitions are precise and testable.
+☐ Assumptions and limits are documented.
+☐ Verification signals and metrics are identified.
+☐ Evidence references are present and reproducible.
+☐ The system's behavior is properly understood.
+☐ The system's operating boundaries are properly understood.
+☐ The system's failure modes are properly understood.
+☐ The system's observable indicators are properly understood.
 
 References
 ----------

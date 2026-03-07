@@ -1,14 +1,14 @@
-Medical Infusion Pump Use Cases and Examples
+Medical Infusion Pump Use Cases and Examples 🏥💊
 ==============================================
 
 🟢 **Domain-Specific Mnemonic:** MIPUSE (Medical Infusion Pump Use Scenarios and Evidence)
 
-Purpose
+Purpose 🤔
 -------
 🟢 **Nominal** (Expected Behavior) 🟡 **Boundary** (Edge Cases) 🔴 **Fault** (Error Conditions)
 Provide domain-tailored use cases with evidence expectations aligned to **IEC 62304 + ISO 14971 + IEC 60601 context**.
 
-Representative Use Cases
+Representative Use Cases 📝
 ------------------------
 ### 1. Nominal Mission/Profile Operation 🟢
 
@@ -85,7 +85,7 @@ Representative Use Cases
     .. note::
         This scenario demonstrates proper regression stability.
 
-Domain-Specific Examples
+Domain-Specific Examples 📚
 ------------------------
 ### Example A (Nominal) 🟢
 
@@ -132,7 +132,7 @@ Domain-Specific Examples
     .. admonition::
         This example demonstrates proper fault detection and containment.
 
-Patterns
+Patterns 📈
 --------
 ### 1. Map each scenario to requirement and hazard identifiers 🟢
 
@@ -173,7 +173,7 @@ Patterns
     .. note::
         This pattern ensures that raw data and logs are properly captured and stored.
 
-Anti-Patterns
+Anti-Patterns 🚫
 -------------
 ### 1. Broad “pass” claims without scenario-level evidence 🔴
 
@@ -217,7 +217,7 @@ Anti-Patterns
     .. admonition::
         This anti-pattern ensures that compliance references are properly linked to evidence.
 
-Pitfalls
+Pitfalls 🚨
 --------
 ### 1. Underestimating interface timing effects 🟡
 
@@ -261,7 +261,7 @@ Pitfalls
     .. admonition::
         This pitfall ensures that ownership for unresolved risks is properly assigned.
 
-Best Practices
+Best Practices 🏆
 --------------
 ### 1. Keep scenario definitions deterministic and reproducible 🟢
 
@@ -305,14 +305,14 @@ Best Practices
     .. admonition::
         This best practice ensures that residual risk is properly reviewed.
 
-Checklist
+Checklist 📝
 ---------
 ☐ Nominal/boundary/fault scenarios are covered.
 ☐ Evidence is traceable and auditable.
 ☐ Compliance mapping is explicit.
 ☐ Open issues include priority and owner.
 
-Additional Deep-Dive Notes
+Additional Deep-Dive Notes 📚
 --------------------------
 ### Domain Focus: Medical 🟢
 
@@ -422,54 +422,93 @@ Additional Deep-Dive Notes
     .. admonition::
         This checklist ensures that open issues are properly tracked and addressed.
 
-Table of Compliance References
+Table of Compliance References 📚
 -----------------------------
 
-| Reference | Description |
-|-----------|-------------|
-| IEC 60601-1:2012 | Medical electrical equipment - Part 1: General requirements for basic safety and essential performance |
-| IEC 62304 | Medical device software - Software life cycle processes |
-| ISO 14971 | Medical devices - Application of risk management to medical devices |
+.. list-table::
+   :widths: 50 50
+   :stub-columns: 1
 
-Table of Evidence Priorities
+   * - Reference
+     - Description
+   * - IEC 60601-1:2012
+     - Medical electrical equipment - Part 1: General requirements for basic safety and essential performance
+   * - IEC 62304
+     - Medical device software - Software life cycle processes
+   * - ISO 14971
+     - Medical devices - Application of risk management to medical devices
+
+Table of Evidence Priorities 📝
 ---------------------------
 
-| Priority | Description |
-|----------|-------------|
-| Functional Correctness | Ensure that the system performs its intended functions correctly |
-| Timing Behavior | Ensure that the system behaves correctly in terms of timing and synchronization |
-| Robustness | Ensure that the system can withstand various types of faults and errors |
-| Traceability | Ensure that the system can provide clear and unambiguous evidence of its behavior |
+.. list-table::
+   :widths: 50 50
+   :stub-columns: 1
 
-Table of Patterns and Anti-Patterns
+   * - Priority
+     - Description
+   * - Functional Correctness
+     - Ensure that the system performs its intended functions correctly
+   * - Timing Behavior
+     - Ensure that the system behaves correctly in terms of timing and synchronization
+   * - Robustness
+     - Ensure that the system can withstand various types of faults and errors
+   * - Traceability
+     - Ensure that the system can provide clear and unambiguous evidence of its behavior
+
+Table of Patterns and Anti-Patterns 📈
 -----------------------------------
 
-| Pattern/Anti-Pattern | Description |
-|---------------------|-------------|
-| Baseline-First Comparison | Compare artifacts against a common baseline |
-| Fixed Acceptance Thresholds | Use fixed thresholds for acceptance criteria |
-| Deterministic Reruns | Ensure that reruns of scenarios are deterministic and reproducible |
-| Post-Hoc Threshold Tuning | Avoid adjusting thresholds after the fact |
-| Missing Raw Artifacts | Ensure that raw data and logs are properly captured and stored |
-| Incomplete Negative-Path Checks | Ensure that all possible negative paths are thoroughly tested |
+.. list-table::
+   :widths: 50 50
+   :stub-columns: 1
 
-Table of Pitfalls
+   * - Pattern/Anti-Pattern
+     - Description
+   * - Baseline-First Comparison
+     - Compare artifacts against a common baseline
+   * - Fixed Acceptance Thresholds
+     - Use fixed thresholds for acceptance criteria
+   * - Deterministic Reruns
+     - Ensure that reruns of scenarios are deterministic and reproducible
+   * - Post-Hoc Threshold Tuning
+     - Avoid adjusting thresholds after the fact
+   * - Missing Raw Artifacts
+     - Ensure that raw data and logs are properly captured and stored
+   * - Incomplete Negative-Path Checks
+     - Ensure that all possible negative paths are thoroughly tested
+
+Table of Pitfalls 🚨
 -----------------
 
-| Pitfall | Description |
-|--------|-------------|
-| Hidden Assumptions | Avoid making assumptions about system behavior without clear evidence |
-| Interface Timing Drift | Consider the potential impact of interface timing on system behavior |
-| Weak Requirement-to-Test Linkage | Ensure that requirements are properly linked to test cases |
+.. list-table::
+   :widths: 50 50
+   :stub-columns: 1
 
-Table of Best Practices
+   * - Pitfall
+     - Description
+   * - Hidden Assumptions
+     - Avoid making assumptions about system behavior without clear evidence
+   * - Interface Timing Drift
+     - Consider the potential impact of interface timing on system behavior
+   * - Weak Requirement-to-Test Linkage
+     - Ensure that requirements are properly linked to test cases
+
+Table of Best Practices 🏆
 -----------------------
 
-| Best Practice | Description |
-|--------------|-------------|
-| Keep Scenario Definitions Deterministic and Reproducible | Ensure that scenario definitions are clear and concise |
-| Use Quantitative Pass/Fail Thresholds | Establish clear and objective pass/fail criteria |
-| Review Residual Risk Before Release Recommendation | Thoroughly review residual risk before releasing a product |
+.. list-table::
+   :widths: 50 50
+   :stub-columns: 1
+
+   * - Best Practice
+     - Description
+   * - Keep Scenario Definitions Deterministic and Reproducible
+     - Ensure that scenario definitions are clear and concise
+   * - Use Quantitative Pass/Fail Thresholds
+     - Establish clear and objective pass/fail criteria
+   * - Review Residual Risk Before Release Recommendation
+     - Thoroughly review residual risk before releasing a product
 
 .. note::
     This document is intended to provide guidance and best practices for use case development and evidence collection. It is not a substitute for regulatory requirements or industry standards.
@@ -482,177 +521,3 @@ Table of Best Practices
 
 .. admonition::
     This document is intended for use by medical infusion pump developers and testers. It is not intended for use by the general public.
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================
-
-Medical Infusion Pump Use Cases and Examples
-==============================================

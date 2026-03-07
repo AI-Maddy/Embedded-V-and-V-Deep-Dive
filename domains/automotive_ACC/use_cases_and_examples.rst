@@ -15,9 +15,9 @@ Representative Use Cases 📊
 
 .. important:: Ensure that the system is functioning as expected in nominal conditions.
 
-*   Given: normal traffic conditions
-*   When: adaptive cruise control is engaged
-*   Then: speed regulation is maintained within acceptable limits
+*   **GIVEN**: normal traffic conditions
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: speed regulation is maintained within acceptable limits
 
 ### Boundary-Condition Operation Near Limits 🟡
 
@@ -25,9 +25,9 @@ Representative Use Cases 📊
 
 .. important:: Ensure that the system is functioning as expected near the limits of its operating conditions.
 
-*   Given: dense stop-and-go traffic with tight headway and timing limits
-*   When: adaptive cruise control is engaged
-*   Then: speed regulation is maintained within acceptable limits, but near the boundary of acceptable behavior
+*   **GIVEN**: dense stop-and-go traffic with tight headway and timing limits
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: speed regulation is maintained within acceptable limits, but near the boundary of acceptable behavior
 
 ### Fault Detection, Containment, and Recovery 🔴
 
@@ -35,9 +35,9 @@ Representative Use Cases 📊
 
 .. important:: Ensure that the system is functioning as expected in fault conditions.
 
-*   Given: sensor dropout and invalid CAN frame injection
-*   When: adaptive cruise control is engaged
-*   Then: fault detection and containment mechanisms are triggered, and recovery is successful
+*   **GIVEN**: sensor dropout and invalid CAN frame injection
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: fault detection and containment mechanisms are triggered, and recovery is successful
 
 ### Degraded-Mode Continuation with Safety Constraints 🟢
 
@@ -45,9 +45,9 @@ Representative Use Cases 📊
 
 .. important:: Ensure that the system is functioning as expected in degraded mode.
 
-*   Given: reduced system functionality due to hardware failure
-*   When: adaptive cruise control is engaged
-*   Then: degraded-mode operation is maintained within safety constraints
+*   **GIVEN**: reduced system functionality due to hardware failure
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: degraded-mode operation is maintained within safety constraints
 
 ### Regression Stability after Fixes 🟡
 
@@ -55,9 +55,9 @@ Representative Use Cases 📊
 
 .. important:: Ensure that the system is functioning as expected after fixes.
 
-*   Given: multiple fixes applied to the system
-*   When: adaptive cruise control is engaged
-*   Then: regression stability is ensured, and no new faults are introduced
+*   **GIVEN**: multiple fixes applied to the system
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: regression stability is ensured, and no new faults are introduced
 
 Domain-Specific Mnemonic Acronym: **ADAS** (Advanced Driver Assistance Systems)
 
@@ -68,25 +68,25 @@ Domain-Specific Examples 📚
 
 .. important:: This example represents the normal operating conditions of the system.
 
-*   Given: normal traffic conditions
-*   When: adaptive cruise control is engaged
-*   Then: speed regulation is maintained within acceptable limits
+*   **GIVEN**: normal traffic conditions
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: speed regulation is maintained within acceptable limits
 
 ### Example B (Boundary): Dense Stop-and-Go with Tight Headway and Timing Limits 🟡
 
 .. warning:: This example represents the boundary conditions of the system.
 
-*   Given: dense stop-and-go traffic with tight headway and timing limits
-*   When: adaptive cruise control is engaged
-*   Then: speed regulation is maintained within acceptable limits, but near the boundary of acceptable behavior
+*   **GIVEN**: dense stop-and-go traffic with tight headway and timing limits
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: speed regulation is maintained within acceptable limits, but near the boundary of acceptable behavior
 
 ### Example C (Fault): Sensor Dropout and Invalid CAN Frame Injection 🔴
 
 .. admonition:: This example represents a fault condition in the system.
 
-*   Given: sensor dropout and invalid CAN frame injection
-*   When: adaptive cruise control is engaged
-*   Then: fault detection and containment mechanisms are triggered, and recovery is successful
+*   **GIVEN**: sensor dropout and invalid CAN frame injection
+*   **WHEN**: adaptive cruise control is engaged
+*   **THEN**: fault detection and containment mechanisms are triggered, and recovery is successful
 
 Patterns 📝
 ----------
@@ -184,8 +184,13 @@ Best Practices 📚
 *   Review residual risk before making a release recommendation
 *   Use a risk-based approach to determine release requirements
 
-Checklist 📝
-------------
+Severity/Priority Colour Legend:
+🟢 Nominal
+🟡 Boundary
+🔴 Fault
+
+Pre-Review Checklist 📝
+------------------------
 
 ☐ Nominal/Boundary/Fault Scenarios are Covered
 =============================================
@@ -210,6 +215,12 @@ Checklist 📝
 
 *   Ensure that open issues include priority and owner
 *   Use a consistent naming convention for open issues
+
+☐ Review Heuristic is Applied
+==========================
+
+*   Apply the review heuristic to mark confidence as provisional if a claim cannot be tied to an artifact
+*   Use a consistent naming convention for review heuristics
 
 Additional Deep-Dive Notes 📝
 ---------------------------
@@ -259,9 +270,36 @@ Additional Deep-Dive Notes 📝
 *   Capture residual risk, ownership, and next action for each unresolved item
 *   Use a consistent naming convention for checklist extensions
 
-Severity/Priority Colour Legend:
-🟢 Nominal
-🟡 Boundary
-🔴 Fault
-
+Standards References:
 ARP4754A/4761, ASPICE, DO-178C, DO-254, IEC 62304, ISO 26262, ISO 21434
+
+.. list-table:: Mapping of Scenarios to Requirements and Hazards
+   :widths: 20 20 20 20
+   :stub-columns: 1
+
+   *   - Scenario
+       - Requirement
+       - Hazard
+       - Priority
+   *   - Nominal Mission/Profile Operation
+       - Functional Correctness
+       - Loss of Control
+       - High
+   *   - Boundary-Condition Operation Near Limits
+       - Timing Behavior
+       - Collision
+       - Medium
+   *   - Fault Detection, Containment, and Recovery
+       - Robustness
+       - System Failure
+       - High
+   *   - Degraded-Mode Continuation with Safety Constraints
+       - Functional Correctness
+       - Loss of Control
+       - Medium
+   *   - Regression Stability after Fixes
+       - Timing Behavior
+       - Collision
+       - Low
+
+Note: This is a sample mapping of scenarios to requirements and hazards. The actual mapping will depend on the specific system and its requirements.

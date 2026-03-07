@@ -48,9 +48,14 @@ Options:
   --reset-progress   Clear saved checkpoint and start from the first file.
   --dry-run          Show which files would be processed; make no changes.
   --sleep N          Seconds to wait between files (default: 2). Set 0 to disable.
+  --file-list FILE   Use a custom file list instead of file_list.txt.
+  --force            Force re-enrichment even if content appears unchanged
+                     (sets FORCE_REENRICH=1, bypasses hash skip).
   -h, --help         Show this help message.
 EOF
 }
+
+FORCE_REENRICH=${FORCE_REENRICH:-0}
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -58,6 +63,8 @@ while [[ $# -gt 0 ]]; do
     --reset-progress)  rm -f "$PROGRESS_FILE"; info "Progress reset."; shift ;;
     --dry-run)         DRY_RUN=true; shift ;;
     --sleep)           SLEEP_BETWEEN="$2"; shift 2 ;;
+    --file-list)       FILE_LIST="$2"; shift 2 ;;
+    --force)           FORCE_REENRICH=1; shift ;;
     -h|--help)         usage; exit 0 ;;
     *)                 echo "Unknown option: $1"; usage; exit 1 ;;
   esac
@@ -131,7 +138,7 @@ for (( i=START_IDX; i<TOTAL; i++ )); do
 
   # Call the enricher
   set +e
-  output=$("$PYTHON" "$ENRICHER" "$abs" 2>&1)
+  output=$(FORCE_REENRICH="$FORCE_REENRICH" "$PYTHON" "$ENRICHER" "$abs" 2>&1)
   rc=$?
   set -e
 

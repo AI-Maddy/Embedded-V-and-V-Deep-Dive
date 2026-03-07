@@ -1,20 +1,22 @@
 🌟 Worked Example — Day01 VModel and Requirements 🌟
-===================================================
+=====================================================
 
-🔍 **Mnemonic Acronym: FOCUS** 🔍
----------------------------------
+🔍 **Mnemonic Acronym: FOCUSED** 🔍
+-----------------------------------
 **F** - **Fidelity** of the model under test  
 **O** - **Observability** of key signals and states  
 **C** - **Confidence** in simulation outcomes  
 **U** - **Understanding** of requirement intent  
 **S** - **Severity** classification for anomalies  
+**E** - **Evidence** capture and management  
+**D** - **Determinism** in test execution and results  
 
 🎯 Objective 🎯
 --------------
 Execute a practical **MIL** exercise for Day01 VModel and Requirements and produce audit-ready evidence for **DO-178C**, **ISO 26262**, and **ARP4754A** compliance.
 
 .. important::
-   The objective aligns with the **FOCUS** mnemonic to ensure model fidelity, simulation observability, and requirement clarity.
+   The objective aligns with the **FOCUSED** mnemonic to ensure model fidelity, simulation observability, requirement clarity, and deterministic test execution.
 
 📖 Scenario 📖
 --------------
@@ -27,9 +29,29 @@ Execute a practical **MIL** exercise for Day01 VModel and Requirements and produ
 
 **Scenario Templates**  
 =======================
+### GIVEN
+A pre-configured MIL environment with frozen assumptions.
+
+### WHEN
+A specific scenario (Nominal, Boundary, Fault) is executed.
+
+### THEN
+Outputs are captured, analyzed, and compared against requirements.
+
+#### Nominal Scenario Template 🟢
 GIVEN: A pre-configured MIL environment with frozen assumptions.  
-WHEN: A specific scenario (Nominal, Boundary, Fault) is executed.  
-THEN: Outputs are captured, analyzed, and compared against requirements.
+WHEN: The nominal scenario is executed.  
+THEN: Outputs match the expected baseline, and requirements are met.
+
+#### Boundary Scenario Template 🟡
+GIVEN: A pre-configured MIL environment with frozen assumptions.  
+WHEN: The boundary scenario is executed.  
+THEN: Stress conditions are observed, and outputs are analyzed for timing/value/mode limits.
+
+#### Fault Scenario Template 🔴
+GIVEN: A pre-configured MIL environment with frozen assumptions.  
+WHEN: The fault scenario is executed.  
+THEN: The system detects and recovers from the fault, and residual risk is documented.
 
 🛠️ Setup 🛠️
 ------------
@@ -92,9 +114,12 @@ THEN: Outputs are captured, analyzed, and compared against requirements.
 
 🔎 Pre-Review Checklist 🔎
 --------------------------
-☐ Functional, timing, robustness evidence captured.  
-☐ Requirement-linked verdict table completed.  
-☐ Residual risk and next actions documented.  
+- ☐ Functional, timing, robustness evidence captured.  
+- ☐ Requirement-linked verdict table completed.  
+- ☐ Residual risk and next actions documented.  
+- ☐ All runs are deterministic and reproducible.  
+- ☐ Pass/fail logic is requirement-driven.  
+- ☐ Observations are separated from interpretation in reports.  
 
 .. admonition:: Standards Reference
    :class: tip
@@ -108,7 +133,7 @@ THEN: Outputs are captured, analyzed, and compared against requirements.
 This day emphasizes: **model fidelity, requirement intent clarity, and simulation confidence**.
 
 .. note::
-   The **FOCUS** mnemonic should guide all activities to ensure compliance with industry standards and best practices.
+   The **FOCUSED** mnemonic should guide all activities to ensure compliance with industry standards and best practices.
 
 📊 Summary Table 📊
 -------------------
@@ -131,3 +156,6 @@ This day emphasizes: **model fidelity, requirement intent clarity, and simulatio
      - 🔴 Red
      - Recovery successful, residual risk noted
      - Partial Pass
+
+   .. note::
+      This table summarizes the execution results, highlighting the scenario type, severity level, key observations, and verdict.
