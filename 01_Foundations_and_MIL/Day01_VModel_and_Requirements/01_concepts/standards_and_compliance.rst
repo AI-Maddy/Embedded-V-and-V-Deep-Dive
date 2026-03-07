@@ -1,60 +1,71 @@
 Standards and Compliance — Day01
 ================================
 
-Objective
----------
-Map early requirement work to the compliance vocabulary used in each domain.
+🎯 Objective
+------------
+Map early requirement work to the compliance language used in each domain, so every requirement is **auditable, testable, and safety-linked** from Day 1.
 
-Domain Mapping
---------------
-- Automotive: ISO 26262 ASIL decomposition and safety-goal inheritance.
-- Aerospace: DO-178C objective-based evidence and DAL expectations.
-- Medical: IEC 62304 classification and ISO 14971 risk controls.
-
-What to Capture Now
--------------------
-- Requirement rationale with hazard/risk references.
-- Verification intent per requirement (analysis/test/inspection).
-- Planned evidence owner and lifecycle stage.
-
-Common Mistakes
----------------
-- Treating all requirements as equal criticality.
-- Missing linkage between hazard and verification criteria.
-- Deferring traceability until after implementation.
-
-Additional Deep-Dive Notes
+🚦 Compliance Signal Legend
 --------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+- 🟢 **Strong**: clear safety/risk linkage and measurable verification criteria.
+- 🟡 **Partial**: intent exists, but acceptance criteria or ownership is incomplete.
+- 🔴 **Weak**: no traceable linkage to hazard/risk or no verification path.
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+🧭 Domain Mapping at a Glance
+----------------------------
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+.. list-table::
+	 :header-rows: 1
+	 :widths: 18 30 32 20
+
+	 * - Domain
+		 - Core Standard Focus
+		 - Requirement Emphasis
+		 - Day01 Priority
+	 * - 🚗 Automotive
+		 - ISO 26262 (ASIL, safety goals)
+		 - ASIL decomposition, inheritance, and traceability
+		 - Hazard-linked requirement clarity
+	 * - ✈️ Aerospace
+		 - DO-178C (objective-based evidence, DAL)
+		 - Verifiable low-level/high-level requirement intent
+		 - Objective + evidence alignment
+	 * - 🏥 Medical
+		 - IEC 62304 + ISO 14971
+		 - Software safety class and risk-control linkage
+		 - Risk-control verification intent
+
+📌 What to Capture Now (Minimum Evidence Pack)
+----------------------------------------------
+- 🧾 **Rationale**: why the requirement exists, with hazard/risk reference.
+- 🧪 **Verification method**: analysis, test, inspection, or demonstration.
+- 📏 **Acceptance criteria**: measurable pass/fail condition.
+- 👤 **Owner**: who produces and reviews the evidence.
+- 🕒 **Lifecycle stage**: MIL/SIL/HIL target for first formal verification.
+
+🧠 Make It Memorable: ``H.E.A.R.T`` Rule
+----------------------------------------
+- **H — Hazard linked**: each requirement ties to a safety/risk concern.
+- **E — Evidence planned**: define artifact(s) expected at review.
+- **A — Acceptance measurable**: avoid vague terms like “works well”.
+- **R — Responsibility assigned**: clear producer and approver.
+- **T — Traceability complete**: requirement ↔ test ↔ result ↔ review.
+
+⚠️ Common Mistakes (and Fast Fixes)
+----------------------------------
+- 🔴 Treating all requirements with equal criticality  → apply domain criticality tags early (ASIL/DAL/Class).
+- 🔴 Missing hazard-to-verification linkage            → add one explicit trace row per safety objective.
+- 🟡 Deferring traceability until implementation       → create requirement IDs and verification placeholders now.
+- 🟡 Vague acceptance wording                          → convert to numeric thresholds and conditions.
+
+✅ Day01 Review Checklist
+------------------------
+- Does each critical requirement have a domain criticality tag?
+- Is the verification intent explicit and realistic for MIL?
+- Can a reviewer find hazard/risk origin in one hop?
+- Is there at least one nominal, one boundary, and one fault scenario for key objectives?
+- Are unresolved items tagged with owner, residual risk, and next action?
+
+🧩 Practical Heuristic
+---------------------
+If a compliance claim cannot be tied to a concrete artifact, mark confidence as 🟡 provisional and log the missing evidence.

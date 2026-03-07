@@ -1,67 +1,58 @@
 Description — Automotive
 ========================
 
-Purpose
--------
-Document **Automotive**-specific details for Day01 VModel and Requirements with focus on use-case intent, assumptions, and acceptance criteria.
+🎯 Purpose
+----------
+Define Automotive Day01 use-case intent in a way that is **safety-linked, measurable, and verifiable** across MIL activities.
 
-Domain Alignment
-----------------
-- Standard reference: **ISO 26262 (ASIL) + ISO 21434**
-- Critical hazards: unintended acceleration/deceleration, loss of stability, braking faults
-- Relevant interfaces: CAN, LIN, FlexRay, Automotive Ethernet
+🌈 Readiness Legend
+------------------
+- 🟢 **Ready**: requirement and scenario are measurable with clear pass/fail.
+- 🟡 **Partial**: intent exists, but assumptions/timing/ownership are incomplete.
+- 🔴 **Risky**: ambiguous behavior or no traceable verification path.
 
-Examples
---------
-- Nominal path: adaptive cruise and speed regulation under normal traffic.
-- Boundary path: dense stop-and-go with tight headway and timing limits.
-- Fault path: sensor dropout and invalid CAN frame injection.
+🧭 Domain Alignment (Automotive)
+-------------------------------
+- 📘 Standards: **ISO 26262 (ASIL)** and **ISO 21434** (cybersecurity context).
+- ⚠️ Hazard themes: unintended acceleration/deceleration, loss of stability, braking faults.
+- 🔌 Interfaces: CAN, LIN, FlexRay, Automotive Ethernet.
 
-Patterns
---------
-- Use requirement-linked checks for every scenario.
-- Track timing and functional outcomes together.
-- Keep setup reproducibility constraints explicit.
+🚗 Scenario Set (Memorable 3-Pack)
+----------------------------------
+- ✅ **Nominal**: adaptive cruise tracks target speed and gap under normal traffic.
+- ⚖️ **Boundary**: stop-and-go with tight headway, latency limits, and noisy sensor edges.
+- 🧨 **Fault**: radar dropout, implausible wheel-speed values, or malformed CAN frame.
 
-Anti-Patterns
--------------
-- Domain-agnostic statements without measurable criteria.
-- Ignoring interface constraints during analysis.
-- Closing findings without residual risk statement.
+🧠 Make It Memorable: ``D.R.I.V.E``
+-----------------------------------
+- **D — Define trigger**: exact event that starts behavior.
+- **R — Range-bound output**: limits/units explicitly stated.
+- **I — Interface-aware**: bus timing and signal validity constraints captured.
+- **V — Verify method**: analysis/test/inspection selected per requirement.
+- **E — Evidence trace**: requirement ↔ scenario ↔ result ↔ review.
 
-Pitfalls
---------
-- Missing sensor/actuator fault variants.
-- Weak traceability from objective to artifact.
-- Non-repeatable reruns from uncontrolled configuration drift.
+📋 Practical Example (ACC)
+-------------------------
+- Requirement: “When lead-vehicle distance error exceeds 8 m, ACC shall reduce commanded torque within 150 ms and restore time-gap to 1.8 ± 0.2 s within 3.0 s under nominal road-load conditions.”
+- Verification plan:
+	- 🧮 Analysis: control-law and timing budget feasibility.
+	- 🧪 Test: nominal/boundary/fault MIL scenarios with logged latency.
+	- 📋 Inspection: requirement wording, units, assumptions, and trace links.
 
-Checklist
----------
-- Scope and assumptions are explicit.
-- Acceptance criteria are quantitative.
-- Evidence set is complete and auditable.
-- Follow-up actions are prioritized.
+⚠️ Anti-Patterns to Avoid
+------------------------
+- 🔴 Domain-agnostic statements without measurable criteria.
+- 🔴 Ignoring bus/interface timing while claiming functional compliance.
+- 🟡 Closing findings without residual-risk statement and owner.
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: Automotive
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+✅ Day01 Checklist
+-----------------
+- Are assumptions and operational design domain limits explicit?
+- Are acceptance criteria quantitative (time, range, thresholds)?
+- Is each scenario linked to requirement IDs and expected artifacts?
+- Is at least one fault scenario tied to safe/degraded behavior?
+- Are unresolved risks tagged with owner and next action?
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: Automotive
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+🧩 Review Heuristic
+------------------
+If an Automotive claim cannot be tied to a requirement ID, a scenario result, and a timestamped artifact, confidence remains 🟡 provisional.

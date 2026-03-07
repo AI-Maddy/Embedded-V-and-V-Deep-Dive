@@ -1,63 +1,73 @@
 Functional Requirements — Day01
-==============================
+===============================
 
-Goal
-----
-Define observable functional behavior in a way that enables objective verification.
+🎯 Goal
+-------
+Define observable system behavior so each requirement is clear, testable, and traceable from Day01 onward.
 
-Writing Rules
--------------
+🌈 Quality Legend (Color Cues)
+-----------------------------
+- 🟢 **Ready**: measurable, bounded, and independently verifiable.
+- 🟡 **Needs work**: intent is clear, but criteria or conditions are incomplete.
+- 🔴 **Risky**: ambiguous wording or no objective verification path.
+
+🧭 What a Good Functional Requirement Contains
+---------------------------------------------
+- **Behavior**: what the system shall do.
+- **Trigger**: when the behavior must occur.
+- **Condition**: under what state/constraints it applies.
+- **Output**: expected result/state change.
+- **Bound**: timing/threshold/range limits.
+- **Verification**: analysis, test, inspection, or demonstration.
+
+✍️ Writing Rules (Simple + Strong)
+----------------------------------
 - Use measurable language (ranges, thresholds, timing limits).
-- Specify preconditions and expected system state.
-- Avoid ambiguous verbs (optimize, quickly, properly).
+- State preconditions and interfaces explicitly.
+- Prefer “shall” statements with one clear behavior each.
+- Avoid vague words: *optimize*, *quickly*, *properly*, *normal*.
+- Keep units explicit (ms, Nm, V, %, °C).
 
-Requirement Template
---------------------
-- ID:
-- Function intent:
-- Trigger condition:
-- Expected output/state:
-- Timing/performance bound:
-- Verification method:
+🧠 Make It Memorable: ``S.M.A.R.T-E``
+-------------------------------------
+- **S — Specific** behavior
+- **M — Measurable** criteria
+- **A — Achievable** within system limits
+- **R — Relevant** to hazard/risk or mission intent
+- **T — Time-bounded** response/latency defined
+- **E — Evidence-linked** verification method planned
 
-Quality Check
--------------
-- Is this requirement independently testable?
-- Is the pass/fail criterion quantitative?
-- Is the dependency on external interfaces explicit?
+🧩 Requirement Template (Copy/Paste)
+-----------------------------------
+- **ID**:
+- **Function intent**:
+- **Trigger condition**:
+- **Preconditions / system state**:
+- **Expected output/state**:
+- **Timing/performance bound**:
+- **Interfaces/signals involved**:
+- **Verification method** (analysis/test/inspection):
+- **Pass/fail criteria**:
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+✅ Good vs ❌ Weak Example
+-------------------------
+- ❌ Weak: “The controller shall respond quickly to speed errors.”
+- ✅ Good: “When speed error exceeds 3 km/h, the controller shall command corrective torque within 120 ms and reduce speed error below 1 km/h within 2.0 s under nominal road-load conditions.”
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+🔍 Verification Method Difference (Quick View)
+---------------------------------------------
+- 🧮 **Analysis**: prove by model/math/logical reasoning.
+- 🧪 **Test**: execute with inputs and verify measured outputs.
+- 📋 **Inspection**: review artifacts against checklist/standard.
 
-Additional Deep-Dive Notes
---------------------------
-- Domain Focus: General
-- Phase Focus: MIL
-- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.
-- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.
-- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.
-- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.
-- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.
-- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.
-- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.
+📌 Day01 Quality Check
+---------------------
+- Is each requirement independently testable?
+- Is pass/fail quantitative and unambiguous?
+- Are dependencies on external interfaces explicit?
+- Is at least one nominal, one boundary, and one fault scenario identified?
+- Does each critical requirement have an evidence owner and next action?
+
+🧩 Review Heuristic
+------------------
+If a requirement cannot be verified objectively, classify it as 🟡 draft and refine before downstream design.
