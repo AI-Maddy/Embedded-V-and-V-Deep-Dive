@@ -105,6 +105,36 @@ GIVEN / WHEN / THEN Scenarios 🧪
   WHEN the signal exceeds the expected range,  
   THEN the system violates requirement R3, and residual risk is logged.  
 
+
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262, ISO 21434
+- **Interfaces**: CAN, LIN, FlexRay, Automotive Ethernet
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C (Software Considerations in Airborne Systems), DO-254 (Design Assurance for Airborne Electronic Hardware), ARP4754A (System Development Process for Aircraft), ARP4761 (Safety Assessment for Aircraft Systems)
+- **Hazard profile**: Loss of control authority, Unstable mode transition, Stale avionics data
+- **Interfaces**: ARINC 429/664, AFDX, Discrete I/O
+- **Representative fault**: bus label corruption and sensor disagreement event → the fault detection and isolation mechanism activates, preventing unsafe behavior.
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304, ISO 14971, IEC 60601
+- **Hazard profile**: Incorrect dosage delivery, Missed alarm, Unsafe therapy continuation
+- **Interfaces**: Device buses, Sensor links, Alarm/event channels
+- **Representative fault**: Sensor spike/dropout and actuator command rejection path.
+- Full details: `medical/ <medical>`_
 Additional Deep-Dive Notes 📘
 -----------------------------
 - **Domain Focus**: Embedded Systems  

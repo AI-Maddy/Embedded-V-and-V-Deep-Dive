@@ -95,9 +95,41 @@ GIVEN / WHEN / THEN Scenarios
 .. warning::
    Be cautious of hidden assumptions that may lead to incorrect conclusions during testing.
 
+
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262 (ASIL) + ISO 21434
+- **Hazard profile**: unintended acceleration/deceleration, loss of stability, braking faults
+- **Interfaces**: CAN, LIN, FlexRay, Automotive Ethernet
+- **Representative fault**: Sensor dropout and invalid CAN frame injection, simulating real-world failures to assess system robustness.
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C/DO-254 + ARP4754A/ARP4761
+- **Hazard profile**: loss of control authority, unstable mode transition, stale avionics data
+- **Interfaces**: ARINC 429/664, AFDX, discrete I/O
+- **Representative fault**: bus label corruption and sensor disagreement event.
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304 + ISO 14971 + IEC 60601 context. These standards provide the framework for software lifecycle processes, risk management, and medical electrical equipment safety, ensuring that all aspects of system design and testing adhere to best practices.
+- **Hazard profile**: Incorrect dosage delivery, Missed alarm, Unsafe therapy continuation
+- **Interfaces**: device buses, sensor links, alarm/event channels. Understanding these interfaces is vital for ensuring that the system responds correctly to various inputs and conditions, which is critical for patient safety.
+- **Representative fault**: sensor spike/dropout and actuator command rejection path. This scenario tests the system's response to failures, ensuring that it can handle unexpected situations safely and effectively, thereby preventing potential harm to patients.
+- Full details: `medical/ <medical>`_
 Additional Deep-Dive Notes
 --------------------------
-- **Domain Focus**: General
+- Domain Focus: Automotive | Aerospace | Medical
 - **Phase Focus**: HIL
 - **Evidence Priorities**: functional correctness, timing behavior, robustness, and traceability.
 - **Patterns**: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.

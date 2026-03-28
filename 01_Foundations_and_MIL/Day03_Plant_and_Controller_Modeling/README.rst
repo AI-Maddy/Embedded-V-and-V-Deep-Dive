@@ -101,10 +101,40 @@ THEN the output demonstrates safe failure behavior as per requirements.
 .. note::  
    Use **IEC 62304 Section 5.7** for checklist alignment in software lifecycle management. This ensures that our processes are in line with established standards.
 
-📌 Additional Deep-Dive Notes 📌
+📌 
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262 (ASIL) + ISO 21434
+- **Hazard profile**: unintended acceleration/deceleration, loss of stability, braking faults
+- **Interfaces**: CAN, LIN, FlexRay, Automotive Ethernet
+- **Representative fault**: sensor dropout and invalid CAN frame injection.
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C, DO-254, ARP4754A, ARP4761
+- **Interfaces**: ARINC 429, AFDX
+- **Representative fault**: Bus label corruption and sensor disagreement event.
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304 + ISO 14971 + IEC 60601 context
+- **Hazard profile**: incorrect dosage delivery, missed alarm, unsafe therapy continuation
+- **Interfaces**: device buses, sensor links, alarm/event channels
+- **Representative fault**: sensor spike/dropout and actuator command rejection path.
+- Full details: `medical/ <medical>`_
+Additional Deep-Dive Notes 📌
 -------------------------------
-- **Domain Focus**: General  
-- **Phase Focus**: MIL  
+- Domain Focus: Automotive | Aerospace | Medical- **Phase Focus**: MIL  
 - **Evidence Priorities**: Functional correctness, timing behavior, robustness, and traceability.  
 - **Patterns**: Baseline-first comparison, fixed acceptance thresholds, deterministic reruns.  
 - **Anti-Patterns**: Post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.  

@@ -119,9 +119,41 @@ THEN: The system detects the fault, triggers recovery mechanisms, and logs the e
      - Fault detected, recovery triggered
      - Fault logs, error traces
 
+
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262 (ASIL) + ISO 21434
+- **Hazard profile**: unintended acceleration/deceleration, loss of stability, braking faults
+- **Interfaces**: CAN, LIN, FlexRay, Automotive Ethernet
+- **Representative fault**: Sensor dropout or invalid CAN frame injection. → The model must trigger fallback mechanisms and ensure safe operation.
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C/DO-254, ARP4754A/ARP4761
+- **Hazard profile**: Loss of control authority, Unstable mode transition, Stale avionics data
+- **Interfaces**: ARINC 429/664, AFDX, Discrete I/O
+- **Representative fault**: Bus label corruption and sensor disagreement event.
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304, ISO 14971, IEC 60601
+- **Hazard profile**: Incorrect dosage delivery, Missed alarm, Unsafe therapy continuation
+- **Interfaces**: Device buses, Sensor links, Alarm/event channels
+- **Representative fault**: Sensor spike/dropout and actuator command rejection path → The system enters a safe state, halting therapy and issuing alerts
+- Full details: `medical/ <medical>`_
 Additional Deep-Dive Notes 📘
 -----------------------------
-- **Domain Focus**: General embedded systems.  
+- Domain Focus: Automotive | Aerospace | Medical.  
 - **Phase Focus**: MIL.  
 - **Evidence Priorities**: Functional correctness, timing behavior, robustness, and traceability.  
 - **Patterns**: Baseline-first comparison, fixed acceptance thresholds, deterministic reruns.  

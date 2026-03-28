@@ -121,10 +121,36 @@ This day emphasizes **real-time integration confidence on representative hardwar
 ☐ Are all domain standards (DO-178C, DO-254, ISO 26262, IEC 62304, ARP4754A/4761, ASPICE) properly considered?
 ☐ Are all required deliverables complete and accurate?
 
+
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262, ISO 21434
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C/DO-254 + ARP4754A/ARP4761 📚
+- **Hazard profile**: loss of control authority, unstable mode transition, stale avionics data 🚨
+- **Interfaces**: ARINC 429/664, AFDX, discrete I/O 📊
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304, ISO 14971, IEC 60601
+- **Interfaces**: Device buses, sensor links, alarm/event channels
+- Full details: `medical/ <medical>`_
 Additional Deep-Dive Notes 📝
 ---------------------------
 
-- **Domain Focus**: General
+- Domain Focus: Automotive | Aerospace | Medical
 - **Phase Focus**: HIL
 - **Evidence Priorities**: Functional correctness, timing behavior, robustness, and traceability
 - **Patterns**: Baseline-first comparison, fixed acceptance thresholds, deterministic reruns

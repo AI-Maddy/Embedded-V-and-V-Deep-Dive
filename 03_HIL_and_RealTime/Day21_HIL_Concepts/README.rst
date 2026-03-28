@@ -90,9 +90,41 @@ This day emphasizes **real-time integration confidence on representative hardwar
   - **WHEN** the system attempts to process the input,
   - **THEN** it should trigger the appropriate fault handling mechanisms.
 
+
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262 (ASIL) + ISO 21434
+- **Hazard profile**: unintended acceleration/deceleration, loss of stability, braking faults
+- **Interfaces**: CAN, LIN, FlexRay, Automotive Ethernet
+- **Representative fault**: Sensor dropout and invalid CAN frame injection, simulating real-world failures to assess system robustness.
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C/DO-254 + ARP4754A/ARP4761
+- **Hazard profile**: loss of control authority, unstable mode transition, stale avionics data
+- **Interfaces**: ARINC 429/664, AFDX, discrete I/O
+- **Representative fault**: bus label corruption and sensor disagreement event.
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304 (Software Life Cycle Processes) + ISO 14971 (Risk Management) + IEC 60601 (Medical Electrical Equipment).
+- **Hazard profile**: incorrect dosage delivery, missed alarm, unsafe therapy continuation.
+- **Interfaces**: device buses, sensor links, alarm/event channels.
+- **Representative fault**: Sensor spike/dropout and actuator command rejection path.
+- Full details: `medical/ <medical>`_
 Additional Deep-Dive Notes
 --------------------------
-- **Domain Focus**: General
+- Domain Focus: Automotive | Aerospace | Medical
 - **Phase Focus**: HIL
 - **Evidence Priorities**: functional correctness, timing behavior, robustness, and traceability.
 - **Patterns**: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.

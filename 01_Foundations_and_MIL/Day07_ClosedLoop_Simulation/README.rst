@@ -99,10 +99,38 @@ THEN: The system gracefully handles the fault and logs recovery actions.
    - **T**: Triage failures by severity  
    - **S**: Sufficient handoff quality  
 
+
+
+
+
+
+
+Domain Breakdown
+----------------
+
+🚗 Automotive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: ISO 26262 (ASIL), ISO 21434
+- **Hazard profile**: Unintended acceleration/deceleration, Loss of stability, Braking faults
+- **Interfaces**: CAN (Controller Area Network), LIN (Local Interconnect Network), FlexRay, Automotive Ethernet
+- Full details: `automotive/ <automotive>`_
+
+✈ Aerospace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: DO-178C, ARP4754A, DO-254, ARP4761
+- **Interfaces**: ARINC 429, AFDX
+- Full details: `aerospace/ <aerospace>`_
+
+🩺 Medical
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Standards**: IEC 62304, ISO 14971, IEC 60601
+- **Hazard profile**: Incorrect dosage delivery, Missed alarm, Unsafe therapy continuation
+- **Interfaces**: Device buses, Sensor links, Alarm/event channels
+- **Representative fault**: Sensor spike/dropout or actuator command rejection → Therapy halts safely, and error is logged for investigation
+- Full details: `medical/ <medical>`_
 Additional Deep-Dive Notes 📘
 -----------------------------
-- **Domain Focus**: General Embedded Systems  
-- **Phase Focus**: MIL  
+- Domain Focus: Automotive | Aerospace | Medical- **Phase Focus**: MIL  
 - **Evidence Priorities**: Functional correctness, timing behavior, robustness, and traceability.  
 - **Patterns**: Baseline-first comparison, fixed acceptance thresholds, deterministic reruns.  
 - **Anti-Patterns**: Post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.  
