@@ -1,2 +1,8 @@
 # Ignore reference attachments and generated docs source folder
 Ref/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
