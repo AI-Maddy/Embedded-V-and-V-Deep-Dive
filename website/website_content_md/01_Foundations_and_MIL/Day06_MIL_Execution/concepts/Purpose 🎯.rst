@@ -1,0 +1,7 @@
+Purpose 🎯
+----------
+Summarize Day06 MIL Execution for quick recall and evidence-driven application in **MIL**.
+
+.. note::
+   MIL (Model-in-the-Loop) is a critical phase in embedded systems V&V, ensuring model fidelity and simulation-based validation of requirements.
+

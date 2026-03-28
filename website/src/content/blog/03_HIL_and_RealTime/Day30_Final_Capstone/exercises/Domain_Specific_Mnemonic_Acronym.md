@@ -1,0 +1,11 @@
+---
+title: "Domain Specific Mnemonic Acronym"
+description: "Auto-generated from filename."
+pubDate: 2026-03-24
+---
+
+
+
+# 🔍 Domain-Specific Mnemonic Acronym
+
+**HIL** - Hardware-in-the-Loop

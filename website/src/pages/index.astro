@@ -1,0 +1,256 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const TOPICS = [
+  { icon: "📋", label: "Requirements",     color: "#6c63ff", glow: "rgba(108,99,255,.25)", desc: "Functional · Safety · Traceability",         href: "/blog" },
+  { icon: "🔬", label: "Test Design",       color: "#00b894", glow: "rgba(0,184,148,.25)",  desc: "Equivalence · Boundary · Error Guessing",   href: "/blog" },
+  { icon: "🔗", label: "Traceability",      color: "#0984e3", glow: "rgba(9,132,227,.25)",  desc: "RTM · Bidirectional · ASPICE",              href: "/blog" },
+  { icon: "🛠️", label: "Tools & Infra",     color: "#fdcb6e", glow: "rgba(253,203,110,.25)", desc: "Jenkins · DOORS · JIRA · Polarion",        href: "/blog" },
+  { icon: "📐", label: "Standards",         color: "#e17055", glow: "rgba(225,112,85,.25)", desc: "ISO 26262 · ASPICE · DO-178C · IEC 61508",  href: "/blog" },
+  { icon: "🌐", label: "Real Scenarios",    color: "#a29bfe", glow: "rgba(162,155,254,.25)", desc: "HIL · SIL · MIL · Hardware-in-the-Loop",   href: "/blog" },
+  { icon: "🧩", label: "Patterns",          color: "#55efc4", glow: "rgba(85,239,196,.25)", desc: "Page Object · Data-Driven · Keyword-Driven", href: "/blog" },
+  { icon: "🤖", label: "TinyML & Edge AI",  color: "#fd79a8", glow: "rgba(253,121,168,.25)", desc: "TFLite · ONNX · Edge inference · MCU AI",  href: "/blog" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      body { background: #07090f !important; }
+      .page-wrap { position: relative; z-index: 1; }
+
+      /* ── Hero ── */
+      .hero {
+        text-align: center; padding: 3.5rem 1.5rem 2rem;
+        position: relative; overflow: hidden;
+      }
+      .hero::before {
+        content: ''; position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px;
+        background: radial-gradient(ellipse, rgba(108,99,255,.18) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .hero-badge {
+        display: inline-flex; align-items: center; gap: .5rem;
+        background: rgba(108,99,255,.1); border: 1px solid rgba(108,99,255,.25);
+        color: #a29bfe; font-size: .72rem; font-weight: 700;
+        letter-spacing: .1em; text-transform: uppercase;
+        padding: .3rem 1rem; border-radius: 999px; margin-bottom: 1.25rem;
+      }
+      .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800;
+        margin-bottom: .5rem; line-height: 1.1;
+        background: linear-gradient(135deg, #e2e8f0 30%, #a29bfe);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      }
+      .hero p {
+        font-size: 1.1rem; color: #4a5568; max-width: 600px; margin: 0 auto;
+      }
+      .hero p strong { color: #6c63ff; }
+      .hero-nav {
+        display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;
+      }
+      .hero-btn {
+        display: inline-flex; align-items: center; gap: .5rem;
+        padding: .55rem 1.25rem; border-radius: 999px;
+        font-size: .88rem; font-weight: 600; text-decoration: none;
+        transition: all .2s;
+      }
+      .hero-btn-primary {
+        background: linear-gradient(135deg, #6c63ff, #a29bfe);
+        color: #fff; box-shadow: 0 4px 16px rgba(108,99,255,.35);
+      }
+      .hero-btn-primary:hover { box-shadow: 0 6px 24px rgba(108,99,255,.5); transform: translateY(-1px); }
+      .hero-btn-secondary {
+        background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1);
+        color: #94a3b8;
+      }
+      .hero-btn-secondary:hover { border-color: #6c63ff; color: #e2e8f0; }
+
+      /* ── Section label ── */
+      .section-label {
+        text-align: center; font-size: .68rem; font-weight: 700;
+        letter-spacing: .15em; color: #1a2235; text-transform: uppercase;
+        margin: 2rem 0 1.5rem;
+      }
+
+      /* ── Mindmap Grid ── */
+      .mindmap-wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+      .mindmap-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1rem; align-items: center;
+      }
+
+      /* Hub */
+      .hub {
+        grid-column: 2; grid-row: 2;
+        background: linear-gradient(135deg, #0f1525, #090c18);
+        border: 2px solid rgba(108,99,255,.3);
+        border-radius: 16px; padding: 1.75rem 1.25rem;
+        text-align: center;
+        box-shadow: 0 0 50px rgba(108,99,255,.15), inset 0 1px 0 rgba(255,255,255,.04);
+        position: relative; overflow: hidden;
+      }
+      .hub::before {
+        content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+        width: 200px; height: 100px;
+        background: radial-gradient(ellipse, rgba(108,99,255,.2), transparent 70%);
+      }
+      .hub-icon { font-size: 2.5rem; margin-bottom: .5rem; position: relative; }
+      .hub-title { font-size: 1.1rem; font-weight: 800; position: relative; }
+      .hub-sub { font-size: .72rem; color: #4a5568; margin-top: .3rem; position: relative; }
+      .hub-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; margin-top: .8rem; }
+      .hub-badge {
+        background: rgba(108,99,255,.12); border: 1px solid rgba(108,99,255,.22);
+        border-radius: 999px; padding: .2rem .65rem;
+        font-size: .65rem; color: #a29bfe; position: relative;
+      }
+
+      /* Topic nodes */
+      .node {
+        background: #0e1220; border: 1px solid #1a2235;
+        border-radius: 14px; padding: 1.1rem;
+        text-decoration: none; color: #e2e8f0;
+        display: flex; flex-direction: column; gap: .3rem;
+        transition: transform .2s, border-color .2s, box-shadow .2s;
+        position: relative; overflow: hidden;
+      }
+      .node::before {
+        content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+        background: var(--c);
+      }
+      .node::after {
+        content: ''; position: absolute; inset: 0;
+        background: radial-gradient(circle at 50% -20%, color-mix(in srgb, var(--c) 8%, transparent), transparent 60%);
+        pointer-events: none;
+      }
+      .node:hover {
+        transform: translateY(-4px);
+        border-color: var(--c);
+        box-shadow: 0 8px 32px rgba(0,0,0,.5), 0 0 24px var(--glow);
+      }
+      .node-top { display: flex; align-items: center; gap: .5rem; }
+      .node-icon { font-size: 1.5rem; }
+      .node-label { font-size: .9rem; font-weight: 700; }
+      .node-desc { font-size: .72rem; color: #3a4a5e; line-height: 1.4; }
+      .node-link { font-size: .68rem; color: var(--c); margin-top: .3rem; display: flex; align-items: center; gap: .25rem; }
+
+      .n0 { grid-column:1; grid-row:1; }
+      .n1 { grid-column:2; grid-row:1; }
+      .n2 { grid-column:3; grid-row:1; }
+      .n3 { grid-column:1; grid-row:2; }
+      .n4 { grid-column:3; grid-row:2; }
+      .n5 { grid-column:1; grid-row:3; }
+      .n6 { grid-column:2; grid-row:3; }
+      .n7 { grid-column:3; grid-row:3; }
+
+      /* ── Info cards ── */
+      .cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 1100px; margin: 2.5rem auto; padding: 0 1.5rem; }
+      .info-card {
+        background: #0e1220; border: 1px solid #1a2235; border-radius: 14px;
+        padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;
+        transition: border-color .2s, box-shadow .2s;
+      }
+      .info-card:hover { border-color: var(--c); box-shadow: 0 0 20px var(--glow); }
+      .info-card-icon { font-size: 2rem; flex-shrink: 0; }
+      .info-card h2 { font-size: 1rem; font-weight: 700; color: var(--c); margin-bottom: .3rem; }
+      .info-card p { font-size: .82rem; color: #3a4a5e; margin: 0; }
+      .info-card a {
+        display: inline-flex; align-items: center; gap: .3rem;
+        margin-top: .75rem; font-size: .78rem; color: var(--c);
+        text-decoration: none; font-weight: 600;
+      }
+      .info-card a:hover { opacity: .8; }
+
+      @media (max-width: 700px) {
+        .mindmap-grid { grid-template-columns: 1fr 1fr; }
+        .hub { grid-column: 1 / -1; grid-row: 1; }
+        .n0,.n1,.n2,.n3,.n4,.n5,.n6,.n7 { grid-column: auto; grid-row: auto; }
+        .cards-row { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <div class="page-wrap">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-badge">🔬 Embedded V&amp;V Deep Dive 🧠</div>
+        <h1>Verification &amp; Validation<br/>Knowledge Hub</h1>
+        <p>
+          <strong>Skim, explore, and master</strong> embedded V&amp;V topics with
+          colorful mind maps, cheatsheets, icons, and deep-dive articles.
+        </p>
+        <div class="hero-nav">
+          <a href="/blog" class="hero-btn hero-btn-primary">📝 Blog &amp; Articles</a>
+          <a href="/about" class="hero-btn hero-btn-secondary">👤 About</a>
+        </div>
+      </section>
+
+      <!-- Mind Map -->
+      <div class="section-label">⬡ V&amp;V Topic Mind Map</div>
+
+      <div class="mindmap-wrap">
+        <div class="mindmap-grid">
+          {TOPICS.map((t, i) => {
+            const cls = i < 3 ? `n${i}` : i === 3 ? "n3" : i === 4 ? "n4" : `n${i}`;
+            return (
+              <a href={t.href} class={`node ${cls}`} style={`--c:${t.color}; --glow:${t.glow}`}>
+                <div class="node-top">
+                  <span class="node-icon">{t.icon}</span>
+                  <span class="node-label">{t.label}</span>
+                </div>
+                <div class="node-desc">{t.desc}</div>
+                <div class="node-link">Explore →</div>
+              </a>
+            );
+          })}
+
+          <!-- Hub -->
+          <div class="hub">
+            <div class="hub-icon">🔬</div>
+            <div class="hub-title">Embedded V&amp;V</div>
+            <div class="hub-sub">Deep Dive Resource</div>
+            <div class="hub-badges">
+              <span class="hub-badge">ISO 26262</span>
+              <span class="hub-badge">ASPICE</span>
+              <span class="hub-badge">HIL/SIL</span>
+              <span class="hub-badge">TinyML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info cards -->
+      <div class="cards-row">
+        <div class="info-card" style="--c:#ffb300; --glow:rgba(255,179,0,.15)">
+          <div class="info-card-icon">📚</div>
+          <div>
+            <h2>Deep Dives</h2>
+            <p>In-depth articles, standards, and real-world scenarios for every major V&amp;V topic. From ISO 26262 to TinyML and Edge AI.</p>
+            <a href="/blog">Read Articles →</a>
+          </div>
+        </div>
+        <div class="info-card" style="--c:#00b894; --glow:rgba(0,184,148,.15)">
+          <div class="info-card-icon">📝</div>
+          <div>
+            <h2>Blog &amp; Updates</h2>
+            <p>Stay up to date with the latest in Embedded V&amp;V, TinyML, Edge AI and verification methodologies.</p>
+            <a href="/blog">View Blog →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <Footer />
+  </body>
+</html>

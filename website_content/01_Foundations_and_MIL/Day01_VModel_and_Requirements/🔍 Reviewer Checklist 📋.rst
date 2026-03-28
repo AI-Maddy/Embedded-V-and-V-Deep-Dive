@@ -1,0 +1,14 @@
+🔍 Reviewer Checklist 📋
+-------------------------
+☐ Are pass/fail rules explicit and reproducible?  
+☐ Is each key claim backed by a concrete artifact?  
+☐ Are failures triaged with severity and owner?  
+☐ Is handoff quality sufficient for the next phase?  
+
+.. admonition:: Severity Legend
+   :class: tip
+
+   🟢 Nominal: No issues, ready for next phase.  
+   🟡 Boundary: Minor issues, requires attention.  
+   🔴 Fault: Critical issues, requires immediate action.
+

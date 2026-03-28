@@ -1,0 +1,7 @@
+# 🛡️ Make It Memorable: `S.A.F.E.R`
+
+-   **S --- Source hazard linked** (trace to hazard ID)
+-   **A --- Action defined** (what protection occurs)
+-   **F --- Fault timing bounded** (how fast to detect/react)
+-   **E --- End state safe** (deterministic safe-state behavior)
+-   **R --- Residual risk recorded** (owner + next action)

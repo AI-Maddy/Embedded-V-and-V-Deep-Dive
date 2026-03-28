@@ -1,0 +1,62 @@
+
+## 🔍 Reviewer Checklist
+
+-   Are pass/fail rules explicit and reproducible? ☐
+-   Is each key claim backed by a concrete artifact? ☐
+-   Are failures triaged with severity and owner? ☐
+-   Is handoff quality sufficient for the next phase? ☐
+
+::: note
+::: title
+Note
+:::
+
+This checklist is essential for ensuring that all aspects of the HIL
+process are covered before moving to the next phase.
+:::
+
+## 🔄 GIVEN / WHEN / THEN Scenarios
+
+-   **Nominal Scenario 🟢**:
+    -   **GIVEN** a properly configured HIL setup,
+    -   **WHEN** a nominal input signal is applied,
+    -   **THEN** the system should respond within the defined timing
+        thresholds.
+-   **Boundary Scenario 🟡**:
+    -   **GIVEN** an input signal at the edge of acceptable limits,
+    -   **WHEN** the system processes this signal,
+    -   **THEN** it should maintain stability without failure.
+-   **Fault Scenario 🔴**:
+    -   **GIVEN** a simulated fault condition in the hardware,
+    -   **WHEN** the system attempts to process the input,
+    -   **THEN** it should trigger the appropriate fault handling
+        mechanisms.
+
+## Additional Deep-Dive Notes
+
+-   **Domain Focus**: General
+-   **Phase Focus**: HIL
+-   **Evidence Priorities**: functional correctness, timing behavior,
+    robustness, and traceability.
+-   **Patterns**: baseline-first comparison, fixed acceptance
+    thresholds, deterministic reruns.
+-   **Anti-Patterns**: post-hoc threshold tuning, missing raw artifacts,
+    incomplete negative-path checks.
+-   **Pitfalls**: hidden assumptions, interface timing drift, weak
+    requirement-to-test linkage.
+-   **Example Expansion**: include one nominal, one boundary, and one
+    fault scenario per objective.
+-   **Review Heuristic**: if a claim cannot be tied to an artifact, mark
+    confidence as provisional.
+-   **Checklist Extension**: capture residual risk, ownership, and next
+    action for each unresolved item.
+
+::: important
+::: title
+Important
+:::
+
+Always refer to the relevant standards (DO-178C, DO-254, ISO 26262, IEC
+62304, ARP4754A/4761, ASPICE) when conducting HIL testing to ensure
+compliance and safety.
+:::

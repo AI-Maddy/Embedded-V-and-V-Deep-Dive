@@ -1,0 +1,175 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+
+/** Convert a slug segment like "01_Foundations_and_MIL" → "Foundations and MIL" */
+function labelFromSlug(segment: string): string {
+  return segment
+    .replace(/^\d+[-_]/, '')           // strip leading number prefix (01_, Day04_, etc.)
+    .replace(/^Day\d+[-_]/i, '')       // strip Day prefix (Day21_)
+    .replace(/[-_]/g, ' ')             // underscores/hyphens → spaces
+    .replace(/\b\w/g, c => c.toUpperCase()); // title-case
+}
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+
+  // Paths for actual posts (leaf files)
+  const postPaths = allPosts.map(post => ({
+    params: { slug: post.id },
+    props: { isPost: true as const, postId: post.id },
+  }));
+
+  // Paths for intermediate folders
+  const folderSet = new Set<string>();
+  for (const post of allPosts) {
+    const parts = post.id.split('/');
+    for (let i = 1; i < parts.length; i++) {
+      folderSet.add(parts.slice(0, i).join('/'));
+    }
+  }
+
+  const folderPaths = Array.from(folderSet).map(folder => ({
+    params: { slug: folder },
+    props: { isPost: false as const, postId: null },
+  }));
+
+  return [...postPaths, ...folderPaths];
+}
+
+type Props =
+  | { isPost: true; postId: string }
+  | { isPost: false; postId: null };
+
+const { isPost, postId } = Astro.props;
+const { slug = '' } = Astro.params;
+
+// For posts: render content
+let post: CollectionEntry<'blog'> | undefined;
+let Content: any = null;
+if (isPost) {
+  const allPosts = await getCollection('blog');
+  post = allPosts.find(p => p.id === postId);
+  if (post) {
+    const rendered = await render(post);
+    Content = rendered.Content;
+  }
+}
+
+// For folders: list children
+let children: Array<{ id: string; label: string; isPost: boolean; title?: string }> = [];
+if (!isPost) {
+  const allPosts = await getCollection('blog');
+  const prefix = slug + '/';
+  const childKeys = new Map<string, boolean>(); // childSlug → isPost
+  const titleMap = new Map<string, string>();
+
+  for (const p of allPosts) {
+    if (p.id.startsWith(prefix)) {
+      const rest = p.id.slice(prefix.length);
+      const firstSegment = rest.split('/')[0];
+      if (!firstSegment) continue;
+      const childId = `${slug}/${firstSegment}`;
+      const isLeaf = !rest.includes('/');
+      if (isLeaf) {
+        childKeys.set(childId, true);
+        titleMap.set(childId, p.data.title ?? '');
+      } else if (!childKeys.has(childId)) {
+        childKeys.set(childId, false);
+      }
+    }
+  }
+
+  children = Array.from(childKeys.entries())
+    .map(([id, isLeaf]) => ({
+      id,
+      isPost: isLeaf,
+      label: labelFromSlug(id.split('/').pop() ?? ''),
+      title: titleMap.get(id),
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+}
+
+// Breadcrumbs
+const crumbs = slug.split('/').map((part, i, arr) => ({
+  label: labelFromSlug(part),
+  href: '/blog/' + arr.slice(0, i + 1).join('/') + '/',
+}));
+const pageTitle = isPost
+  ? (post?.data.title ?? labelFromSlug(slug.split('/').pop() ?? ''))
+  : labelFromSlug(slug.split('/').pop() ?? '');
+---
+
+{isPost ? (
+  post && Content ? (
+    <BlogPost {...post.data}>
+      <Content />
+    </BlogPost>
+  ) : (
+    <p>Post not found.</p>
+  )
+) : (
+  <html lang="en">
+    <head>
+      <BaseHead title={`${pageTitle} | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+      <style>
+        body { margin: 0; font-family: system-ui, sans-serif; background: #f6f6fa; }
+        main { max-width: 900px; margin: 2em auto; padding: 0 1.5em 4em; }
+        nav.breadcrumb { font-size: 0.875em; color: #888; margin-bottom: 1.75em; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25em; }
+        nav.breadcrumb a { color: #6c63ff; text-decoration: none; }
+        nav.breadcrumb a:hover { text-decoration: underline; }
+        nav.breadcrumb .sep { color: #bbb; }
+        h1 { color: #1a1a2e; margin-bottom: 1.25em; font-size: 1.8em; }
+        ul.child-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.9em; }
+        ul.child-list li a {
+          display: flex; align-items: flex-start; gap: 0.75em;
+          padding: 1em 1.2em; background: #fff;
+          border: 1px solid #e4e4ef; border-radius: 0.7em;
+          text-decoration: none; color: #222;
+          transition: box-shadow 0.15s, border-color 0.15s;
+          min-height: 3em;
+        }
+        ul.child-list li a:hover { box-shadow: 0 4px 14px rgba(108,99,255,0.13); border-color: #6c63ff; color: #6c63ff; }
+        .item-icon { font-size: 1.1em; flex-shrink: 0; margin-top: 0.1em; }
+        .item-label { line-height: 1.35; font-size: 0.95em; }
+      </style>
+    </head>
+    <body>
+      <Header />
+      <main>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/blog/">Blog</a>
+          {crumbs.map((crumb, i) => (
+            <>
+              <span class="sep" aria-hidden="true">›</span>
+              {i < crumbs.length - 1
+                ? <a href={crumb.href}>{crumb.label}</a>
+                : <span aria-current="page">{crumb.label}</span>
+              }
+            </>
+          ))}
+        </nav>
+        <h1>{pageTitle}</h1>
+        {children.length === 0 ? (
+          <p style="color:#888;">No content found in this folder.</p>
+        ) : (
+          <ul class="child-list">
+            {children.map(child => (
+              <li>
+                <a href={`/blog/${child.id}/`}>
+                  <span class="item-icon">{child.isPost ? '📄' : '📁'}</span>
+                  <span class="item-label">{child.isPost && child.title ? child.title : child.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </main>
+      <Footer />
+    </body>
+  </html>
+)}

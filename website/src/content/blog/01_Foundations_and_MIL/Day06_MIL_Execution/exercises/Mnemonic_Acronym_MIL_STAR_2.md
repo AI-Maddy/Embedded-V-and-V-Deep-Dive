@@ -1,0 +1,11 @@
+---
+title: "Mnemonic Acronym MIL STAR 2"
+description: "Auto-generated from filename."
+pubDate: 2026-03-24
+---
+
+# 🛠️ **Mnemonic Acronym: MIL STAR**
+
+**M**odel fidelity **I**nterface validation **L**ogging and tracing
+**S**imulation confidence **T**iming analysis **A**udit-ready evidence
+**R**epeatability

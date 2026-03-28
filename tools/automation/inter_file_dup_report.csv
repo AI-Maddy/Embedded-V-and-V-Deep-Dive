@@ -1,24 +1,15 @@
 type,file,count,excerpt,extra
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,Additional Deep-Dive Notes,"lines:28,40,52"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,--------------------------,"lines:29,41,53"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,- Domain Focus: General,"lines:30,42,54"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,- Phase Focus: MIL,"lines:31,43,55"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Evidence Priorities: functional correctness, timing behavior, robustness, and traceability.","lines:32,44,56"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Patterns: baseline-first comparison, fixed acceptance thresholds, deterministic reruns.","lines:33,45,57"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Anti-Patterns: post-hoc threshold tuning, missing raw artifacts, incomplete negative-path checks.","lines:34,46,58"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Pitfalls: hidden assumptions, interface timing drift, weak requirement-to-test linkage.","lines:35,47,59"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Example Expansion: include one nominal, one boundary, and one fault scenario per objective.","lines:36,48,60"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Review Heuristic: if a claim cannot be tied to an artifact, mark confidence as provisional.","lines:37,49,61"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"- Checklist Extension: capture residual risk, ownership, and next action for each unresolved item.","lines:38,50,62"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/05_aerospace/use_case/description.rst,3,-----------,"lines:36,72,84"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/README.rst,3,-------------------------,"lines:9,26,70"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/aerospace/README.rst,3,------------,"lines:5,73,91"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/concepts/README.rst,3,---------------,"lines:5,54,93"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/concepts/concept_note.rst,3,--------------,"lines:56,74,100"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/README.rst,3,-------------------,"lines:8,22,49"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/worked_example.rst,4,--------------,"lines:13,20,58,76"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/worked_example.rst,4,--------------,"lines:15,22,80,98"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/worked_example.rst,3,GIVEN: A pre-configured MIL environment with frozen assumptions.,"lines:42,47,52"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/medical/README.rst,3,------------,"lines:5,79,124"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/06_medical/use_case/requirements.rst,3,- 🔴 Critical,"lines:125,133,145"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/06_medical/use_case/requirements.rst,4,-------------,"lines:5,52,69,76"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/06_medical/use_case/requirements.rst,3,- 🔴 Critical,"lines:139,147,159"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/08_exercises/aerospace.rst,3,-----------,"lines:35,52,64"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/concepts/README.rst,3,--------------,"lines:5,50,56"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day02_Traceability_and_TestDesign/concepts/concept_note.rst,3,---------------,"lines:20,81,99"
@@ -151,8 +142,13 @@ duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_Rea
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day24_HIL_Scripting/exercises/README.rst,4,----------------,"lines:5,13,26,44"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day24_HIL_Scripting/exercises/worked_example.rst,3,----------------,"lines:34,52,70"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/README.rst,3,------------,"lines:5,33,57"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,3,--------------,"lines:26,44,69"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,3,"WHEN data is transmitted,","lines:83,88,93"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,11,.. list-table::,"lines:21,51,74,96,118,141,163,186"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,11,:widths: 20 40 20 20,"lines:22,52,75,97,119,142,164,187"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,11,:stub-columns: 1,"lines:23,53,76,98,120,143,165,188"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,11,- **Description**,"lines:26,56,79,101,123,146,168,191"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,3,"- logs, traces","lines:62,129,173"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,3,"WHEN data is transmitted,","lines:247,252,257"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,3,- Data is transmitted,"lines:273,277,281"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/exercises/README.rst,3,---------------,"lines:32,38,56"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/exercises/worked_example.rst,3,-----------,"lines:5,11,23"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/exercises/worked_example.rst,3,-------------------,"lines:51,69,87"
@@ -160,8 +156,9 @@ duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_Rea
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/aerospace/README.rst,3,-----------,"lines:5,39,57"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/concepts/README.rst,3,------------,"lines:5,34,58"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/concepts/concept_note.rst,4,--------------,"lines:36,42,60,67"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst,4,----------------,"lines:5,13,38,56"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst,3,"- **WHEN** the execution trace is captured,","lines:16,21,26"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst,3,-------------------,"lines:13,47,71"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst,3,"* **WHEN** the execution trace is captured,","lines:19,25,31"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/README.rst,4,----------------,"lines:39,55,63,87"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/worked_example.rst,3,-----------,"lines:5,19,41"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day26_ExecutionTrace_and_WCET/exercises/worked_example.rst,3,--------------------,"lines:69,87,117"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day27_HIL_FaultInjection/automotive/README.rst,4,-----------,"lines:5,27,39,57"
@@ -181,237 +178,167 @@ duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_Rea
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day29_HIL_Regression_and_Automation/concepts/concept_note.rst,3,---------------,"lines:9,42,60"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day29_HIL_Regression_and_Automation/exercises/README.rst,4,----------------,"lines:5,19,40,58"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day29_HIL_Regression_and_Automation/exercises/worked_example.rst,3,----------------,"lines:52,70,97"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/README.rst,4,-------------------------,"lines:23,64,97,105"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/README.rst,3,"- THEN: The system behaves as expected, and the acceptance criterion is met","lines:51,56,61"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,3,-------------------,"lines:5,70,84"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,3,- Then: expected results verified.,"lines:48,54,60"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,4,----------------,"lines:63,77,91,98"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,6,| --- | --- |,"lines:130,139,148,157,166,175"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/results/README.rst,5,+-----------------------+---------------------------------------+,"lines:124,128,131,134,137"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst,3,+-----------------------+---------------------------------------+,"lines:107,112,115"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst,3,|-----------+-------------+--------|,"lines:121,124,127"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/README.rst,5,-------------------------,"lines:12,24,66,99,107"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/README.rst,3,"- THEN: The system behaves as expected, and the acceptance criterion is met","lines:53,58,63"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,3,-------------------,"lines:5,89,109"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,3,.. important::,"lines:35,105,125"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,7,.. list-table::,"lines:41,151,166,181,196,211,226"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,7,:header-rows: 1,"lines:42,152,167,182,197,212,227"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,7,- Description,"lines:46,155,170,185,200,215,230"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,3,- **Then**: expected results verified.,"lines:64,70,76"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,4,----------------,"lines:79,99,119,129"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/results/README.rst,3,------------------,"lines:95,143,178"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst,3,WHEN: The adaptive cruise control system is engaged.,"lines:50,56,62"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/automotive/README.rst,3,------------------,"lines:66,96,141"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/automotive/results/README.rst,3,+-----------------------+---------------+---------------+---------------+,"lines:137,143,147"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst,6,--------------,"lines:17,57,93,111,147,165"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst,4,*   This ensures that the verification process is properly understood.,"lines:170,175,180,185"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst,3,-------------------,"lines:43,91,98"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst,3,*   Verify that each exercise result meets the requirement IDs.,"lines:70,76,81"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst,3,* **Risks:** Incomplete or inaccurate testing.,"lines:57,71,75"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst,4,+-----------------------+---------------+---------------+,"lines:131,136,139,142"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,5,.. important::,"lines:21,97,111,140,160"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,4,.. warning::,"lines:25,91,117,154"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,7,.. code-block:: markdown,"lines:33,42,51,62,71,80,131"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,3,* WHEN: Therapy control algorithm is executed,"lines:36,45,54"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/concepts/README.rst,5,--------------,"lines:34,74,110,128,164"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst,3,THEN the system shall produce the expected outputs and meet the requirement IDs.,"lines:25,35,90"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst,3,-------------------,"lines:61,123,130"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst,3,*   Verify that each exercise result meets the requirement IDs.,"lines:94,104,113"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst,5,* **Standards References:** IEC 60601,"lines:52,74,91,103,120"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst,5,* **Standards References:** IEC 62304,"lines:57,69,86,98,115"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst,3,* **Risks:** Incomplete or inaccurate testing.,"lines:63,80,85"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/README.rst,4,* **Standards References:** ISO 14971,"lines:64,81,108,125"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,5,.. important::,"lines:31,107,121,150,170"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,4,.. warning::,"lines:35,101,127,164"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,7,.. code-block:: markdown,"lines:43,52,61,72,81,90,141"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,3,* WHEN: Therapy control algorithm is executed,"lines:46,55,64"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/medical/results/README.rst,12,"- Reference: IEC 62304, ISO 14971, IEC 60601","lines:192,194,196,198,200,202,204,206"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Compliance_Standards_CheatSheet.rst,13,.. important::,"lines:29,41,53,68,83,106,150,159"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Compliance_Standards_CheatSheet.rst,8,.. warning::,"lines:32,56,86,115,165,183,201,232"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Compliance_Standards_CheatSheet.rst,7,.. admonition::,"lines:44,74,112,162,177,189,238"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Compliance_Standards_CheatSheet.rst,4,| --- | --- | --- |,"lines:245,257,269,278"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,31,-----------------,"lines:10,14,22,30,38,46,76,82"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,25,🔹 **VERITAS** 🤖,"lines:13,21,29,37,45,56,75,81"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,106,+-----------------------+-----------------------+,"lines:236,241,244,247,250,253,256,261"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,34,+=======================+=======================+,"lines:238,263,274,333,344,355,366,377"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,7,================,"lines:270,281,329,340,351,373,406"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,*   THEN: The system behaves as expected,"lines:288,295,302,319,326"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,26,=====================,"lines:362,384,395,428,439,450,461,472"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,8,Table of Review Status,"lines:427,460,493,526,559,592,625,658"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,8,Table of Review Comments,"lines:438,471,504,537,570,603,636,669"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,7,Table of Review History,"lines:449,482,515,548,581,614,647"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,6,| Review Status        | Description          |,"lines:497,530,563,596,629,662"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,6,| Review Status1       | Review Status Description|,"lines:499,532,565,598,631,664"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,6,| Review Status2       | Review Status Description|,"lines:501,534,567,600,633,666"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,| Review Comment       | Description          |,"lines:508,541,574,607,640"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,| Review Comment1      | Review Comment Description|,"lines:510,543,576,609,642"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,| Review Comment2      | Review Comment Description|,"lines:512,545,578,611,644"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,| Review History      | Description          |,"lines:519,552,585,618,651"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,| Review History1     | Review History Description|,"lines:521,554,587,620,653"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,| Review History2     | Review History Description|,"lines:523,556,589,622,655"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,3,-------------------,"lines:42,126,258"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🟢 Nominal,"lines:63,143,168,193,218"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,.. code-block:: text,"lines:65,76,87,97"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,3,Logs updated with timestamp and event code,"lines:72,83,104"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🟡 Boundary,"lines:74,148,173,198,223"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🔴 Fault,"lines:85,153,178,203,228"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🔴 Advanced,"lines:95,158,183,208,233"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,3,* Validate that the system logs are updated with timestamp and event code.,"lines:146,151,161"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Analyze the system logs to ensure that they are updated correctly.,"lines:171,176,181,186"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Ensure that all evidence artifacts are archived and traceable.,"lines:195,200,205,210"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,8,* Verify that the system logs are updated correctly.,"lines:196,201,206,211,221,226,231,236"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Document all residual risks with owner and due date.,"lines:220,225,230,235"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,22,-----------------,"lines:12,16,25,34,43,51,81,96"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,16,🔹 **VERITAS** 🤖,"lines:15,24,33,42,50,61,80,95"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,16,.. list-table::,"lines:83,180,202,216,278,292,306,320"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,16,:widths: 20 80,"lines:84,181,203,217,279,293,307,321"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,16,:stub-columns: 1,"lines:85,182,204,218,280,294,308,322"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,16,- **Description**,"lines:88,185,207,221,283,297,311,325"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,4,- Scenario Description,"lines:90,92,223,225"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,7,================,"lines:214,228,276,290,304,332,374"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,*   THEN: The system behaves as expected,"lines:235,242,249,266,273"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,6,=====================,"lines:318,346,360,402,416,430"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,3,-------------------,"lines:44,128,260"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🟢 Nominal,"lines:65,145,170,195,220"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,.. code-block:: text,"lines:67,78,89,99"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,3,Logs updated with timestamp and event code,"lines:74,85,106"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🟡 Boundary,"lines:76,150,175,200,225"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🔴 Fault,"lines:87,155,180,205,230"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,5,### 🔴 Advanced,"lines:97,160,185,210,235"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,3,* Validate that the system logs are updated with timestamp and event code.,"lines:148,153,163"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Analyze the system logs to ensure that they are updated correctly.,"lines:173,178,183,188"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Ensure that all evidence artifacts are archived and traceable.,"lines:197,202,207,212"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,8,* Verify that the system logs are updated correctly.,"lines:198,203,208,213,223,228,233,238"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Document all residual risks with owner and due date.,"lines:222,227,232,237"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/HIL-ref.rst,3,.. code-block:: text,"lines:63,80,96"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,4,:class: tip,"lines:5,6,143,144"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,-------------------------,"lines:13,100,176"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,-------------------,"lines:43,54,64"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,.. code-block:: text,"lines:68,79,89"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,4,:class: warning,"lines:133,134,237,238"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,-------------------------,"lines:12,102,176"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,-------------------,"lines:45,56,66"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,.. code-block:: text,"lines:70,81,91"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,3,- **Test Environment**: Ensure test environment is stable and controlled.,"lines:159,165,171"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/SIL-ref.rst,14,:class: tip,"lines:5,6,112,113,127,128,137,138"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/SIL-ref.rst,3,.. code-block:: text,"lines:64,75,85"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/reference-for-repo.rst,3,----------------,"lines:48,67,116"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/reference-for-repo.rst,3,.. code-block:: text,"lines:70,81,91"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,3,| Language | Explanation | Where Used | Severity/Priority |,"lines:27,167,222"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,7,| Tool | Explanation | Where Used | Severity/Priority |,"lines:43,64,81,110,125,236,255"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,7,|------|-------------|------------|-------------------|,"lines:44,65,82,96,111,126,237"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,4,|----------|-------------|------------|-------------------|,"lines:139,154,168,180"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/README.rst,3,----------------------,"lines:29,115,162"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/README.rst,4,-------------------------,"lines:49,62,75,177"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,11,.. important::,"lines:53,72,86,107,129,142,153,164"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,GIVEN: System is in high-workload transition mode,"lines:57,103,189"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,WHEN: Stability margins are approached,"lines:58,115,190"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,5,.. warning::,"lines:61,94,118,193,282"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,16,.. admonition::,"lines:64,75,97,110,121,132,145,156"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,GIVEN: System is in fault detection mode,"lines:68,138,149,202"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,"THEN: System detects and contains the fault, and recovers to a safe state 🔴","lines:70,140,151,204"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,5,This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.,"lines:73,130,143,154,165"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,Review this scenario carefully to ensure that the system's fault detection and recovery mechanisms are functioning corre,"lines:76,146,157"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,THEN: System behavior is evaluated for stability and reliability 🟡,"lines:92,105,116"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,Anti-Patterns,"lines:219,335,352"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,Best Practices,"lines:233,337,354"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,Additional Deep-Dive Notes,"lines:248,339,356"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,Table of Evidence,"lines:267,341,358"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,24,-----------------,"lines:268,328,345,369,383,397,411,425"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,Checklist for Review,"lines:303,342,359"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,21,Indices and tables,"lines:344,382,396,410,424,438,452,466"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,40,*   General Index,"lines:364,385,392,399,406,413,420,427"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,39,*   Module Index,"lines:365,386,393,400,407,414,421,428"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,39,*   Search Page,"lines:366,387,394,401,408,415,422,429"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,3,=====================================,"lines:2,197,209"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,3,---------------------------,"lines:10,65,215"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,8,*   When: adaptive cruise control is engaged,"lines:19,29,39,49,59,72,80,88"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,59,Medical Infusion Pump Use Cases and Examples,"lines:1,486,489,492,495,498,501,504"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,59,==============================================,"lines:2,487,490,493,496,499,502,505"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,11,.. list-table::,"lines:27,90,126,154,178,206,230,254"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,11,:header-rows: 1,"lines:28,91,127,155,179,207,231,255"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,11,- Explanation,"lines:31,94,130,158,182,210,234,258"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,11,- Where Used,"lines:32,95,131,159,183,211,235,259"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,11,- Severity/Priority,"lines:33,96,132,160,184,212,236,260"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,3,- All domains,"lines:239,243,315"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,3,- Automotive,"lines:287,335,339"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/README.rst,3,----------------------,"lines:31,122,171"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/README.rst,4,-------------------------,"lines:53,66,79,186"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,5,.. admonition::,"lines:7,93,122,151,164"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,.. list-table::,"lines:40,69,98,219"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,:header-rows: 1,"lines:41,70,99,220"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,:stub-columns: 1,"lines:42,71,100,221"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,*   - **Use Case**,"lines:44,73,102"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,- **GIVEN**,"lines:45,74,103"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,- System is in fault detection mode,"lines:57,107,111"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,"- System detects and contains the fault, and recovers to a safe state 🔴","lines:59,109,113"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,.. important::,"lines:64,119,138,161"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,3,=====================================,"lines:2,202,214"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,3,---------------------------,"lines:10,65,226"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,8,*   **WHEN**: adaptive cruise control is engaged,"lines:19,29,39,49,59,72,80,88"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,29,.. important::,"lines:22,37,49,67,82,99,114,126"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,18,.. admonition::,"lines:25,55,102,132,148,203,217,247"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,10,.. warning::,"lines:34,70,79,111,156,183,227,285"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,8,- Is evidence reproducible across reruns?,"lines:53,94,196,233,258,295,320,369"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,8,- Are anomalies linked to objective requirements?,"lines:54,95,197,234,259,296,321,370"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,8,- Is residual risk clearly described?,"lines:55,96,198,235,260,297,322,371"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,6,☐ Validate synchronization source before formal runs.,"lines:58,88,190,252,314,363"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,6,☐ Verify scenario-to-requirement traceability.,"lines:59,89,191,253,315,364"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,6,☐ Enforce artifact naming/versioning consistency.,"lines:60,90,192,254,316,365"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,6,☐ Document residual risk and next experiment.,"lines:61,91,193,255,317,366"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,11,"If a claim cannot be tied to an artifact, mark confidence as provisional.","lines:99,201,225,238,263,287,300,325"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,10,☐ Capture residual risk.,"lines:102,204,228,241,266,290,303,328"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,10,☐ Assign ownership.,"lines:103,205,229,242,267,291,304,329"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,10,☐ Document next action for each unresolved item.,"lines:104,206,230,243,268,292,305,330"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,+-----------------------+-----------------------+,"lines:116,121,124,127"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📚 C.A.N.A. Methodology Implementation Checklist 📚 =====================,"lines:183,245,307,356"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,☐ Capture baseline artifacts under nominal conditions.,"lines:184,246,308,357"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,☐ Analyze captured data to identify trends and patterns.,"lines:185,247,309,358"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,☐ Normalize data to ensure consistency and accuracy.,"lines:186,248,310,359"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,☐ Analyze normalized data to draw conclusions and make recommendations.,"lines:187,249,311,360"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📝 C.A.N.A. Methodology Review Checklist 📝 =====================,"lines:189,251,313,362"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,6,===================== 📚 C.A.N.A. Methodology Review Criteria 🔍 =====================,"lines:195,232,257,294,319,368"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,10,===================== 📚 C.A.N.A. Methodology Review Heuristic 📚 =====================,"lines:200,224,237,262,286,299,324,348"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,9,===================== 📝 C.A.N.A. Methodology Checklist Extension 📝 =====================,"lines:203,227,240,265,289,302,327,351"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📚 C.A.N.A. Methodology Implementation Roadmap 📚 =====================,"lines:208,270,332,381"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,The C.A.N.A. methodology implementation roadmap includes the following steps:,"lines:209,271,333,382"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,1. **Phase 1: Capture**: Capture baseline artifacts under nominal conditions.,"lines:211,273,335,384"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,2. **Phase 2: Analyze**: Analyze captured data to identify trends and patterns.,"lines:212,274,336,385"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,3. **Phase 3: Normalize**: Normalize data to ensure consistency and accuracy.,"lines:213,275,337,386"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,4. **Phase 4: Analyze**: Analyze normalized data to draw conclusions and make recommendations.,"lines:214,276,338,387"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📚 C.A.N.A. Methodology Review Roadmap 📚 =====================,"lines:216,278,340,389"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,The C.A.N.A. methodology review roadmap includes the following steps:,"lines:217,279,341,390"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,1. **Step 1: Validate**: Validate synchronization source before formal runs.,"lines:219,281,343,392"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,2. **Step 2: Verify**: Verify scenario-to-requirement traceability.,"lines:220,282,344,393"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,3. **Step 3: Enforce**: Enforce artifact naming/versioning consistency.,"lines:221,283,345,394"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,4. **Step 4: Document**: Document residual risk and next experiment.,"lines:222,284,346,395"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,6,--------------------------------------------------------,"lines:7,160,181,186,191,196"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,------------------,"lines:45,54,69"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,5,| --- | --- |,"lines:48,126,134,143,154"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,**CANoe Verification & Validation (V&V) Mnemonic: C.A.N.O.E.**,"lines:79,238,246"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,"C.A.N.O.E. stands for Capture, Analyze, Network, Online Evaluation, and Evidence-based decision-making.","lines:81,236,248"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,5,.. list-table::,"lines:428,444,462,484,500"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,5,:widths: 50 50,"lines:429,445,463,485,501"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,5,:stub-columns: 1,"lines:430,446,464,486,502"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,5,- Description,"lines:433,449,467,489,505"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,-----------------------------,"lines:5,98,176"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,7,-------------------------,"lines:38,76,83,184,192,199,218"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,☐ Validate synchronization source before formal runs.,"lines:92,178,186"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,☐ Verify scenario-to-requirement traceability.,"lines:93,179,187"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,☐ Enforce artifact naming/versioning consistency.,"lines:94,180,188"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,☐ Document residual risk and next experiment.,"lines:95,181,189"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,---------------------------,"lines:108,118,204"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,------------------,"lines:54,69,84"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,.. list-table::,"lines:56,137,158"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,:header-rows: 1,"lines:57,138,159"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,- Description,"lines:60,141,162"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/README.rst,3,---------------------,"lines:19,107,221"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/README.rst,5,-------------------------,"lines:47,158,192,200,252"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/README.rst,4,----------------------,"lines:66,119,232,264"
 duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/README.rst,3,-------------------,"lines:75,114,134"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Color | Severity | Priority |,"lines:12,95,237"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,10,| --- | --- | --- |,"lines:13,70,96,179,201,209,217,238"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| 🟢 | Nominal | High |,"lines:14,97,239"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| 🟡 | Boundary | Medium |,"lines:15,98,240"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| 🔴 | Fault | Low |,"lines:16,99,241"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,-----------------,"lines:32,256,270"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,--------------------,"lines:50,156,223"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Metric | Description | Priority |,"lines:69,178,296"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Execution-path confidence | Confidence in the execution path of the system | 🟢 |,"lines:71,180,298"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| WCET evidence | Worst-case execution time evidence | 🟡 |,"lines:72,181,299"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Breakpoint determinism | Determinism of breakpoint behavior | 🔴 |,"lines:73,182,300"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,-------------------------,"lines:106,233,282"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,☐ Review scope and objectives,"lines:158,188,225"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,☐ Verify scenario-to-requirement traceability,"lines:159,189,226"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,☐ Ensure artifact naming/versioning consistency,"lines:160,190,227"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,☐ Review notes include residual risk and next experiment,"lines:161,191,228"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,☐ Verify deliverables,"lines:162,192,229"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,☐ Review criteria met,"lines:163,193,230"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Given | When | Then |,"lines:200,208,216"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,4,=====================================,"lines:318,355,364,371"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,7,| --- | --- |,"lines:321,331,340,349,358,367,374"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,4,--------------------,"lines:39,161,185,257"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,3,- ISO 26262,"lines:146,155,251"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,3,- IEC 62304,"lines:147,156,252"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,3,- ARP4754A/4761,"lines:148,157,253"
-duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,4,| --- | --- | --- |,"lines:260,269,278,287"
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/02_requirements/traceability_matrix.rst,3,"Additional Deep-Dive Notes ↵ -------------------------- ↵ - Domain Focus: General ↵ - Phase Focus: MIL ↵ - Evidence Priorities: functional correctness, timing behavior, robustness, and traceability. ↵ - Pattern",
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,6,:stub-columns: 1,"lines:12,80,117,213,232,251"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,:widths: 40 40 40,"lines:212,231,250"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,* - Tool version,"lines:218,237,256"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,* - Project/profile,"lines:221,240,259"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,- Set logging granularity,"lines:222,241,260"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,* - Interface mapping,"lines:224,243,262"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,- Verify execution-path confidence,"lines:226,245,264"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,6,.. list-table::,"lines:12,65,273,293,313,333"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,6,:stub-columns: 1,"lines:14,67,275,295,315,335"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,5,- Severity/Priority,"lines:17,279,299,319,339"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,4,--------------------,"lines:46,175,199,271"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,5,- Description,"lines:70,278,298,318,338"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,3,- ISO 26262,"lines:160,169,265"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,3,- IEC 62304,"lines:161,170,266"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,3,- ARP4754A/4761,"lines:162,171,267"
+duplicate_line,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,4,:widths: 20 80 10,"lines:274,294,314,334"
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/01_Foundations_and_MIL/Day01_VModel_and_Requirements/exercises/worked_example.rst,2,.. admonition:: Standards Reference ↵    :class: tip,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day24_HIL_Scripting/medical/hil/scripts/device_control_sequences.rst,2,"Additional Deep-Dive Notes ↵ -------------------------- ↵ - Domain Focus: Medical ↵ - Phase Focus: HIL ↵ - Evidence Priorities: functional correctness, timing behavior, robustness, and traceability. ↵ - Pattern",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day25_Bus_and_Network_Analysis/concepts/concept_note.rst,11,.. list-table:: ↵    :widths: 20 40 20 20 ↵    :stub-columns: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/aerospace/README.rst,7,.. list-table:: ↵    :header-rows: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/03_HIL_and_RealTime/Day30_Final_Capstone/exercises/README.rst,2,"GIVEN a consistent setup, ↵ WHEN the exercise is rerun, ↵ THEN the system shall produce the same outputs and meet the requirement IDs.",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,16,.. list-table:: ↵    :widths: 20 80 ↵    :stub-columns: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,2,* - **Scenario** ↵      - **Description** ↵    * - Scenario1 ↵      - Scenario Description ↵    * - Scenario2 ↵      - Scenario Description,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,2,### Nominal Scenario 🟢 ↵ -----------------,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,2,### Boundary Scenario 🟡 ↵ -----------------,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,2,### Fault Scenario 🔴 ↵ -----------------,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,8,Table of Review Status ↵ =====================,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,8,Table of Review Comments ↵ =====================,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,7,Table of Review History ↵ =====================,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,6,+-----------------------+-----------------------+ ↵ | Review Status        | Description          | ↵ +=======================+=======================+ ↵ | Review Status1       | Review Status Description| ↵ ,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,+-----------------------+-----------------------+ ↵ | Review Comment       | Description          | ↵ +=======================+=======================+ ↵ | Review Comment1      | Review Comment Description|,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/README.rst,5,+-----------------------+-----------------------+ ↵ | Review History      | Description          | ↵ +=======================+=======================+ ↵ | Review History1     | Review History Description| ↵ +,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,2,.. note:: ↵    **Pre-review checklist** to ensure completeness and accuracy.,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Ensure that all evidence artifacts are archived and traceable. ↵ * Verify that the system logs are updated correctly.,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/Domain usecases.rst,4,* Document all residual risks with owner and due date. ↵ * Verify that the system logs are updated correctly.,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,2,- ISO/IEC/IEEE 29148 ↵    - INCOSE SE Handbook ↵    - IEC 61508,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,2,.. admonition:: 🚨 **Important** ↵    :class: warning ↵    :class: warning,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,2,Tools and Frameworks Guide ↵ ==========================,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Ref/MIL-ref.rst,2,.. admonition:: 🚨 **Important** ↵    :class: warning,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,2,🔍 **Tools and Frameworks Guide** ↵ =====================================,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,2,☐ Review the catalog for completeness and accuracy ↵ ☐ Verify the tools and frameworks are up-to-date and relevant ↵ ☐ Ensure the catalog is organized and easy to navigate ↵ ☐ Check for consistency in forma,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,2,"| Language | Explanation | Where Used | Severity/Priority | ↵ |---------|-------------|------------|-------------------| ↵ | **C** | Deterministic, low-level systems programming for MCUs and safety-critic",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,2,"| Tool | Explanation | Where Used | Severity/Priority | ↵ |------|-------------|------------|-------------------| ↵ | **MATLAB/Simulink** | Industry standard for model-based design, control systems, and c",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/Tools_and_Frameworks_Guide.rst,11,.. list-table:: ↵    :header-rows: 1,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/README.rst,2,.. list-table:: ↵        :widths: 20 80 ↵        :stub-columns: 1,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,2,.. warning:: ↵         This scenario requires careful consideration of the system's stability margins.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,5,.. important:: ↵         This scenario is critical for ensuring the system's fault tolerance and recovery mechanisms.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,3,.. admonition:: ↵         Review this scenario carefully to ensure that the system's fault detection and recovery mechanisms are functioning correctly.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,2,Table of Contents ↵ -----------------,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,2,Use Cases and Examples ↵     Patterns ↵     Anti-Patterns ↵     Pitfalls ↵     Best Practices ↵     Checklist ↵     Additional Deep-Dive Notes ↵     References ↵     Table of Evidence ↵     Checklist for Review,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,21,Indices and tables ↵ -----------------,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,39,*   General Index ↵ *   Module Index ↵ *   Search Page,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,2,*   Given: normal traffic conditions ↵ *   When: adaptive cruise control is engaged ↵ *   Then: speed regulation is maintained within acceptable limits,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,2,"*   Given: dense stop-and-go traffic with tight headway and timing limits ↵ *   When: adaptive cruise control is engaged ↵ *   Then: speed regulation is maintained within acceptable limits, but near the b",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,2,"*   Given: sensor dropout and invalid CAN frame injection ↵ *   When: adaptive cruise control is engaged ↵ *   Then: fault detection and containment mechanisms are triggered, and recovery is successful",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,59,Medical Infusion Pump Use Cases and Examples ↵ ==============================================,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/aerospace_FlightControl/use_cases_and_examples.rst,4,.. list-table:: ↵     :header-rows: 1 ↵     :stub-columns: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,2,*   **GIVEN**: normal traffic conditions ↵ *   **WHEN**: adaptive cruise control is engaged ↵ *   **THEN**: speed regulation is maintained within acceptable limits,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,2,"*   **GIVEN**: dense stop-and-go traffic with tight headway and timing limits ↵ *   **WHEN**: adaptive cruise control is engaged ↵ *   **THEN**: speed regulation is maintained within acceptable limits, bu",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/automotive_ACC/use_cases_and_examples.rst,2,"*   **GIVEN**: sensor dropout and invalid CAN frame injection ↵ *   **WHEN**: adaptive cruise control is engaged ↵ *   **THEN**: fault detection and containment mechanisms are triggered, and recovery is s",
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,2,.. important:: ↵         Proper calibration and configuration are essential for accurate dosing.,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,2,.. warning:: ↵         Failure to properly test boundary conditions may result in product failures or safety issues.,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,2,.. important:: ↵         Proper testing of boundary conditions is essential for ensuring infusion pump performance.,
 duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,2,.. important:: ↵         Proper fault detection and containment are essential for ensuring patient safety.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📚 C.A.N.A. Methodology Implementation Checklist 📚 ===================== ↵ ☐ Capture baseline artifacts under nominal conditions. ↵ ☐ Analyze captured data to identify trends and patt,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📝 C.A.N.A. Methodology Review Checklist 📝 ===================== ↵ ☐ Validate synchronization source before formal runs. ↵ ☐ Verify scenario-to-requirement traceability. ↵ ☐ Enforce art,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,6,===================== 📚 C.A.N.A. Methodology Review Criteria 🔍 ===================== ↵ - Is evidence reproducible across reruns? ↵ - Are anomalies linked to objective requirements? ↵ - Is residual risk clea,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,10,"===================== 📚 C.A.N.A. Methodology Review Heuristic 📚 ===================== ↵ If a claim cannot be tied to an artifact, mark confidence as provisional.",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,9,===================== 📝 C.A.N.A. Methodology Checklist Extension 📝 ===================== ↵ ☐ Capture residual risk. ↵ ☐ Assign ownership. ↵ ☐ Document next action for each unresolved item.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📚 C.A.N.A. Methodology Implementation Roadmap 📚 ===================== ↵ The C.A.N.A. methodology implementation roadmap includes the following steps:,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,1. **Phase 1: Capture**: Capture baseline artifacts under nominal conditions. ↵ 2. **Phase 2: Analyze**: Analyze captured data to identify trends and patterns. ↵ 3. **Phase 3: Normalize**: Normalize data ,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,===================== 📚 C.A.N.A. Methodology Review Roadmap 📚 ===================== ↵ The C.A.N.A. methodology review roadmap includes the following steps:,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,4,1. **Step 1: Validate**: Validate synchronization source before formal runs. ↵ 2. **Step 2: Verify**: Verify scenario-to-requirement traceability. ↵ 3. **Step 3: Enforce**: Enforce artifact naming/version,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,2,* GIVEN: Baseline configuration and test environment. ↵ * WHEN: Run nominal test case. ↵ * THEN: Verify expected results and store baseline artifacts.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,2,* GIVEN: Baseline configuration and test environment with boundary conditions. ↵ * WHEN: Run boundary test case. ↵ * THEN: Verify expected results and identify potential issues.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,2,* GIVEN: Baseline configuration and test environment with fault conditions. ↵ * WHEN: Run fault test case. ↵ * THEN: Verify expected results and identify potential failures.,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,**CANoe Verification & Validation (V&V) Mnemonic: C.A.N.O.E.**,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,"C.A.N.O.E. stands for Capture, Analyze, Network, Online Evaluation, and Evidence-based decision-making.",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,2,* DO-178C: Software Considerations in Airborne Systems and Equipment Certification ↵ * DO-254: Design Assurance Guidance for Airborne Electronic Hardware ↵ * ISO 26262: Functional Safety for Road Vehicles,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Color | Severity | Priority | ↵ | --- | --- | --- | ↵ | 🟢 | Nominal | High | ↵ | 🟡 | Boundary | Medium | ↵ | 🔴 | Fault | Low |,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,3,| Metric | Description | Priority | ↵ | --- | --- | --- | ↵ | Execution-path confidence | Confidence in the execution path of the system | 🟢 | ↵ | WCET evidence | Worst-case execution time evidence | 🟡 | ↵ | ,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* Is evidence reproducible across reruns? ↵ * Are anomalies linked to objective requirements? ↵ * Is residual risk clearly described?,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* Functional correctness ↵ * Timing behavior ↵ * Robustness ↵ * Traceability,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* Baseline-first comparison ↵ * Fixed acceptance thresholds ↵ * Deterministic reruns,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* Post-hoc threshold tuning ↵ * Missing raw artifacts ↵ * Incomplete negative-path checks,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* Hidden assumptions ↵ * Interface timing drift ↵ * Weak requirement-to-test linkage,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,"* Include one nominal, one boundary, and one fault scenario per objective",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,"* If a claim cannot be tied to an artifact, mark confidence as provisional",
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* Capture residual risk ↵ * Ownership ↵ * Next action for each unresolved item,
-duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,☐ Review scope and objectives ↵ ☐ Verify scenario-to-requirement traceability ↵ ☐ Ensure artifact naming/versioning consistency ↵ ☐ Review notes include residual risk and next experiment ↵ ☐ Verify deliverabl,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/domains/medical_InfusionPump/use_cases_and_examples.rst,5,.. list-table:: ↵    :widths: 50 50 ↵    :stub-columns: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,2,- Is evidence reproducible across reruns? ↵ - Are anomalies linked to objective requirements? ↵ - Is residual risk clearly described?,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANalyzer/README.rst,3,☐ Validate synchronization source before formal runs. ↵ ☐ Verify scenario-to-requirement traceability. ↵ ☐ Enforce artifact naming/versioning consistency. ↵ ☐ Document residual risk and next experiment.,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/CANoe/README.rst,3,.. list-table:: ↵    :header-rows: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/TRACE32/README.rst,2,* - Color ↵      - Severity ↵      - Priority ↵    * - 🟢 ↵      - Nominal ↵      - High ↵    * - 🟡 ↵      - Boundary ↵      - Medium ↵    * - 🔴 ↵      - Fault ↵      - Low,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,.. list-table:: ↵    :widths: 20 80 ↵    :stub-columns: 1,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,### Domain Focus 📊 ↵ - Domain: Embedded Systems,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,### Evidence Priorities 📊 ↵ - Functional correctness 🟢 ↵ - Timing behavior 🕒 ↵ - Robustness 🔴 ↵ - Traceability 🔗,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,### Patterns 📊 ↵ - Baseline-first comparison ↵ - Fixed acceptance thresholds ↵ - Deterministic reruns,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,### Anti-Patterns 🚨 ↵ - Post-hoc threshold tuning ↵ - Missing raw artifacts ↵ - Incomplete negative-path checks,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,### Pitfalls 🤔 ↵ - Hidden assumptions ↵ - Interface timing drift ↵ - Weak requirement-to-test linkage,
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,"### Example Expansion 📊 ↵ - Include one nominal, one boundary, and one fault scenario per objective",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,"### Review Heuristic 📝 ↵ - If a claim cannot be tied to an artifact, mark confidence as provisional",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,2,"### Checklist Extension 📅 ↵ - Capture residual risk, ownership, and next action for each unresolved item",
+duplicate_paragraph,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/tools/Wireshark/README.rst,4,.. list-table:: ↵    :widths: 20 80 10 ↵    :stub-columns: 1,
 duplicate_file,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/02_SIL_and_Software_Validation/Day18_ObjectCode_Verification_DAL_A/aerospace/README.rst,3,sha256:e8915b10c841,
 duplicate_file,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/02_SIL_and_Software_Validation/Day18_ObjectCode_Verification_DAL_A/aerospace/TRACE32_ObjectCode_Testing/PRACTICE_Scripts/README.rst,3,sha256:e8915b10c841,
 duplicate_file,/home/madhavan/projects/Embedded-V-and-V-Deep-Dive/02_SIL_and_Software_Validation/Day18_ObjectCode_Verification_DAL_A/aerospace/TRACE32_ObjectCode_Testing/README.rst,3,sha256:e8915b10c841,

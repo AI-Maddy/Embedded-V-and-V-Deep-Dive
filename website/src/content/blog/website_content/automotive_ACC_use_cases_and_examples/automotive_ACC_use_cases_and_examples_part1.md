@@ -1,0 +1,106 @@
+---
+title: "automotive ACC use cases and examples part1"
+description: "Auto-generated from filename."
+pubDate: 2026-03-24
+---
+
+# Automotive Use Cases and Examples 🚗💻
+
+## Purpose 📝
+
+Provide domain-tailored use cases with evidence expectations aligned to
+**ISO 26262 (ASIL) + ISO 21434** 📚.
+
+## Representative Use Cases 📊
+
+\### Nominal Mission/Profile Operation 🟢
+
+::: note
+::: title
+Note
+:::
+
+This scenario represents the normal operating conditions of the system.
+:::
+
+::: important
+::: title
+Important
+:::
+
+Ensure that the system is functioning as expected in nominal conditions.
+:::
+
+-   **GIVEN**: normal traffic conditions
+-   **WHEN**: adaptive cruise control is engaged
+-   **THEN**: speed regulation is maintained within acceptable limits
+
+\### Boundary-Condition Operation Near Limits 🟡
+
+::: warning
+::: title
+Warning
+:::
+
+This scenario represents the boundary conditions of the system.
+:::
+
+::: important
+::: title
+Important
+:::
+
+Ensure that the system is functioning as expected near the limits of its
+operating conditions.
+:::
+
+-   **GIVEN**: dense stop-and-go traffic with tight headway and timing
+    limits
+-   **WHEN**: adaptive cruise control is engaged
+-   **THEN**: speed regulation is maintained within acceptable limits,
+    but near the boundary of acceptable behavior
+
+\### Fault Detection, Containment, and Recovery 🔴
+
+::: admonition
+This scenario represents a fault condition in the system.
+:::
+
+::: important
+::: title
+Important
+:::
+
+Ensure that the system is functioning as expected in fault conditions.
+:::
+
+-   **GIVEN**: sensor dropout and invalid CAN frame injection
+-   **WHEN**: adaptive cruise control is engaged
+-   **THEN**: fault detection and containment mechanisms are triggered,
+    and recovery is successful
+
+\### Degraded-Mode Continuation with Safety Constraints 🟢
+
+::: note
+::: title
+Note
+:::
+
+This scenario represents the degraded mode of the system.
+:::
+
+::: important
+::: title
+Important
+:::
+
+Ensure that the system is functioning as expected in degraded mode.
+:::
+
+-   **GIVEN**: reduced system functionality due to hardware failure
+-   **WHEN**: adaptive cruise control is engaged
+-   **THEN**: degraded-mode operation is maintained within safety
+    constraints
+
+\### Regression Stability after Fixes 🟡
+

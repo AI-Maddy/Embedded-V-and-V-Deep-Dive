@@ -1,0 +1,20 @@
+**Pitfalls** 🚨
+----------------
+
+- Hidden assumptions in environment or calibration setup.
+- Missing negative-path scenarios for high-criticality behavior.
+- Incomplete traceability from requirement to verdict.
+
+.. important::
+   These pitfalls can have significant consequences and should be carefully avoided.
+
+**Best Practices** 📈
+-------------------
+
+- Tag every artifact with domain requirement IDs.
+- Capture timing + functional evidence in the same run package.
+- Record residual risk and ownership before closure.
+
+.. note::
+   These best practices can help ensure effective verification and validation in the aerospace domain.
+

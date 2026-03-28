@@ -1,0 +1,19 @@
+✈️  Aerospace Focus — Day 05: Simulation Tools Setup
+=====================================================
+
+.. image:: https://img.shields.io/badge/Phase-MIL-blue
+   :alt: Phase: MIL
+
+.. image:: https://img.shields.io/badge/Standard-DO--178C%20%2F%20ARP4754A-critical
+   :alt: Standard: DO-178C / ARP4754A
+
+.. image:: https://img.shields.io/badge/Criticality-DAL--A%2FB-red
+   :alt: Criticality: DAL-A/B
+
+.. note::
+   🛡️ **Safety-Critical Context** — Every artifact produced in this section must be
+   traceable to a hazard-linked requirement. Unsupported claims are not acceptable
+   as evidence under DO-178C or ARP4754A reviews.
+
+----
+

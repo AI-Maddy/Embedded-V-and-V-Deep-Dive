@@ -1,0 +1,25 @@
+---
+// MindMap.astro: Astro component to render a Markmap mind map using markmap-view
+import { onMount } from 'astro/client';
+const { markdown } = Astro.props;
+---
+
+<div id="mindmap-container" style="width:100%; min-height:400px; background: #fff; border-radius: 1em; box-shadow: 0 2px 8px rgba(108,99,255,0.08); margin: 2em 0; padding: 1em;"></div>
+
+<script type="module">
+  import 'markmap-view/dist/index.js';
+  const markdown = {JSON.stringify(markdown)};
+  onMount(() => {
+    if (window.markmap && window.markmap.Markmap) {
+      window.markmap.Markmap.create('#mindmap-container', undefined, markdown);
+    } else {
+      // fallback: load script dynamically
+      const script = document.createElement('script');
+      script.src = '/node_modules/markmap-view/dist/index.js';
+      script.onload = () => {
+        window.markmap.Markmap.create('#mindmap-container', undefined, markdown);
+      };
+      document.body.appendChild(script);
+    }
+  });
+</script>

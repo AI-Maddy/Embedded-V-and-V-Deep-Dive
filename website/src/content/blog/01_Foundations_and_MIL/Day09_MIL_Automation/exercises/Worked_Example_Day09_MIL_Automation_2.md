@@ -1,0 +1,7 @@
+---
+title: "Worked Example  Day09 MIL Automation 2"
+description: "Auto-generated from filename."
+pubDate: 2026-03-24
+---
+
+# Worked Example --- Day09 MIL Automation

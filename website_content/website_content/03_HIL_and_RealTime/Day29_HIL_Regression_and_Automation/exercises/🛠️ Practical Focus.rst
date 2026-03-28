@@ -1,0 +1,7 @@
+🛠️ Practical Focus
+------------------
+Primary focus: **real-time integration behavior, interface timing, and hardware realism**. Ensuring that the system behaves as expected under various conditions is essential for validating the performance of embedded systems.
+
+.. important::
+   Real-time performance is crucial in safety-critical applications, where failures can lead to catastrophic outcomes.
+

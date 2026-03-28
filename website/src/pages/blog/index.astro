@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+function labelFromSlug(segment: string): string {
+  return segment
+    .replace(/^\d+[-_]/, '')
+    .replace(/^Day\d+[-_]/i, '')
+    .replace(/[-_]/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
+const posts = await getCollection('blog');
+// Only show top-level directories (not flat root files)
+const groups = Array.from(new Set(
+  posts
+    .filter(p => p.id.includes('/'))
+    .map(p => p.id.split('/')[0])
+)).sort();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Blog | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<style>
+			body { margin: 0; font-family: system-ui, sans-serif; background: #f6f6fa; }
+			main { max-width: 900px; margin: 2em auto; padding: 0 1.5em 4em; }
+			h1 { color: #1a1a2e; margin-bottom: 0.25em; font-size: 2em; }
+			.subtitle { color: #666; margin-bottom: 2em; font-size: 1em; }
+			ul {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+				gap: 1em;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			ul li a {
+				display: flex;
+				align-items: center;
+				gap: 0.75em;
+				padding: 1.1em 1.3em;
+				background: #fff;
+				border: 1px solid #e4e4ef;
+				border-radius: 0.75em;
+				text-decoration: none;
+				color: #1a1a2e;
+				font-weight: 600;
+				font-size: 1em;
+				transition: box-shadow 0.15s, border-color 0.15s;
+			}
+			ul li a:hover {
+				box-shadow: 0 4px 14px rgba(108,99,255,0.13);
+				border-color: #6c63ff;
+				color: #6c63ff;
+			}
+			.group-icon { font-size: 1.3em; }
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Blog</h1>
+			<p class="subtitle">Browse topics by section</p>
+			<ul>
+				{groups.map(group => (
+					<li>
+						<a href={`/blog/${group}/`}>
+							<span class="group-icon">📂</span>
+							{labelFromSlug(group)}
+						</a>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

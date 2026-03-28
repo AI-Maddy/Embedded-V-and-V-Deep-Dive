@@ -1,0 +1,17 @@
+🔹 **Checklist** 🔹
+------------------
+
+☐ **Domain Hazard Coverage** 📝
+☐ **Compliance References** 📝
+☐ **Nominal/Boundary/Fault Results** 📊
+☐ **Residual Risks and Next Actions** 📝
+
+.. warning::
+    Failure to comply with ISO 26262 and ISO 21434 may result in safety-critical system failures.
+
+.. important::
+    Evidence-driven decision-making is critical in automotive safety verification and validation.
+
+.. admonition::
+    This document is not a substitute for professional expertise in automotive safety verification and validation.
+

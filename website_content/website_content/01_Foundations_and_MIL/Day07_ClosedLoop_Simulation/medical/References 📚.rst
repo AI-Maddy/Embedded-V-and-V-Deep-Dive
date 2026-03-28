@@ -1,0 +1,8 @@
+References 📚
+------------
+- **IEC 62304**: Medical device software lifecycle processes  
+- **ISO 14971**: Risk management for medical devices  
+- **IEC 60601**: Electrical safety and performance standards  
+
+.. important::
+   Ensure all scenarios are mapped to compliance standards and domain-specific hazards.

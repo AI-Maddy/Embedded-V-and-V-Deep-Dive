@@ -1,0 +1,12 @@
+# **Additional Deep-Dive Notes** 📝
+
+-   Domain Focus: General
+-   Phase Focus: HIL
+-   Evidence Priorities: functional correctness, timing behavior,
+    robustness, and traceability.
+-   Patterns: baseline-first comparison, fixed acceptance thresholds,
+    deterministic reruns.
+-   Anti-Patterns: post-hoc threshold tuning, missing raw artifacts,
+    incomplete negative-path checks.
+-   Pitfalls: hidden assumptions, interface timing drift, weak
+    requirement-to-test linkage.
