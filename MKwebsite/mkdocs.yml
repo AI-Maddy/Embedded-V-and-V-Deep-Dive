@@ -1,0 +1,124 @@
+site_name: "Embedded V&V Deep Dive"
+site_description: "A 30-day cognitive-science-optimized learning journey through Model-in-Loop, Software-in-Loop, and Hardware-in-Loop verification and validation"
+site_author: "Embedded V&V Team"
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    logo: material/chip
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.keys
+  - def_list
+
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - "Phase 1: MIL":
+    - mil/index.md
+    - "Day 01 — V-Model & Requirements": mil/day01.md
+    - "Day 02 — Traceability & Test Design": mil/day02.md
+    - "Day 03 — Plant & Controller Modeling": mil/day03.md
+    - "Day 04 — Domain Modeling Patterns": mil/day04.md
+    - "Day 05 — Simulation Tools Setup": mil/day05.md
+    - "Day 06 — MIL Execution": mil/day06.md
+    - "Day 07 — Closed-Loop Simulation": mil/day07.md
+    - "Day 08 — Fault Injection in MIL": mil/day08.md
+    - "Day 09 — MIL Automation": mil/day09.md
+    - "Day 10 — MIL Mini-Project": mil/day10.md
+  - "Phase 2: SIL":
+    - sil/index.md
+    - "Day 11 — Code Generation": sil/day11.md
+    - "Day 12 — SIL Setup": sil/day12.md
+    - "Day 13 — SIL Execution": sil/day13.md
+    - "Day 14 — Unit & Integration Testing": sil/day14.md
+    - "Day 15 — Static Analysis": sil/day15.md
+    - "Day 16 — SIL Fault Injection": sil/day16.md
+    - "Day 17 — Robustness & Negative Testing": sil/day17.md
+    - "Day 18 — Object Code Verification": sil/day18.md
+    - "Day 19 — Coverage MC/DC": sil/day19.md
+    - "Day 20 — SIL Mini-Project": sil/day20.md
+  - "Phase 3: HIL":
+    - hil/index.md
+    - "Day 21 — HIL Concepts": hil/day21.md
+    - "Day 22 — Hardware Setup": hil/day22.md
+    - "Day 23 — Real-Time I/O": hil/day23.md
+    - "Day 24 — HIL Scripting": hil/day24.md
+    - "Day 25 — Bus & Network Analysis": hil/day25.md
+    - "Day 26 — Execution Trace & WCET": hil/day26.md
+    - "Day 27 — HIL Fault Injection": hil/day27.md
+    - "Day 28 — Compliance Mapping": hil/day28.md
+    - "Day 29 — HIL Regression & Automation": hil/day29.md
+    - "Day 30 — Final Capstone": hil/day30.md
+  - Domains:
+    - "Automotive (ACC)": domains/automotive.md
+    - "Aerospace (Flight Control)": domains/aerospace.md
+    - "Medical (Infusion Pump)": domains/medical.md
+  - Standards:
+    - "Compliance Cheatsheet": standards/compliance.md
+    - "Tools Reference": standards/tools.md
+  - Cheatsheet: cheatsheet.md
